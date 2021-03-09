@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="./js/materialize.min.js"></script>
+  <!--Let browser know website is optimized for mobile-->
   <title>Trabalho prático do Módulo 1 - Fundamentos</title>
 </head>
 
 <body>
+  <div class="container grey lighten-5">
+    <h1 class="center-align">Números por extenso</h1>
+    <div class="row">
+      <div class="col s12">
+        <form action="#">
+          <p>Escolha um número entre 0 e 999:</p>
+          <p class="range-field">
+            <input type="range" id="range-input" min="0" max="999" value="0" />
+          </p>
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled value="0" id="numero-atual" type="text" class="validate">
+              <label for="disabled">Número atual:</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled value="0" id="numero-extenso" type="text" class="validate">
+              <label for="disabled">Número por extenso:</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
+  <!--Core fot this app-->
+  <script type="text/javascript" src="./js/index.js" denfer></script>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="./js/materialize.min.js"></script>
 </body>
 
 </html>

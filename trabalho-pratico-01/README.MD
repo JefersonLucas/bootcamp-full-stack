@@ -26,7 +26,7 @@ Os alunos deverão desempenhar as seguintes atividades:
    c. O terceiro input deve ser textual, desabilitado e somente-leitura. Este input deve mostrar o número selecionado do range em formato por extenso.
 3. A imagem abaixo ilustra uma possível interface para a aplicação.
 
-![Exemplo](./exemplo.JPG)
+![Exemplo](./img/exemplo.JPG)
 
 ## Dicas
 
