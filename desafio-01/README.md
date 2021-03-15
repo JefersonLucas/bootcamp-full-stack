@@ -53,8 +53,6 @@ Para deixar o backend online. Este backend está configurado para "escutar" a po
 
 ![Exemplo 01](./img/exemplo-02.jpg)
 
-**Atenção:** confira às dicas da próxima página.
-
 ## Dicas
 
 1. Após executar a requisição à API, obtenha somente os dados necessários ao app. Esses são: `name` (first + " " + last), `picture` (imagem), `dob.age` (idade) e `gender` (sexo).
