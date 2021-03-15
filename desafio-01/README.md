@@ -1,5 +1,16 @@
 # Desafio do Módulo 01
 
+## To Do list
+
+- [x] Levantar o back-end com o [JSON Server](https://www.npmjs.com/package/json-server);
+- [x] Criar o layout com o [Materialize](https://materializecss.com);
+- [x] Capturar os eventos do `input`;
+  - [x] Prevenir comportamento padrão de formulário;
+- [x] Criar elementos dinamicamente;
+- [x] Realizar requisições HTTP com `async`/`await`;
+- [ ] Criar indicação de "loading" no momento da requisição HTTP;
+- [ ] Filtrar usuários;
+
 ## Objetivos
 
 Exercitar os seguintes conceitos trabalhados no Módulo:

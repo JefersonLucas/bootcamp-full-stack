@@ -4,6 +4,12 @@
 const globalState = {
 	users: [],
 	filteredUsers: [],
+	loading:  function(value) {
+		let loading = loader;
+		loading = value ? 
+			loading.classList.add("active-progress") :
+			loading.classList.remove("active-progress");
+	}
 }
 
 // Variáveis de estado global da aplicação
@@ -21,14 +27,10 @@ function start() {
 	usersSearch.focus();
 	// Monitora se o input tem algum valor
 	usersSearch.addEventListener("input", event => {
-		
-		const valueInput = event.target.value;
+		let valueInput = event.target.value;
+		const { loading } = globalState;
 
-		if(valueInput) {
-			loader.classList.add("active-progress");
-		} else {
-			loader.classList.remove("active-progress");
-		}
+		valueInput = valueInput ?	loading(true) : loading(false)
 
 	});
 	// Monitora se existe algum evento submit no formulário
@@ -39,6 +41,7 @@ function start() {
 function handleSubmit(event) {
 
 	const filter = event.target[0].value;
+	const { loading } = globalState;
 
 	// Previne o evento padrão do formulário
 	event.preventDefault();
@@ -46,7 +49,7 @@ function handleSubmit(event) {
 	// Verifica se há algum valor no input.
 	if(event.target[0].value) {
 		// Se houver, inclui uma nova classe que ativa a barra de progresso.
-		loader.classList.add("active-progress");
+		loading(true);
 		// Chamada da função que faz a requisição da API
 		fetchUsers(api);
 		// Chamada das funções que montam a lista de usuários e estatísticas 
@@ -55,7 +58,7 @@ function handleSubmit(event) {
 	}
 	else {
 		// Se não, remove a barra de progresso.
-		loader.classList.remove("active-progress");
+		loading(false)
 	}
 }
 
@@ -135,7 +138,6 @@ function returnFilteredUsers(filter) {
 }
 
 // Retorna as lista de Estatísticas do Usuário
-
 function returnStatisticsUsers(filter) {
 	// Extraindo todos os usuários do objeto global
 	const { users } = globalState;
