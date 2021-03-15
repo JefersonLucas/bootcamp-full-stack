@@ -1,6 +1,6 @@
 # Node Ignore
 
-# Logs
+## Logs
 logs
 *.log
 npm-debug.log*
@@ -10,6 +10,9 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Dependency directories
 node_modules/
+desafio-01/backend/node_modules/
+desafio-01/backend/package-lock.json
+desafio-01/backend/package.json
 
 # Optional npm cache directory
 .npm
