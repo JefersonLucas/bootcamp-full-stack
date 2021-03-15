@@ -15,11 +15,7 @@ const submitButton = document.querySelector("#submit-button");
 const filteredUsers = document.querySelector("#filtered-users");
 const statisticsUsers = document.querySelector("#statistics-users");
 
-/*
-	Tudo começa por aqui, a invocação desta função 
-	é feita na última linha de código deste arquivo
-*/
-
+// Tudo começa por aqui, a invocação desta função é feita na última linha de código deste arquivo
 function start() {
 	usersForm.addEventListener("submit", handleSubmit);
 }
@@ -33,10 +29,12 @@ function handleSubmit(event) {
 	// Verifica se há algum valor no input.
 	if(event.target[0].value) {
 		// Se houver, inclui uma nova classe que ativa a barra de progresso.
-		loader.classList.add("active-progress");
-		
+		loader.classList.add("active-progress");		
 		// Chamada da função que faz a requisição da API
 		fetchUsers(api);
+		// Chamada das funções que montam a lista de usuários e estatísticas 
+		filteredUsers.appendChild(returnFilteredUsers());
+		statisticsUsers.appendChild(returnStatisticsUsers());
 	}
 	else {
 		// Se não, remove a barra de progresso.
@@ -64,7 +62,23 @@ async function fetchUsers(url) {
 
 }
 
-/*
+// Retorna as listas de Usuários Filtrados
+function returnFilteredUsers() {
+	// Criação dos elementos
+	const ul = document.createElement("ul");
+	const li = document.createElement("li")
+	const h4 = document.createElement("h4");
+	// Atribuição de classes e elementos internos
+	ul.className = "collection with-header";
+	li.className = "collection-header";
+	h4.innerText = "Usuário(s) filtrado(s)";
+	// Inserção dos elementos filhos
+	li.appendChild(h4);
+	ul.appendChild(li);
+	// Retorno do elemento pai com os elementos filhos dentro do elemento pai
+	return ul;
+
+	/*
 	Usuários filtrados
 	
 	<ul class="collection with-header">
@@ -96,8 +110,26 @@ async function fetchUsers(url) {
 		</li>
 	</ul> 
 */
+}
 
-/*
+// Retorna as lista de Estatísticas do Usuário
+
+function returnStatisticsUsers() {
+	// Criação dos elementos
+	const ul = document.createElement("ul");
+	const li = document.createElement("li")
+	const h4 = document.createElement("h4");
+	// Atribuição de classes e elementos internos
+	ul.className = "collection with-header";
+	li.className = "collection-header";
+	h4.innerText = "Usuário(s) filtrado(s)";
+	// Inserção dos elementos filhos
+	li.appendChild(h4);
+	ul.appendChild(li);
+	// Retorno do elemento pai com os elementos filhos dentro do elemento pai
+	return ul;
+
+	/*
 	Estatísticas
 
 	<ul class="collection with-header">
@@ -121,7 +153,7 @@ async function fetchUsers(url) {
 
 	</ul> 
 */
-
+}
 
 // Iniciando o app
 start();
