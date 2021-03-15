@@ -17,11 +17,28 @@ const statisticsUsers = document.querySelector("#statistics-users");
 
 // Tudo começa por aqui, a invocação desta função é feita na última linha de código deste arquivo
 function start() {
+	// Esse método efetua o foco no input de busca de usuário
+	usersSearch.focus();
+	// Monitora se o input tem algum valor
+	usersSearch.addEventListener("input", event => {
+		
+		const valueInput = event.target.value;
+
+		if(valueInput) {
+			loader.classList.add("active-progress");
+		} else {
+			loader.classList.remove("active-progress");
+		}
+
+	});
+	// Monitora se existe algum evento submit no formulário
 	usersForm.addEventListener("submit", handleSubmit);
 }
 
 // Função que atua sobre o clique no submit
 function handleSubmit(event) {
+
+	const filter = event.target[0].value;
 
 	// Previne o evento padrão do formulário
 	event.preventDefault();
@@ -29,12 +46,12 @@ function handleSubmit(event) {
 	// Verifica se há algum valor no input.
 	if(event.target[0].value) {
 		// Se houver, inclui uma nova classe que ativa a barra de progresso.
-		loader.classList.add("active-progress");		
+		loader.classList.add("active-progress");
 		// Chamada da função que faz a requisição da API
 		fetchUsers(api);
 		// Chamada das funções que montam a lista de usuários e estatísticas 
-		filteredUsers.appendChild(returnFilteredUsers());
-		statisticsUsers.appendChild(returnStatisticsUsers());
+		filteredUsers.appendChild(returnFilteredUsers(filter));
+		statisticsUsers.appendChild(returnStatisticsUsers(filter));
 	}
 	else {
 		// Se não, remove a barra de progresso.
@@ -63,7 +80,9 @@ async function fetchUsers(url) {
 }
 
 // Retorna as listas de Usuários Filtrados
-function returnFilteredUsers() {
+function returnFilteredUsers(filter) {
+	// Extraindo todos os usuários do objeto global
+	const { users } = globalState;
 	// Criação dos elementos
 	const ul = document.createElement("ul");
 	const li = document.createElement("li")
@@ -75,6 +94,9 @@ function returnFilteredUsers() {
 	// Inserção dos elementos filhos
 	li.appendChild(h4);
 	ul.appendChild(li);
+
+	console.log(filter)
+
 	// Retorno do elemento pai com os elementos filhos dentro do elemento pai
 	return ul;
 
@@ -114,7 +136,9 @@ function returnFilteredUsers() {
 
 // Retorna as lista de Estatísticas do Usuário
 
-function returnStatisticsUsers() {
+function returnStatisticsUsers(filter) {
+	// Extraindo todos os usuários do objeto global
+	const { users } = globalState;
 	// Criação dos elementos
 	const ul = document.createElement("ul");
 	const li = document.createElement("li")
@@ -122,10 +146,14 @@ function returnStatisticsUsers() {
 	// Atribuição de classes e elementos internos
 	ul.className = "collection with-header";
 	li.className = "collection-header";
-	h4.innerText = "Usuário(s) filtrado(s)";
+	h4.innerText = "Estatística(s)";
 	// Inserção dos elementos filhos
 	li.appendChild(h4);
 	ul.appendChild(li);
+	
+	console.log(filter)
+
+
 	// Retorno do elemento pai com os elementos filhos dentro do elemento pai
 	return ul;
 

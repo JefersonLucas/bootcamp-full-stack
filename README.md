@@ -11,10 +11,10 @@ O Bootcamp é constistuído de 5 (cinco) módulos, sendo eles:
 **Módulo 01 - Fundamentos de JavaScript**
 
 <p>
-  <img alt="HTML5" src="https://img.shields.io/badge/-HTML-fff?style=plastic&logo=HTML5" title="HTML5" />
-  <img alt="CSS3" src="https://img.shields.io/badge/-CSS-fff?style=plastic&logo=CSS3&logoColor=1572B6" title="CSS3" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-fff?fff&style=plastic&logo=javascript&logoColor=F6C915" title="JavaScript" />
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-fff?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
+  <img alt="HTML5" src="https://img.shields.io/badge/-HTML-21262d?style=plastic&logo=HTML5" title="HTML5" />
+  <img alt="CSS3" src="https://img.shields.io/badge/-CSS-21262d?style=plastic&logo=CSS3&logoColor=1572B6" title="CSS3" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-21262d?fff&style=plastic&logo=javascript&logoColor=F6C915" title="JavaScript" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-21262d?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
 </p>
 
 1. Introdução ao JavaScript, instruções, tipos, valores, variáveis e comentários.
@@ -25,12 +25,12 @@ O Bootcamp é constistuído de 5 (cinco) módulos, sendo eles:
 **Módulo 02 – Desenvolvimento de APIs com Node.js**
 
 <p>
-	<img alt="Node.js" src="https://img.shields.io/badge/-Node.js-fff?style=plastic&logo=node.js&logoColor=509941" title="Node.js" />
-	<img alt="NPM" src="https://img.shields.io/badge/-NPM-fff?style=plastic&logo=npm" title="NPM" />
-	<img alt="Express.js" src="https://img.shields.io/badge/-Express.js-fff?style=plastic&logo=express&logoColor=1a1a1a" title="Express.js" />
-	<img alt="JSON" src="https://img.shields.io/badge/-JSON-fff?style=plastic&logo=json&logoColor=1a1a1a" title="JSON" />
-	<img alt="Insomnia" src="https://img.shields.io/badge/-Insomnia-fff?style=plastic&logo=insomnia&logoColor=5547b8" title="Insomnia" />
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-fff?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
+	<img alt="Node.js" src="https://img.shields.io/badge/-Node.js-21262d?style=plastic&logo=node.js&logoColor=509941" title="Node.js" />
+	<img alt="NPM" src="https://img.shields.io/badge/-NPM-21262d?style=plastic&logo=npm" title="NPM" />
+	<img alt="Express.js" src="https://img.shields.io/badge/-Express.js-21262d?style=plastic&logo=express&logoColor=fff" title="Express.js" />
+	<img alt="JSON" src="https://img.shields.io/badge/-JSON-21262d?style=plastic&logo=json&logoColor=gray" title="JSON" />
+	<img alt="Insomnia" src="https://img.shields.io/badge/-Insomnia-21262d?style=plastic&logo=insomnia&logoColor=5547b8" title="Insomnia" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-21262d?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
 </p>
 
 1. Introdução ao Node.js, Express.js, Event Loop, módulos e ferramentas.
@@ -41,11 +41,11 @@ O Bootcamp é constistuído de 5 (cinco) módulos, sendo eles:
 **Módulo 03 – Front End com React**
 
 <p>
-  <img alt="React" src="https://img.shields.io/badge/-React-ffffff?style=plastic&logo=react&logoColor=61DAFB" title="React" />
-	<img alt="Node.js" src="https://img.shields.io/badge/-Node.js-fff?style=plastic&logo=node.js&logoColor=509941" title="Node.js" />
-	<img alt="NPM" src="https://img.shields.io/badge/-NPM-fff?style=plastic&logo=npm" title="NPM" />
-	<img alt="Yarn" src="https://img.shields.io/badge/-Yarn-fff?style=plastic&logo=yarn" title="Yarn" />
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-fff?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
+  <img alt="React" src="https://img.shields.io/badge/-React-21262d?style=plastic&logo=react&logoColor=61DAFB" title="React" />
+	<img alt="Node.js" src="https://img.shields.io/badge/-Node.js-21262d?style=plastic&logo=node.js&logoColor=509941" title="Node.js" />
+	<img alt="NPM" src="https://img.shields.io/badge/-NPM-21262d?style=plastic&logo=npm" title="NPM" />
+	<img alt="Yarn" src="https://img.shields.io/badge/-Yarn-21262d?style=plastic&logo=yarn" title="Yarn" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-21262d?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
 </p>
 
 1. Introdução ao React, VirtualDOM, create-react-app e JavaScript puro x React.
@@ -56,10 +56,10 @@ O Bootcamp é constistuído de 5 (cinco) módulos, sendo eles:
 **Módulo 04 – Persistência com MongoDB, controle de código e implantação no Heroku**
 
 <p>
-	<img alt="Git" src="https://img.shields.io/badge/-Git-fff?style=plastic&logo=git" title="Git" />
-	<img alt="Heroku" src="https://img.shields.io/badge/-Heroku-fff?fff&style=plastic&logo=heroku&logoColor=410093" title="Heroku" />
-	<img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-fff?fff&style=plastic&logo=mongodb" title="MongoDB" />
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-fff?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
+	<img alt="Git" src="https://img.shields.io/badge/-Git-21262d?style=plastic&logo=git" title="Git" />
+	<img alt="Heroku" src="https://img.shields.io/badge/-Heroku-21262d?fff&style=plastic&logo=heroku&logoColor=3e0094" title="Heroku" />
+	<img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-21262d?fff&style=plastic&logo=mongodb" title="MongoDB" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-21262d?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
 </p>
 
 1. MongoDB, coleções, CRUD, BulkWrite, índices, modelagem e agregações.
@@ -73,10 +73,10 @@ O Bootcamp é constistuído de 5 (cinco) módulos, sendo eles:
 
 ## Trabalhos práticos
 
-Como aplicação do conteúdo no meio do módulo, é desenvolvido um **trabalho prático** para desenvolver os conhecimentos adiquiridos até então.
+Como aplicação prático dos conteúdos abordados, no meio dos módulos são desenvolvidos **trabalhos práticos**, para desenvolver os conhecimentos.
 
 <details open="open">
-<summary>Trabalhos práticos</summary>
+<summary>Trabalhos práticos:</summary>
   <ul>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-01">Trabalho prático do Módulo 01</a></li>
   </ul>
@@ -84,11 +84,24 @@ Como aplicação do conteúdo no meio do módulo, é desenvolvido um **trabalho 
 
 ## Desafios
 
-Como aplicação do conteúdo no fim do módulo, é desenvolvido um **desafio** para desenvolver os conhecimentos adiquiridos até então.
+Como aplicação prático dos conteúdos abordados, ao fim dos módulos são desenvolvidos **desafios** para aplicar os conhecimentos adiquiridos.
 
 <details open="open">
-<summary>Desafios</summary>
+<summary>Desafios:</summary>
   <ul>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-01">Desafio do Módulo 01</a></li>
   </ul>
 </details>
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](https://github.com/JefersonLucas/bootcamp-full-stack/blob/main/LICENSE.md) para obter detalhes.
+
+## Agradecimentos
+
+Meus sinceros agradecimentos:
+
+- A Deus.
+- Aos meus professores e monitores(as):
+  - [@rrgomide](https://github.com/rrgomide);
+- E a todos os meus colegas do Bootcamp Desenvolvedor Full Stack turma 2021-1B.
