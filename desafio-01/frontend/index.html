@@ -2,77 +2,78 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="./css/materialize.min.css">
-  <!-- Style for this app -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="./js/materialize.min.js"></script>
-  <!-- Import Google Icon Font -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
-  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-  <title>Desafio do Módulo 01</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="./css/materialize.min.css">
+	<!-- Style for this app -->
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="./js/materialize.min.js"></script>
+	<!-- Import Google Icon Font -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+	<title>Desafio do Módulo 01</title>
 </head>
 
 <body>
-  <!-- Preloader indeterminate -->
-  <div class="progress" id="loader">
-    <div class="indeterminate"></div>
-  </div>
+	<!-- Preloader indeterminate -->
+	<div class="progress" id="loader">
+		<div class="indeterminate"></div>
+	</div>
 
-  <!-- Container -->
-  <div class="container grey lighten-5">
+	<!-- Container -->
+	<div class="container grey lighten-5">
 
-    <!-- Title -->
-    <h1 class="center-align">Pesquisa de usuários</h1>
+		<!-- Title -->
+		<h1 class="center-align">Pesquisa de usuários</h1>
 
-    <div class="row">
-      <div class="col s12">
-        <form id="users-form">
-          <div class="row">
-            <!-- Input text -->
-            <div class="input-field col s10">
-              <input id="users-search" type="text" class="validate">
-              <label for="disabled">Busca</label>
-            </div>
-            <!-- Button submit -->
-            <div class="input-field col s2">
-              <button class="btn waves-effect waves-teal" type="submit" id="submit-button">
-                Buscar <i class="material-icons right">search</i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+		<div class="row">
+			<div class="col s12">
+				<form id="users-form">
+					<div class="row">
+						<!-- Input text -->
+						<div class="input-field col s10 m10">
+							<input id="users-search" type="text" class="validate" autofocus>
+							<label for="disabled">Busca</label>
+						</div>
+						<!-- Button submit -->
+						<div class="input-field col s2 m2">
+							<button class="btn waves-effect waves-teal" type="submit" id="submit-button">
+								Buscar <i class="material-icons right">search</i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 
-    <div class="row">
-      <div class="col s6">
-        <!-- Filtered users -->
-        <div class="card" id="filtered-users">
-          <!-- Here filtered users will be rendered -->
-        </div>
-      </div>
+		<div class="row">
+			<div class="col s6">
+				<!-- Filtered users -->
+				<div class="card" id="filtered-users">
+					<!-- Here filtered users will be rendered -->
 
-      <div class="col s6">
-        <!-- Statistics -->
-        <div class="card" id="statistics-users">
-          <!-- Here the statistics will be rendered -->
-        </div>
-      </div>
-    </div>
+				</div>
+			</div>
 
-  </div>
+			<div class="col s6">
+				<!-- Statistics -->
+				<div class="card" id="statistics-users">
+					<!-- Here the statistics will be rendered -->
 
-  <!-- Core for this app -->
-  <script type="text/javascript" src="./js/index.js" denfer></script>
-  <!-- JavaScript at end of body for optimized loading -->
-  <script type="text/javascript" src="./js/materialize.min.js"></script>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Core for this app -->
+		<script type="text/javascript" src="./js/index.js" denfer></script>
+		<!-- JavaScript at end of body for optimized loading -->
+		<script type="text/javascript" src="./js/materialize.min.js"></script>
 </body>
 
 </html>

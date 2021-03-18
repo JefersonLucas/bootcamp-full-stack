@@ -10,3 +10,15 @@
 .input-field.col.s2 {
   margin-top: 25px;
 }
+.flex-preloader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
