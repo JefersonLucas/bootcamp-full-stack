@@ -8,8 +8,8 @@
   - [x] Prevenir comportamento padrão de formulário;
 - [x] Criar elementos dinamicamente;
 - [x] Realizar requisições HTTP com `async`/`await`;
-- [ ] Criar indicação de "loading" no momento da requisição HTTP;
-- [ ] Filtrar usuários;
+- [x] Criar indicação de "loading" no momento da requisição HTTP;
+- [x] Filtrar usuários;
 
 ## Objetivos
 
