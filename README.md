@@ -103,7 +103,10 @@ Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.m
 Meus sinceros agradecimentos:
 
 - A Deus.
-- Aos meus professores e monitores(as):
+- Aos meus professores:
   - [Raphael Gomide](https://www.linkedin.com/in/rrgomide/)
   - [Guilherme Assis](https://www.linkedin.com/in/ghdeassis/)
+- e tutores(as) monitores(as):
+  - [Iberê Abondanza](https://www.linkedin.com/in/bereco/)
+  - [Manuella Biagioni](https://www.linkedin.com/in/manuella-biagioni-026543158/)
 - E a todos os meus colegas do Bootcamp Desenvolvedor Full Stack turma 2021-1B.
