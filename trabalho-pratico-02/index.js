@@ -1,88 +1,112 @@
-/** Importação da biblioteca `fs`
- * Importamos as `promises` e criamos um alias chamado `fileSystem`,
- * vamos utilizar bastante ao longo desse arquivo.
- */ 
-import { promises as fileSystem } from "fs"
+/** Importação da biblioteca `fs`:
+ * Importamos as `promises` e criamos um alias chamado `fileSystem`.
+ */
+import { promises as fileSystem } from "fs";
 
-/** Função `start()`
- * Sua função é chamar todas as outras funções nesse arquivo.
- * A sua chamada estará no final do arquivo. 
-*/
+/** Função `start()`:
+ * 1. Sua principal função é chamar todas as demais funções,
+ * sua chamada estará no final do arquivo.
+ */
 function start() {
+  // Chamada da atividade 01
   activity01();
 }
 
-/** Atividade 01 
- * Criar uma função que irá criar um arquivo JSON para cada estado representado no arquivo `Estados.json`.
- * Seu conteúdo será um Array das cidades pertencentes a aquele estado, de acordo com o arquivo `Cidades.json`.
- * O nome do arquivo deve ser o UF do estado, por exemplo: `MG.json`. 
-*/
+/** Atividade 01:
+ * 1. Criar uma **função** que irá criar um arquivo JSON para **cada estado** representado no arquivo `Estados.json`.
+ * 2. Seu conteúdo será um Array das cidades **pertencentes a aquele estado**, de acordo com o arquivo `Cidades.json`.
+ * 3. O nome do arquivo deve ser o **UF** do estado, por exemplo: `MG.json`.
+ *
+ * A sua chamada está dentro de `start()`.
+ */
 
 async function activity01() {
-  /** `try`
-   * Ao ler essa função, o código dentro desse bloco vai "tentar" ser executado, 
-   * caso ocorra algum erro, ele será repassado ao bloco comando `catch()`.
-   */ 
+  /** `try`:
+   * 1. Ao ler essa função, o código dentro desse bloco vai "tentar" ser executado.
+   * 2. caso ocorra algum erro, ele será repassado ao bloco comando `catch()`.
+   */
   try {
-    /** Constante `data`
-     *  Recebe em formato JSON todos os dados de `Estados.json`.
-     */ 
-    const data = JSON.parse(await fileSystem.readFile("./database/Estados.json"));
-    
-    /** Criando arquivos com `for`
-      for(let i = 0; i < data.length; i++) {
-        const conteudo = [{
-          ID,
-        }];
-        await fileSystem.writeFile(`./estados/${data[i].Sigla}.json`, JSON.stringify(conteudo));
-      }
-    */
+    /** Constante `states`.
+     *  Recebe todos os dados em formato JSON do arquivo `Estados.json`.
+     */
+    const states = JSON.parse(
+      await fileSystem.readFile("./database/Estados.json"),
+    );
+    /** Constante `cities`.
+     *  Recebe todos os dados em formato JSON do arquivo `Cidades.json`.
+     */
+    const cities = JSON.parse(
+      await fileSystem.readFile("./database/Cidades.json"),
+    );
 
-   /** Criando arquivos com `map`
-    * Começo desestruturando os itens `Sigla` e `ID`.
-    * Depois eu crio uma constante que rebebe um Array de Objetos.
-    * Dentro desse Array de Objetos eu incluo dinâmicamento cada estado com seu respectivo `ID`.
-    * Finalizando eu crio um arquivo para cada estado,
-    * extraindo a `Sigla` e contatenando para formar o nome arquivo.
-    * Logo depois eu coloco o Array de Objetos que contém o `ID` de cada estado dentro de um `JSON.stringify`
-    */ 
-   data.map(({Sigla, ID}) => {
+    /** Criando arquivos com `map()`:
+     * Começo desestruturando os Objetos pertecentes ao arquivo `Estados.json`.
+     * Dentro crio uma constante `content` que rebebe um Array de Objetos.
+     * Nessa constante será incluído dinâmicamente, cada cidade para cada estado.
+     * Finalizando eu crio um arquivo para cada estado,
+     * depois insiro a constante `content` que contém o Array de Objetos de `cities` dentro de `JSON.stringify`.
+     */
+    states.map(({ Sigla: UF, ID }) => {
+      /** Constante `content`:
+       * Ela recebe um Array de Objetos,
+       * dentro irá receber um método `push()`,
+       * que vai conter Objetos de cada cidade para cada estado.
+       */
+      const content = [];
 
-    /** Constante `conteudo`
-     * Recebe um Array de Objetos
-     * Cria um item chave/valor `ID` que corresponde ao estado pertecente
-     */  
-      const conteudo = [{
-        ID,
-      }];
+      /** Criando um arquivo para cada estado:
+       * 1. No primeiro parâmetro é criado dinâmicamente um estado com a extenção `.json`.
+       * 2. No segundo parâmetro é inserido a constante `content`,
+       * que contém um Array de Objetos com todas as cidades de cada estado.
+       */
+      cities.map(({ Estado: idState, ID: idCity, Nome: nameCity }) => {
+        if (ID == idState) {
+          let city = {
+            id: idCity,
+            name: nameCity,
+          };
+          return content.push(city);
+        }
+      });
 
-      /** Criando o arquivo para cada estado 
-       * No primeiro parâmetro é criado dinâmicamente um estado com a extenção `.json`.
-       * No segundo parâmetro é inserido a constante `conteudo` que contém o Array de Objetos,
-       * que contém o `ID` de cada estado pertecente.  
-      */
-      fileSystem.writeFile(`./estados/${Sigla}.json`, JSON.stringify(conteudo));
+      /** Criando um arquivo para cada estado:
+       * 1. No primeiro parâmetro é criado dinâmicamente um estado com a extenção `.json`.
+       * 2. No segundo parâmetro é inserido a constante `content`,
+       * que contém um Array de Objetos com todas as cidades de cada estado.
+       */
+      fileSystem.writeFile(`./estados/${UF}.json`, JSON.stringify(content));
+
+      // Chamada da atividade 02
+      activity02(UF);
     });
 
-    /** Debugging com o `console.log()` 
-     * Apenas uma mensagem informando que a criação foi bem sucedida.
-     */
-    console.log(`${data.length} arquivos criados com sucesso`);
-  }
-  /** `Catch()`
-   * Caso ocorra algum erro, ele é repassado para o `catch`,
-   * que se responsabiliza por exibir no `console` o erro ocorrido.
-   */ 
-  catch(erro) {
-    /** `console.error()`
-     * Decidi utilizar o `console.error()` por questões de prática de debugging,
-     * Não há diferencas em utilizar por `console.log()`.
+    /** Debugging com o `console.table()`
+     * Este método gera uma tabela dentro de um console, para melhor legibilidade.
+     * Uma tabela será gerada automaticamente para uma matriz ou um objeto.
      * Para saber mais:
      * https://javascript.plainenglish.io/stop-using-console-log-in-javascript-d29d6c24dc26
-     */ 
-    console.error(erro);
+     */
+    console.table({
+      estados: states.length,
+      cidades: cities.length,
+    });
+  } catch (erro) {
+    /** `catch()`:
+     * 1. Caso ocorra algum erro, ele será repassado para o `catch`,
+     * que se responsabiliza por exibir no `console` o erro ocorrido.
+     */
+    console.log(erro);
   }
 }
 
-// Chamando a função `start()`
+/** Atividade 02:
+ * 1. Criar uma **função** que recebe como parâmetro o **UF** do estado,
+ * que realize a leitura do arquivo JSON correspondente e que retorne a **quantidade de cidades** daquele estado.
+ *
+ * A sua chamada está dentro da função `activity01`, no final de `state.map()`.
+ */
+async function activity02(UF) {
+  const state = JSON.parse(await fileSystem.readFile(`./estados/${UF}.json`));
+}
+// Chamanda da função `start()`
 start();

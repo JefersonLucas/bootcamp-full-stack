@@ -1,4 +1,4 @@
-# Trabalho prático do Módulo 01
+# Trabalho prático do Módulo 02
 
 ## Objetivos
 
