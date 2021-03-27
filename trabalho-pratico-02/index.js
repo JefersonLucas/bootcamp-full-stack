@@ -34,6 +34,8 @@ async function start() {
   // console.log(await activity02("AC"));
   // Chamada da atividade 03
   await activity03();
+  // Chamada da atividade 04
+  await activity04();
 }
 
 /** Atividade 01:
@@ -160,6 +162,51 @@ async function activity03() {
         list.sort((a, b) => {
           if (a.cities < b.cities) return 1;
           else if (a.cities > b.cities) return -1;
+          else return 0;
+        });
+        // Imprime os cinco primeiros estados
+        console.log(list.slice(0, 5));
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/** Atividade 04:
+ * 1. Criar um **método** que imprima no `console` um `Array` com o **UF** dos **cinco estados** que **menos possuem cidades**.
+ * 2. Seguidos de: **quantidade**, em **ordem decrescente**.
+ * Você pode usar a função criada no tópico 2. Exemplo de impressão:
+ * ["UF - 30", "UF - 27", "UF - 25", "UF - 23", "UF - 21"];
+ */
+async function activity04() {
+  try {
+    /** Constante `states`:
+     * recebe todos os estados em formato JSON.
+     */
+    const states = parse(await read("./database/Estados.json"));
+
+    /** Constante `list`:
+     * nela que faremos as manipulações das informações `UF` e `cities`.
+     */
+    const list = [];
+
+    // Mapeamento na constante `states`.
+    states.map(async ({ Sigla: UF }) => {
+      /** Constante `cities`:
+       * puxamos as informações da quantidade de cidades da função `activity02()`.
+       */
+      const cities = await activity02(UF);
+
+      // Incluindo na constante `list` um Objeto com os campos chave/valor: `UF` e `cities`.
+      list.push({ UF: UF, cities });
+
+      // Quando a constante `list` obtiver o tamanho de 27 itens (Que correspondem ao tamanho dos estados).
+      if (list.length === 27) {
+        // Ordena os estados pela quatidade de cidades
+        list.sort((a, b) => {
+          if (a.cities > b.cities) return 1;
+          else if (a.cities < b.cities) return -1;
           else return 0;
         });
         // Imprime os cinco primeiros estados
