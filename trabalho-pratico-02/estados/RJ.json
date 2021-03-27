@@ -1,94 +1,462 @@
 [
-  { "id": "3591", "name": "Angra dos Reis" },
-  { "id": "3592", "name": "Aperibé" },
-  { "id": "3593", "name": "Araruama" },
-  { "id": "3594", "name": "Areal" },
-  { "id": "3595", "name": "Armação dos Búzios" },
-  { "id": "3596", "name": "Arraial do Cabo" },
-  { "id": "3597", "name": "Barra do Piraí" },
-  { "id": "3598", "name": "Barra Mansa" },
-  { "id": "3599", "name": "Belford Roxo" },
-  { "id": "3600", "name": "Bom Jardim" },
-  { "id": "3601", "name": "Bom Jesus do Itabapoana" },
-  { "id": "3602", "name": "Cabo Frio" },
-  { "id": "3603", "name": "Cachoeiras de Macacu" },
-  { "id": "3604", "name": "Cambuci" },
-  { "id": "3605", "name": "Campos dos Goytacazes" },
-  { "id": "3606", "name": "Cantagalo" },
-  { "id": "3607", "name": "Carapebus" },
-  { "id": "3608", "name": "Cardoso Moreira" },
-  { "id": "3609", "name": "Carmo" },
-  { "id": "3610", "name": "Casimiro de Abreu" },
-  { "id": "3611", "name": "Comendador Levy Gasparian" },
-  { "id": "3612", "name": "Conceição de Macabu" },
-  { "id": "3613", "name": "Cordeiro" },
-  { "id": "3614", "name": "Duas Barras" },
-  { "id": "3615", "name": "Duque de Caxias" },
-  { "id": "3616", "name": "Engenheiro Paulo de Frontin" },
-  { "id": "3617", "name": "Guapimirim" },
-  { "id": "3618", "name": "Iguaba Grande" },
-  { "id": "3619", "name": "Itaboraí" },
-  { "id": "3620", "name": "Itaguaí" },
-  { "id": "3621", "name": "Italva" },
-  { "id": "3622", "name": "Itaocara" },
-  { "id": "3623", "name": "Itaperuna" },
-  { "id": "3624", "name": "Itatiaia" },
-  { "id": "3625", "name": "Japeri" },
-  { "id": "3626", "name": "Laje do Muriaé" },
-  { "id": "3627", "name": "Macaé" },
-  { "id": "3628", "name": "Macuco" },
-  { "id": "3629", "name": "Magé" },
-  { "id": "3630", "name": "Mangaratiba" },
-  { "id": "3631", "name": "Maricá" },
-  { "id": "3632", "name": "Mendes" },
-  { "id": "3633", "name": "Mesquita" },
-  { "id": "3634", "name": "Miguel Pereira" },
-  { "id": "3635", "name": "Miracema" },
-  { "id": "3636", "name": "Natividade" },
-  { "id": "3637", "name": "Nilópolis" },
-  { "id": "3638", "name": "Niterói" },
-  { "id": "3639", "name": "Nova Friburgo" },
-  { "id": "3640", "name": "Nova Iguaçu" },
-  { "id": "3641", "name": "Paracambi" },
-  { "id": "3642", "name": "Paraíba do Sul" },
-  { "id": "3643", "name": "Parati" },
-  { "id": "3644", "name": "Paty do Alferes" },
-  { "id": "3645", "name": "Petrópolis" },
-  { "id": "3646", "name": "Pinheiral" },
-  { "id": "3647", "name": "Piraí" },
-  { "id": "3648", "name": "Porciúncula" },
-  { "id": "3649", "name": "Porto Real" },
-  { "id": "3650", "name": "Quatis" },
-  { "id": "3651", "name": "Queimados" },
-  { "id": "3652", "name": "Quissamã" },
-  { "id": "3653", "name": "Resende" },
-  { "id": "3654", "name": "Rio Bonito" },
-  { "id": "3655", "name": "Rio Claro" },
-  { "id": "3656", "name": "Rio das Flores" },
-  { "id": "3657", "name": "Rio das Ostras" },
-  { "id": "3658", "name": "Rio de Janeiro" },
-  { "id": "3659", "name": "Santa Maria Madalena" },
-  { "id": "3660", "name": "Santo Antônio de Pádua" },
-  { "id": "3661", "name": "São Fidélis" },
-  { "id": "3662", "name": "São Francisco de Itabapoana" },
-  { "id": "3663", "name": "São Gonçalo" },
-  { "id": "3664", "name": "São João da Barra" },
-  { "id": "3665", "name": "São João de Meriti" },
-  { "id": "3666", "name": "São José de Ubá" },
-  { "id": "3667", "name": "São José do Vale do Rio Preto" },
-  { "id": "3668", "name": "São Pedro da Aldeia" },
-  { "id": "3669", "name": "São Sebastião do Alto" },
-  { "id": "3670", "name": "Sapucaia" },
-  { "id": "3671", "name": "Saquarema" },
-  { "id": "3672", "name": "Seropédica" },
-  { "id": "3673", "name": "Silva Jardim" },
-  { "id": "3674", "name": "Sumidouro" },
-  { "id": "3675", "name": "Tanguá" },
-  { "id": "3676", "name": "Teresópolis" },
-  { "id": "3677", "name": "Trajano de Morais" },
-  { "id": "3678", "name": "Três Rios" },
-  { "id": "3679", "name": "Valença" },
-  { "id": "3680", "name": "Varre-Sai" },
-  { "id": "3681", "name": "Vassouras" },
-  { "id": "3682", "name": "Volta Redonda" }
+  {
+    "id": "3591",
+    "UF": "RJ",
+    "name": "Angra dos Reis"
+  },
+  {
+    "id": "3592",
+    "UF": "RJ",
+    "name": "Aperibé"
+  },
+  {
+    "id": "3593",
+    "UF": "RJ",
+    "name": "Araruama"
+  },
+  {
+    "id": "3594",
+    "UF": "RJ",
+    "name": "Areal"
+  },
+  {
+    "id": "3595",
+    "UF": "RJ",
+    "name": "Armação dos Búzios"
+  },
+  {
+    "id": "3596",
+    "UF": "RJ",
+    "name": "Arraial do Cabo"
+  },
+  {
+    "id": "3597",
+    "UF": "RJ",
+    "name": "Barra do Piraí"
+  },
+  {
+    "id": "3598",
+    "UF": "RJ",
+    "name": "Barra Mansa"
+  },
+  {
+    "id": "3599",
+    "UF": "RJ",
+    "name": "Belford Roxo"
+  },
+  {
+    "id": "3600",
+    "UF": "RJ",
+    "name": "Bom Jardim"
+  },
+  {
+    "id": "3601",
+    "UF": "RJ",
+    "name": "Bom Jesus do Itabapoana"
+  },
+  {
+    "id": "3602",
+    "UF": "RJ",
+    "name": "Cabo Frio"
+  },
+  {
+    "id": "3603",
+    "UF": "RJ",
+    "name": "Cachoeiras de Macacu"
+  },
+  {
+    "id": "3604",
+    "UF": "RJ",
+    "name": "Cambuci"
+  },
+  {
+    "id": "3605",
+    "UF": "RJ",
+    "name": "Campos dos Goytacazes"
+  },
+  {
+    "id": "3606",
+    "UF": "RJ",
+    "name": "Cantagalo"
+  },
+  {
+    "id": "3607",
+    "UF": "RJ",
+    "name": "Carapebus"
+  },
+  {
+    "id": "3608",
+    "UF": "RJ",
+    "name": "Cardoso Moreira"
+  },
+  {
+    "id": "3609",
+    "UF": "RJ",
+    "name": "Carmo"
+  },
+  {
+    "id": "3610",
+    "UF": "RJ",
+    "name": "Casimiro de Abreu"
+  },
+  {
+    "id": "3611",
+    "UF": "RJ",
+    "name": "Comendador Levy Gasparian"
+  },
+  {
+    "id": "3612",
+    "UF": "RJ",
+    "name": "Conceição de Macabu"
+  },
+  {
+    "id": "3613",
+    "UF": "RJ",
+    "name": "Cordeiro"
+  },
+  {
+    "id": "3614",
+    "UF": "RJ",
+    "name": "Duas Barras"
+  },
+  {
+    "id": "3615",
+    "UF": "RJ",
+    "name": "Duque de Caxias"
+  },
+  {
+    "id": "3616",
+    "UF": "RJ",
+    "name": "Engenheiro Paulo de Frontin"
+  },
+  {
+    "id": "3617",
+    "UF": "RJ",
+    "name": "Guapimirim"
+  },
+  {
+    "id": "3618",
+    "UF": "RJ",
+    "name": "Iguaba Grande"
+  },
+  {
+    "id": "3619",
+    "UF": "RJ",
+    "name": "Itaboraí"
+  },
+  {
+    "id": "3620",
+    "UF": "RJ",
+    "name": "Itaguaí"
+  },
+  {
+    "id": "3621",
+    "UF": "RJ",
+    "name": "Italva"
+  },
+  {
+    "id": "3622",
+    "UF": "RJ",
+    "name": "Itaocara"
+  },
+  {
+    "id": "3623",
+    "UF": "RJ",
+    "name": "Itaperuna"
+  },
+  {
+    "id": "3624",
+    "UF": "RJ",
+    "name": "Itatiaia"
+  },
+  {
+    "id": "3625",
+    "UF": "RJ",
+    "name": "Japeri"
+  },
+  {
+    "id": "3626",
+    "UF": "RJ",
+    "name": "Laje do Muriaé"
+  },
+  {
+    "id": "3627",
+    "UF": "RJ",
+    "name": "Macaé"
+  },
+  {
+    "id": "3628",
+    "UF": "RJ",
+    "name": "Macuco"
+  },
+  {
+    "id": "3629",
+    "UF": "RJ",
+    "name": "Magé"
+  },
+  {
+    "id": "3630",
+    "UF": "RJ",
+    "name": "Mangaratiba"
+  },
+  {
+    "id": "3631",
+    "UF": "RJ",
+    "name": "Maricá"
+  },
+  {
+    "id": "3632",
+    "UF": "RJ",
+    "name": "Mendes"
+  },
+  {
+    "id": "3633",
+    "UF": "RJ",
+    "name": "Mesquita"
+  },
+  {
+    "id": "3634",
+    "UF": "RJ",
+    "name": "Miguel Pereira"
+  },
+  {
+    "id": "3635",
+    "UF": "RJ",
+    "name": "Miracema"
+  },
+  {
+    "id": "3636",
+    "UF": "RJ",
+    "name": "Natividade"
+  },
+  {
+    "id": "3637",
+    "UF": "RJ",
+    "name": "Nilópolis"
+  },
+  {
+    "id": "3638",
+    "UF": "RJ",
+    "name": "Niterói"
+  },
+  {
+    "id": "3639",
+    "UF": "RJ",
+    "name": "Nova Friburgo"
+  },
+  {
+    "id": "3640",
+    "UF": "RJ",
+    "name": "Nova Iguaçu"
+  },
+  {
+    "id": "3641",
+    "UF": "RJ",
+    "name": "Paracambi"
+  },
+  {
+    "id": "3642",
+    "UF": "RJ",
+    "name": "Paraíba do Sul"
+  },
+  {
+    "id": "3643",
+    "UF": "RJ",
+    "name": "Parati"
+  },
+  {
+    "id": "3644",
+    "UF": "RJ",
+    "name": "Paty do Alferes"
+  },
+  {
+    "id": "3645",
+    "UF": "RJ",
+    "name": "Petrópolis"
+  },
+  {
+    "id": "3646",
+    "UF": "RJ",
+    "name": "Pinheiral"
+  },
+  {
+    "id": "3647",
+    "UF": "RJ",
+    "name": "Piraí"
+  },
+  {
+    "id": "3648",
+    "UF": "RJ",
+    "name": "Porciúncula"
+  },
+  {
+    "id": "3649",
+    "UF": "RJ",
+    "name": "Porto Real"
+  },
+  {
+    "id": "3650",
+    "UF": "RJ",
+    "name": "Quatis"
+  },
+  {
+    "id": "3651",
+    "UF": "RJ",
+    "name": "Queimados"
+  },
+  {
+    "id": "3652",
+    "UF": "RJ",
+    "name": "Quissamã"
+  },
+  {
+    "id": "3653",
+    "UF": "RJ",
+    "name": "Resende"
+  },
+  {
+    "id": "3654",
+    "UF": "RJ",
+    "name": "Rio Bonito"
+  },
+  {
+    "id": "3655",
+    "UF": "RJ",
+    "name": "Rio Claro"
+  },
+  {
+    "id": "3656",
+    "UF": "RJ",
+    "name": "Rio das Flores"
+  },
+  {
+    "id": "3657",
+    "UF": "RJ",
+    "name": "Rio das Ostras"
+  },
+  {
+    "id": "3658",
+    "UF": "RJ",
+    "name": "Rio de Janeiro"
+  },
+  {
+    "id": "3659",
+    "UF": "RJ",
+    "name": "Santa Maria Madalena"
+  },
+  {
+    "id": "3660",
+    "UF": "RJ",
+    "name": "Santo Antônio de Pádua"
+  },
+  {
+    "id": "3661",
+    "UF": "RJ",
+    "name": "São Fidélis"
+  },
+  {
+    "id": "3662",
+    "UF": "RJ",
+    "name": "São Francisco de Itabapoana"
+  },
+  {
+    "id": "3663",
+    "UF": "RJ",
+    "name": "São Gonçalo"
+  },
+  {
+    "id": "3664",
+    "UF": "RJ",
+    "name": "São João da Barra"
+  },
+  {
+    "id": "3665",
+    "UF": "RJ",
+    "name": "São João de Meriti"
+  },
+  {
+    "id": "3666",
+    "UF": "RJ",
+    "name": "São José de Ubá"
+  },
+  {
+    "id": "3667",
+    "UF": "RJ",
+    "name": "São José do Vale do Rio Preto"
+  },
+  {
+    "id": "3668",
+    "UF": "RJ",
+    "name": "São Pedro da Aldeia"
+  },
+  {
+    "id": "3669",
+    "UF": "RJ",
+    "name": "São Sebastião do Alto"
+  },
+  {
+    "id": "3670",
+    "UF": "RJ",
+    "name": "Sapucaia"
+  },
+  {
+    "id": "3671",
+    "UF": "RJ",
+    "name": "Saquarema"
+  },
+  {
+    "id": "3672",
+    "UF": "RJ",
+    "name": "Seropédica"
+  },
+  {
+    "id": "3673",
+    "UF": "RJ",
+    "name": "Silva Jardim"
+  },
+  {
+    "id": "3674",
+    "UF": "RJ",
+    "name": "Sumidouro"
+  },
+  {
+    "id": "3675",
+    "UF": "RJ",
+    "name": "Tanguá"
+  },
+  {
+    "id": "3676",
+    "UF": "RJ",
+    "name": "Teresópolis"
+  },
+  {
+    "id": "3677",
+    "UF": "RJ",
+    "name": "Trajano de Morais"
+  },
+  {
+    "id": "3678",
+    "UF": "RJ",
+    "name": "Três Rios"
+  },
+  {
+    "id": "3679",
+    "UF": "RJ",
+    "name": "Valença"
+  },
+  {
+    "id": "3680",
+    "UF": "RJ",
+    "name": "Varre-Sai"
+  },
+  {
+    "id": "3681",
+    "UF": "RJ",
+    "name": "Vassouras"
+  },
+  {
+    "id": "3682",
+    "UF": "RJ",
+    "name": "Volta Redonda"
+  }
 ]

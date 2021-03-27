@@ -1,15 +1,37 @@
 /** Importação da biblioteca `fs`:
  * Importamos as `promises` e criamos um alias chamado `fileSystem`.
  */
-import { promises as fileSystem } from "fs";
+import { promises as fileSystem, stat } from "fs";
+
+/** Desestruturando:
+ * Desestruturamos os métodos de `fileSytem`:
+ * 1. `readFile`: que faz a leitura de arquivos.
+ * 2. `writeFile`: que faz a **escrita** de arquivos.
+ *
+ * E os método de `JSON`:
+ * 1. `parse`: analisa uma string JSON, construindo o valor ou um objeto JavaScript descrito pela string.
+ * 2. `stringfy`: converte valores em javascript para uma String  JSON.
+ *
+ * **Obs**.: Estou apelidando somente para facilitar a minha leitura.
+ *
+ * **Documentações**:
+ * `readFile`: https://nodejs.org/api/fs.html#fs_filehandle_readfile_options
+ * `writeFile`: https://nodejs.org/api/fs.html#fs_filehandle_writefile_data_options
+ * `stringfy`: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+ * `parse`: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+ */
+const { readFile: read, writeFile: write } = fileSystem;
+const { parse, stringify } = JSON;
 
 /** Função `start()`:
- * 1. Sua principal função é chamar todas as demais funções,
+ * A principal função é chamar todas as demais funções,
  * sua chamada estará no final do arquivo.
  */
-function start() {
+async function start() {
   // Chamada da atividade 01
-  activity01();
+  await activity01();
+  // Chamada da atividade 02
+  console.log(await activity02("AC"));
 }
 
 /** Atividade 01:
@@ -26,18 +48,14 @@ async function activity01() {
    * 2. caso ocorra algum erro, ele será repassado ao bloco comando `catch()`.
    */
   try {
-    /** Constante `states`.
-     *  Recebe todos os dados em formato JSON do arquivo `Estados.json`.
+    /** Constante `states`:
+     * Recebe todos os dados em formato JSON do arquivo `Estados.json`.
      */
-    const states = JSON.parse(
-      await fileSystem.readFile("./database/Estados.json"),
-    );
-    /** Constante `cities`.
-     *  Recebe todos os dados em formato JSON do arquivo `Cidades.json`.
+    const states = parse(await read("./database/Estados.json"));
+    /** Constante `cities`:
+     * Recebe todos os dados em formato JSON do arquivo `Cidades.json`.
      */
-    const cities = JSON.parse(
-      await fileSystem.readFile("./database/Cidades.json"),
-    );
+    const cities = parse(await read("./database/Cidades.json"));
 
     /** Criando arquivos com `map()`:
      * Começo desestruturando os Objetos pertecentes ao arquivo `Estados.json`.
@@ -63,32 +81,21 @@ async function activity01() {
         if (ID == idState) {
           let city = {
             id: idCity,
+            UF: UF,
             name: nameCity,
           };
           return content.push(city);
         }
       });
-
       /** Criando um arquivo para cada estado:
-       * 1. No primeiro parâmetro é criado dinâmicamente um estado com a extenção `.json`.
-       * 2. No segundo parâmetro é inserido a constante `content`,
-       * que contém um Array de Objetos com todas as cidades de cada estado.
+       * 1. No primeiro parâmetro é criado dinâmicamente um estado com a extenção `.json`;
+       * 2. No segundo parâmetro é inserido a constante `content` dentro do método `JSON.stringfy()`.
+       * 3: Esse método possui os seguintes parâmetros:
+       * 3.1 *valor*: uma constante que contém o Array de Objetos, ela possui todas as cidades de cada estado;
+       * 3.2 *replacer* (opicional): o valor nulo todas as propriedades do objeto são incluídas na string JSON;
+       * 3.3 *espaço* (opicional): é usado para inserir espaço na string JSON para propósito de legibilidade.
        */
-      fileSystem.writeFile(`./estados/${UF}.json`, JSON.stringify(content));
-
-      // Chamada da atividade 02
-      activity02(UF);
-    });
-
-    /** Debugging com o `console.table()`
-     * Este método gera uma tabela dentro de um console, para melhor legibilidade.
-     * Uma tabela será gerada automaticamente para uma matriz ou um objeto.
-     * Para saber mais:
-     * https://javascript.plainenglish.io/stop-using-console-log-in-javascript-d29d6c24dc26
-     */
-    console.table({
-      estados: states.length,
-      cidades: cities.length,
+      write(`./estados/${UF}.json`, stringify(content, null, 2));
     });
   } catch (erro) {
     /** `catch()`:
@@ -103,10 +110,18 @@ async function activity01() {
  * 1. Criar uma **função** que recebe como parâmetro o **UF** do estado,
  * que realize a leitura do arquivo JSON correspondente e que retorne a **quantidade de cidades** daquele estado.
  *
- * A sua chamada está dentro da função `activity01`, no final de `state.map()`.
  */
 async function activity02(UF) {
-  const state = JSON.parse(await fileSystem.readFile(`./estados/${UF}.json`));
+  try {
+    /** Constante `state`:
+     * Recebe um estado passado por parâmetro e retorna o tamanho de cidades que esse estado possui.
+     */
+    const state = JSON.parse(await read(`./estados/${UF}.json`));
+    // Retorno
+    return state.length;
+  } catch (erro) {
+    console.log(erro);
+  }
 }
 // Chamanda da função `start()`
 start();

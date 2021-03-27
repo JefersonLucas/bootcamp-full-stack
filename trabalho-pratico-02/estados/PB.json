@@ -1,225 +1,1117 @@
 [
-  { "id": "2561", "name": "Água Branca" },
-  { "id": "2562", "name": "Aguiar" },
-  { "id": "2563", "name": "Alagoa Grande" },
-  { "id": "2564", "name": "Alagoa Nova" },
-  { "id": "2565", "name": "Alagoinha" },
-  { "id": "2566", "name": "Alcantil" },
-  { "id": "2567", "name": "Algodão de Jandaíra" },
-  { "id": "2568", "name": "Alhandra" },
-  { "id": "2569", "name": "Amparo" },
-  { "id": "2570", "name": "Aparecida" },
-  { "id": "2571", "name": "Araçagi" },
-  { "id": "2572", "name": "Arara" },
-  { "id": "2573", "name": "Araruna" },
-  { "id": "2574", "name": "Areia" },
-  { "id": "2575", "name": "Areia de Baraúnas" },
-  { "id": "2576", "name": "Areial" },
-  { "id": "2577", "name": "Aroeiras" },
-  { "id": "2578", "name": "Assunção" },
-  { "id": "2579", "name": "Baía da Traição" },
-  { "id": "2580", "name": "Bananeiras" },
-  { "id": "2581", "name": "Baraúna" },
-  { "id": "2582", "name": "Barra de Santa Rosa" },
-  { "id": "2583", "name": "Barra de Santana" },
-  { "id": "2584", "name": "Barra de São Miguel" },
-  { "id": "2585", "name": "Bayeux" },
-  { "id": "2586", "name": "Belém" },
-  { "id": "2587", "name": "Belém do Brejo do Cruz" },
-  { "id": "2588", "name": "Bernardino Batista" },
-  { "id": "2589", "name": "Boa Ventura" },
-  { "id": "2590", "name": "Boa Vista" },
-  { "id": "2591", "name": "Bom Jesus" },
-  { "id": "2592", "name": "Bom Sucesso" },
-  { "id": "2593", "name": "Bonito de Santa Fé" },
-  { "id": "2594", "name": "Boqueirão" },
-  { "id": "2595", "name": "Borborema" },
-  { "id": "2596", "name": "Brejo do Cruz" },
-  { "id": "2597", "name": "Brejo dos Santos" },
-  { "id": "2598", "name": "Caaporã" },
-  { "id": "2599", "name": "Cabaceiras" },
-  { "id": "2600", "name": "Cabedelo" },
-  { "id": "2601", "name": "Cachoeira dos Índios" },
-  { "id": "2602", "name": "Cacimba de Areia" },
-  { "id": "2603", "name": "Cacimba de Dentro" },
-  { "id": "2604", "name": "Cacimbas" },
-  { "id": "2605", "name": "Caiçara" },
-  { "id": "2606", "name": "Cajazeiras" },
-  { "id": "2607", "name": "Cajazeirinhas" },
-  { "id": "2608", "name": "Caldas Brandão" },
-  { "id": "2609", "name": "Camalaú" },
-  { "id": "2610", "name": "Campina Grande" },
-  { "id": "2611", "name": "Campo de Santana" },
-  { "id": "2612", "name": "Capim" },
-  { "id": "2613", "name": "Caraúbas" },
-  { "id": "2614", "name": "Carrapateira" },
-  { "id": "2615", "name": "Casserengue" },
-  { "id": "2616", "name": "Catingueira" },
-  { "id": "2617", "name": "Catolé do Rocha" },
-  { "id": "2618", "name": "Caturité" },
-  { "id": "2619", "name": "Conceição" },
-  { "id": "2620", "name": "Condado" },
-  { "id": "2621", "name": "Conde" },
-  { "id": "2622", "name": "Congo" },
-  { "id": "2623", "name": "Coremas" },
-  { "id": "2624", "name": "Coxixola" },
-  { "id": "2625", "name": "Cruz do Espírito Santo" },
-  { "id": "2626", "name": "Cubati" },
-  { "id": "2627", "name": "Cuité" },
-  { "id": "2628", "name": "Cuité de Mamanguape" },
-  { "id": "2629", "name": "Cuitegi" },
-  { "id": "2630", "name": "Curral de Cima" },
-  { "id": "2631", "name": "Curral Velho" },
-  { "id": "2632", "name": "Damião" },
-  { "id": "2633", "name": "Desterro" },
-  { "id": "2634", "name": "Diamante" },
-  { "id": "2635", "name": "Dona Inês" },
-  { "id": "2636", "name": "Duas Estradas" },
-  { "id": "2637", "name": "Emas" },
-  { "id": "2638", "name": "Esperança" },
-  { "id": "2639", "name": "Fagundes" },
-  { "id": "2640", "name": "Frei Martinho" },
-  { "id": "2641", "name": "Gado Bravo" },
-  { "id": "2642", "name": "Guarabira" },
-  { "id": "2643", "name": "Gurinhém" },
-  { "id": "2644", "name": "Gurjão" },
-  { "id": "2645", "name": "Ibiara" },
-  { "id": "2646", "name": "Igaracy" },
-  { "id": "2647", "name": "Imaculada" },
-  { "id": "2648", "name": "Ingá" },
-  { "id": "2649", "name": "Itabaiana" },
-  { "id": "2650", "name": "Itaporanga" },
-  { "id": "2651", "name": "Itapororoca" },
-  { "id": "2652", "name": "Itatuba" },
-  { "id": "2653", "name": "Jacaraú" },
-  { "id": "2654", "name": "Jericó" },
-  { "id": "2655", "name": "João Pessoa" },
-  { "id": "2656", "name": "Juarez Távora" },
-  { "id": "2657", "name": "Juazeirinho" },
-  { "id": "2658", "name": "Junco do Seridó" },
-  { "id": "2659", "name": "Juripiranga" },
-  { "id": "2660", "name": "Juru" },
-  { "id": "2661", "name": "Lagoa" },
-  { "id": "2662", "name": "Lagoa de Dentro" },
-  { "id": "2663", "name": "Lagoa Seca" },
-  { "id": "2664", "name": "Lastro" },
-  { "id": "2665", "name": "Livramento" },
-  { "id": "2666", "name": "Logradouro" },
-  { "id": "2667", "name": "Lucena" },
-  { "id": "2668", "name": "Mãe d`Água" },
-  { "id": "2669", "name": "Malta" },
-  { "id": "2670", "name": "Mamanguape" },
-  { "id": "2671", "name": "Manaíra" },
-  { "id": "2672", "name": "Marcação" },
-  { "id": "2673", "name": "Mari" },
-  { "id": "2674", "name": "Marizópolis" },
-  { "id": "2675", "name": "Massaranduba" },
-  { "id": "2676", "name": "Mataraca" },
-  { "id": "2677", "name": "Matinhas" },
-  { "id": "2678", "name": "Mato Grosso" },
-  { "id": "2679", "name": "Maturéia" },
-  { "id": "2680", "name": "Mogeiro" },
-  { "id": "2681", "name": "Montadas" },
-  { "id": "2682", "name": "Monte Horebe" },
-  { "id": "2683", "name": "Monteiro" },
-  { "id": "2684", "name": "Mulungu" },
-  { "id": "2685", "name": "Natuba" },
-  { "id": "2686", "name": "Nazarezinho" },
-  { "id": "2687", "name": "Nova Floresta" },
-  { "id": "2688", "name": "Nova Olinda" },
-  { "id": "2689", "name": "Nova Palmeira" },
-  { "id": "2690", "name": "Olho d`Água" },
-  { "id": "2691", "name": "Olivedos" },
-  { "id": "2692", "name": "Ouro Velho" },
-  { "id": "2693", "name": "Parari" },
-  { "id": "2694", "name": "Passagem" },
-  { "id": "2695", "name": "Patos" },
-  { "id": "2696", "name": "Paulista" },
-  { "id": "2697", "name": "Pedra Branca" },
-  { "id": "2698", "name": "Pedra Lavrada" },
-  { "id": "2699", "name": "Pedras de Fogo" },
-  { "id": "2700", "name": "Pedro Régis" },
-  { "id": "2701", "name": "Piancó" },
-  { "id": "2702", "name": "Picuí" },
-  { "id": "2703", "name": "Pilar" },
-  { "id": "2704", "name": "Pilões" },
-  { "id": "2705", "name": "Pilõezinhos" },
-  { "id": "2706", "name": "Pirpirituba" },
-  { "id": "2707", "name": "Pitimbu" },
-  { "id": "2708", "name": "Pocinhos" },
-  { "id": "2709", "name": "Poço Dantas" },
-  { "id": "2710", "name": "Poço de José de Moura" },
-  { "id": "2711", "name": "Pombal" },
-  { "id": "2712", "name": "Prata" },
-  { "id": "2713", "name": "Princesa Isabel" },
-  { "id": "2714", "name": "Puxinanã" },
-  { "id": "2715", "name": "Queimadas" },
-  { "id": "2716", "name": "Quixabá" },
-  { "id": "2717", "name": "Remígio" },
-  { "id": "2718", "name": "Riachão" },
-  { "id": "2719", "name": "Riachão do Bacamarte" },
-  { "id": "2720", "name": "Riachão do Poço" },
-  { "id": "2721", "name": "Riacho de Santo Antônio" },
-  { "id": "2722", "name": "Riacho dos Cavalos" },
-  { "id": "2723", "name": "Rio Tinto" },
-  { "id": "2724", "name": "Salgadinho" },
-  { "id": "2725", "name": "Salgado de São Félix" },
-  { "id": "2726", "name": "Santa Cecília" },
-  { "id": "2727", "name": "Santa Cruz" },
-  { "id": "2728", "name": "Santa Helena" },
-  { "id": "2729", "name": "Santa Inês" },
-  { "id": "2730", "name": "Santa Luzia" },
-  { "id": "2731", "name": "Santa Rita" },
-  { "id": "2732", "name": "Santa Teresinha" },
-  { "id": "2733", "name": "Santana de Mangueira" },
-  { "id": "2734", "name": "Santana dos Garrotes" },
-  { "id": "2735", "name": "Santarém" },
-  { "id": "2736", "name": "Santo André" },
-  { "id": "2737", "name": "São Bentinho" },
-  { "id": "2738", "name": "São Bento" },
-  { "id": "2739", "name": "São Domingos de Pombal" },
-  { "id": "2740", "name": "São Domingos do Cariri" },
-  { "id": "2741", "name": "São Francisco" },
-  { "id": "2742", "name": "São João do Cariri" },
-  { "id": "2743", "name": "São João do Rio do Peixe" },
-  { "id": "2744", "name": "São João do Tigre" },
-  { "id": "2745", "name": "São José da Lagoa Tapada" },
-  { "id": "2746", "name": "São José de Caiana" },
-  { "id": "2747", "name": "São José de Espinharas" },
-  { "id": "2748", "name": "São José de Piranhas" },
-  { "id": "2749", "name": "São José de Princesa" },
-  { "id": "2750", "name": "São José do Bonfim" },
-  { "id": "2751", "name": "São José do Brejo do Cruz" },
-  { "id": "2752", "name": "São José do Sabugi" },
-  { "id": "2753", "name": "São José dos Cordeiros" },
-  { "id": "2754", "name": "São José dos Ramos" },
-  { "id": "2755", "name": "São Mamede" },
-  { "id": "2756", "name": "São Miguel de Taipu" },
-  { "id": "2757", "name": "São Sebastião de Lagoa de Roça" },
-  { "id": "2758", "name": "São Sebastião do Umbuzeiro" },
-  { "id": "2759", "name": "Sapé" },
-  { "id": "2760", "name": "Seridó" },
-  { "id": "2761", "name": "Serra Branca" },
-  { "id": "2762", "name": "Serra da Raiz" },
-  { "id": "2763", "name": "Serra Grande" },
-  { "id": "2764", "name": "Serra Redonda" },
-  { "id": "2765", "name": "Serraria" },
-  { "id": "2766", "name": "Sertãozinho" },
-  { "id": "2767", "name": "Sobrado" },
-  { "id": "2768", "name": "Solânea" },
-  { "id": "2769", "name": "Soledade" },
-  { "id": "2770", "name": "Sossêgo" },
-  { "id": "2771", "name": "Sousa" },
-  { "id": "2772", "name": "Sumé" },
-  { "id": "2773", "name": "Taperoá" },
-  { "id": "2774", "name": "Tavares" },
-  { "id": "2775", "name": "Teixeira" },
-  { "id": "2776", "name": "Tenório" },
-  { "id": "2777", "name": "Triunfo" },
-  { "id": "2778", "name": "Uiraúna" },
-  { "id": "2779", "name": "Umbuzeiro" },
-  { "id": "2780", "name": "Várzea" },
-  { "id": "2781", "name": "Vieirópolis" },
-  { "id": "2782", "name": "Vista Serrana" },
-  { "id": "2783", "name": "Zabelê" }
+  {
+    "id": "2561",
+    "UF": "PB",
+    "name": "Água Branca"
+  },
+  {
+    "id": "2562",
+    "UF": "PB",
+    "name": "Aguiar"
+  },
+  {
+    "id": "2563",
+    "UF": "PB",
+    "name": "Alagoa Grande"
+  },
+  {
+    "id": "2564",
+    "UF": "PB",
+    "name": "Alagoa Nova"
+  },
+  {
+    "id": "2565",
+    "UF": "PB",
+    "name": "Alagoinha"
+  },
+  {
+    "id": "2566",
+    "UF": "PB",
+    "name": "Alcantil"
+  },
+  {
+    "id": "2567",
+    "UF": "PB",
+    "name": "Algodão de Jandaíra"
+  },
+  {
+    "id": "2568",
+    "UF": "PB",
+    "name": "Alhandra"
+  },
+  {
+    "id": "2569",
+    "UF": "PB",
+    "name": "Amparo"
+  },
+  {
+    "id": "2570",
+    "UF": "PB",
+    "name": "Aparecida"
+  },
+  {
+    "id": "2571",
+    "UF": "PB",
+    "name": "Araçagi"
+  },
+  {
+    "id": "2572",
+    "UF": "PB",
+    "name": "Arara"
+  },
+  {
+    "id": "2573",
+    "UF": "PB",
+    "name": "Araruna"
+  },
+  {
+    "id": "2574",
+    "UF": "PB",
+    "name": "Areia"
+  },
+  {
+    "id": "2575",
+    "UF": "PB",
+    "name": "Areia de Baraúnas"
+  },
+  {
+    "id": "2576",
+    "UF": "PB",
+    "name": "Areial"
+  },
+  {
+    "id": "2577",
+    "UF": "PB",
+    "name": "Aroeiras"
+  },
+  {
+    "id": "2578",
+    "UF": "PB",
+    "name": "Assunção"
+  },
+  {
+    "id": "2579",
+    "UF": "PB",
+    "name": "Baía da Traição"
+  },
+  {
+    "id": "2580",
+    "UF": "PB",
+    "name": "Bananeiras"
+  },
+  {
+    "id": "2581",
+    "UF": "PB",
+    "name": "Baraúna"
+  },
+  {
+    "id": "2582",
+    "UF": "PB",
+    "name": "Barra de Santa Rosa"
+  },
+  {
+    "id": "2583",
+    "UF": "PB",
+    "name": "Barra de Santana"
+  },
+  {
+    "id": "2584",
+    "UF": "PB",
+    "name": "Barra de São Miguel"
+  },
+  {
+    "id": "2585",
+    "UF": "PB",
+    "name": "Bayeux"
+  },
+  {
+    "id": "2586",
+    "UF": "PB",
+    "name": "Belém"
+  },
+  {
+    "id": "2587",
+    "UF": "PB",
+    "name": "Belém do Brejo do Cruz"
+  },
+  {
+    "id": "2588",
+    "UF": "PB",
+    "name": "Bernardino Batista"
+  },
+  {
+    "id": "2589",
+    "UF": "PB",
+    "name": "Boa Ventura"
+  },
+  {
+    "id": "2590",
+    "UF": "PB",
+    "name": "Boa Vista"
+  },
+  {
+    "id": "2591",
+    "UF": "PB",
+    "name": "Bom Jesus"
+  },
+  {
+    "id": "2592",
+    "UF": "PB",
+    "name": "Bom Sucesso"
+  },
+  {
+    "id": "2593",
+    "UF": "PB",
+    "name": "Bonito de Santa Fé"
+  },
+  {
+    "id": "2594",
+    "UF": "PB",
+    "name": "Boqueirão"
+  },
+  {
+    "id": "2595",
+    "UF": "PB",
+    "name": "Borborema"
+  },
+  {
+    "id": "2596",
+    "UF": "PB",
+    "name": "Brejo do Cruz"
+  },
+  {
+    "id": "2597",
+    "UF": "PB",
+    "name": "Brejo dos Santos"
+  },
+  {
+    "id": "2598",
+    "UF": "PB",
+    "name": "Caaporã"
+  },
+  {
+    "id": "2599",
+    "UF": "PB",
+    "name": "Cabaceiras"
+  },
+  {
+    "id": "2600",
+    "UF": "PB",
+    "name": "Cabedelo"
+  },
+  {
+    "id": "2601",
+    "UF": "PB",
+    "name": "Cachoeira dos Índios"
+  },
+  {
+    "id": "2602",
+    "UF": "PB",
+    "name": "Cacimba de Areia"
+  },
+  {
+    "id": "2603",
+    "UF": "PB",
+    "name": "Cacimba de Dentro"
+  },
+  {
+    "id": "2604",
+    "UF": "PB",
+    "name": "Cacimbas"
+  },
+  {
+    "id": "2605",
+    "UF": "PB",
+    "name": "Caiçara"
+  },
+  {
+    "id": "2606",
+    "UF": "PB",
+    "name": "Cajazeiras"
+  },
+  {
+    "id": "2607",
+    "UF": "PB",
+    "name": "Cajazeirinhas"
+  },
+  {
+    "id": "2608",
+    "UF": "PB",
+    "name": "Caldas Brandão"
+  },
+  {
+    "id": "2609",
+    "UF": "PB",
+    "name": "Camalaú"
+  },
+  {
+    "id": "2610",
+    "UF": "PB",
+    "name": "Campina Grande"
+  },
+  {
+    "id": "2611",
+    "UF": "PB",
+    "name": "Campo de Santana"
+  },
+  {
+    "id": "2612",
+    "UF": "PB",
+    "name": "Capim"
+  },
+  {
+    "id": "2613",
+    "UF": "PB",
+    "name": "Caraúbas"
+  },
+  {
+    "id": "2614",
+    "UF": "PB",
+    "name": "Carrapateira"
+  },
+  {
+    "id": "2615",
+    "UF": "PB",
+    "name": "Casserengue"
+  },
+  {
+    "id": "2616",
+    "UF": "PB",
+    "name": "Catingueira"
+  },
+  {
+    "id": "2617",
+    "UF": "PB",
+    "name": "Catolé do Rocha"
+  },
+  {
+    "id": "2618",
+    "UF": "PB",
+    "name": "Caturité"
+  },
+  {
+    "id": "2619",
+    "UF": "PB",
+    "name": "Conceição"
+  },
+  {
+    "id": "2620",
+    "UF": "PB",
+    "name": "Condado"
+  },
+  {
+    "id": "2621",
+    "UF": "PB",
+    "name": "Conde"
+  },
+  {
+    "id": "2622",
+    "UF": "PB",
+    "name": "Congo"
+  },
+  {
+    "id": "2623",
+    "UF": "PB",
+    "name": "Coremas"
+  },
+  {
+    "id": "2624",
+    "UF": "PB",
+    "name": "Coxixola"
+  },
+  {
+    "id": "2625",
+    "UF": "PB",
+    "name": "Cruz do Espírito Santo"
+  },
+  {
+    "id": "2626",
+    "UF": "PB",
+    "name": "Cubati"
+  },
+  {
+    "id": "2627",
+    "UF": "PB",
+    "name": "Cuité"
+  },
+  {
+    "id": "2628",
+    "UF": "PB",
+    "name": "Cuité de Mamanguape"
+  },
+  {
+    "id": "2629",
+    "UF": "PB",
+    "name": "Cuitegi"
+  },
+  {
+    "id": "2630",
+    "UF": "PB",
+    "name": "Curral de Cima"
+  },
+  {
+    "id": "2631",
+    "UF": "PB",
+    "name": "Curral Velho"
+  },
+  {
+    "id": "2632",
+    "UF": "PB",
+    "name": "Damião"
+  },
+  {
+    "id": "2633",
+    "UF": "PB",
+    "name": "Desterro"
+  },
+  {
+    "id": "2634",
+    "UF": "PB",
+    "name": "Diamante"
+  },
+  {
+    "id": "2635",
+    "UF": "PB",
+    "name": "Dona Inês"
+  },
+  {
+    "id": "2636",
+    "UF": "PB",
+    "name": "Duas Estradas"
+  },
+  {
+    "id": "2637",
+    "UF": "PB",
+    "name": "Emas"
+  },
+  {
+    "id": "2638",
+    "UF": "PB",
+    "name": "Esperança"
+  },
+  {
+    "id": "2639",
+    "UF": "PB",
+    "name": "Fagundes"
+  },
+  {
+    "id": "2640",
+    "UF": "PB",
+    "name": "Frei Martinho"
+  },
+  {
+    "id": "2641",
+    "UF": "PB",
+    "name": "Gado Bravo"
+  },
+  {
+    "id": "2642",
+    "UF": "PB",
+    "name": "Guarabira"
+  },
+  {
+    "id": "2643",
+    "UF": "PB",
+    "name": "Gurinhém"
+  },
+  {
+    "id": "2644",
+    "UF": "PB",
+    "name": "Gurjão"
+  },
+  {
+    "id": "2645",
+    "UF": "PB",
+    "name": "Ibiara"
+  },
+  {
+    "id": "2646",
+    "UF": "PB",
+    "name": "Igaracy"
+  },
+  {
+    "id": "2647",
+    "UF": "PB",
+    "name": "Imaculada"
+  },
+  {
+    "id": "2648",
+    "UF": "PB",
+    "name": "Ingá"
+  },
+  {
+    "id": "2649",
+    "UF": "PB",
+    "name": "Itabaiana"
+  },
+  {
+    "id": "2650",
+    "UF": "PB",
+    "name": "Itaporanga"
+  },
+  {
+    "id": "2651",
+    "UF": "PB",
+    "name": "Itapororoca"
+  },
+  {
+    "id": "2652",
+    "UF": "PB",
+    "name": "Itatuba"
+  },
+  {
+    "id": "2653",
+    "UF": "PB",
+    "name": "Jacaraú"
+  },
+  {
+    "id": "2654",
+    "UF": "PB",
+    "name": "Jericó"
+  },
+  {
+    "id": "2655",
+    "UF": "PB",
+    "name": "João Pessoa"
+  },
+  {
+    "id": "2656",
+    "UF": "PB",
+    "name": "Juarez Távora"
+  },
+  {
+    "id": "2657",
+    "UF": "PB",
+    "name": "Juazeirinho"
+  },
+  {
+    "id": "2658",
+    "UF": "PB",
+    "name": "Junco do Seridó"
+  },
+  {
+    "id": "2659",
+    "UF": "PB",
+    "name": "Juripiranga"
+  },
+  {
+    "id": "2660",
+    "UF": "PB",
+    "name": "Juru"
+  },
+  {
+    "id": "2661",
+    "UF": "PB",
+    "name": "Lagoa"
+  },
+  {
+    "id": "2662",
+    "UF": "PB",
+    "name": "Lagoa de Dentro"
+  },
+  {
+    "id": "2663",
+    "UF": "PB",
+    "name": "Lagoa Seca"
+  },
+  {
+    "id": "2664",
+    "UF": "PB",
+    "name": "Lastro"
+  },
+  {
+    "id": "2665",
+    "UF": "PB",
+    "name": "Livramento"
+  },
+  {
+    "id": "2666",
+    "UF": "PB",
+    "name": "Logradouro"
+  },
+  {
+    "id": "2667",
+    "UF": "PB",
+    "name": "Lucena"
+  },
+  {
+    "id": "2668",
+    "UF": "PB",
+    "name": "Mãe d`Água"
+  },
+  {
+    "id": "2669",
+    "UF": "PB",
+    "name": "Malta"
+  },
+  {
+    "id": "2670",
+    "UF": "PB",
+    "name": "Mamanguape"
+  },
+  {
+    "id": "2671",
+    "UF": "PB",
+    "name": "Manaíra"
+  },
+  {
+    "id": "2672",
+    "UF": "PB",
+    "name": "Marcação"
+  },
+  {
+    "id": "2673",
+    "UF": "PB",
+    "name": "Mari"
+  },
+  {
+    "id": "2674",
+    "UF": "PB",
+    "name": "Marizópolis"
+  },
+  {
+    "id": "2675",
+    "UF": "PB",
+    "name": "Massaranduba"
+  },
+  {
+    "id": "2676",
+    "UF": "PB",
+    "name": "Mataraca"
+  },
+  {
+    "id": "2677",
+    "UF": "PB",
+    "name": "Matinhas"
+  },
+  {
+    "id": "2678",
+    "UF": "PB",
+    "name": "Mato Grosso"
+  },
+  {
+    "id": "2679",
+    "UF": "PB",
+    "name": "Maturéia"
+  },
+  {
+    "id": "2680",
+    "UF": "PB",
+    "name": "Mogeiro"
+  },
+  {
+    "id": "2681",
+    "UF": "PB",
+    "name": "Montadas"
+  },
+  {
+    "id": "2682",
+    "UF": "PB",
+    "name": "Monte Horebe"
+  },
+  {
+    "id": "2683",
+    "UF": "PB",
+    "name": "Monteiro"
+  },
+  {
+    "id": "2684",
+    "UF": "PB",
+    "name": "Mulungu"
+  },
+  {
+    "id": "2685",
+    "UF": "PB",
+    "name": "Natuba"
+  },
+  {
+    "id": "2686",
+    "UF": "PB",
+    "name": "Nazarezinho"
+  },
+  {
+    "id": "2687",
+    "UF": "PB",
+    "name": "Nova Floresta"
+  },
+  {
+    "id": "2688",
+    "UF": "PB",
+    "name": "Nova Olinda"
+  },
+  {
+    "id": "2689",
+    "UF": "PB",
+    "name": "Nova Palmeira"
+  },
+  {
+    "id": "2690",
+    "UF": "PB",
+    "name": "Olho d`Água"
+  },
+  {
+    "id": "2691",
+    "UF": "PB",
+    "name": "Olivedos"
+  },
+  {
+    "id": "2692",
+    "UF": "PB",
+    "name": "Ouro Velho"
+  },
+  {
+    "id": "2693",
+    "UF": "PB",
+    "name": "Parari"
+  },
+  {
+    "id": "2694",
+    "UF": "PB",
+    "name": "Passagem"
+  },
+  {
+    "id": "2695",
+    "UF": "PB",
+    "name": "Patos"
+  },
+  {
+    "id": "2696",
+    "UF": "PB",
+    "name": "Paulista"
+  },
+  {
+    "id": "2697",
+    "UF": "PB",
+    "name": "Pedra Branca"
+  },
+  {
+    "id": "2698",
+    "UF": "PB",
+    "name": "Pedra Lavrada"
+  },
+  {
+    "id": "2699",
+    "UF": "PB",
+    "name": "Pedras de Fogo"
+  },
+  {
+    "id": "2700",
+    "UF": "PB",
+    "name": "Pedro Régis"
+  },
+  {
+    "id": "2701",
+    "UF": "PB",
+    "name": "Piancó"
+  },
+  {
+    "id": "2702",
+    "UF": "PB",
+    "name": "Picuí"
+  },
+  {
+    "id": "2703",
+    "UF": "PB",
+    "name": "Pilar"
+  },
+  {
+    "id": "2704",
+    "UF": "PB",
+    "name": "Pilões"
+  },
+  {
+    "id": "2705",
+    "UF": "PB",
+    "name": "Pilõezinhos"
+  },
+  {
+    "id": "2706",
+    "UF": "PB",
+    "name": "Pirpirituba"
+  },
+  {
+    "id": "2707",
+    "UF": "PB",
+    "name": "Pitimbu"
+  },
+  {
+    "id": "2708",
+    "UF": "PB",
+    "name": "Pocinhos"
+  },
+  {
+    "id": "2709",
+    "UF": "PB",
+    "name": "Poço Dantas"
+  },
+  {
+    "id": "2710",
+    "UF": "PB",
+    "name": "Poço de José de Moura"
+  },
+  {
+    "id": "2711",
+    "UF": "PB",
+    "name": "Pombal"
+  },
+  {
+    "id": "2712",
+    "UF": "PB",
+    "name": "Prata"
+  },
+  {
+    "id": "2713",
+    "UF": "PB",
+    "name": "Princesa Isabel"
+  },
+  {
+    "id": "2714",
+    "UF": "PB",
+    "name": "Puxinanã"
+  },
+  {
+    "id": "2715",
+    "UF": "PB",
+    "name": "Queimadas"
+  },
+  {
+    "id": "2716",
+    "UF": "PB",
+    "name": "Quixabá"
+  },
+  {
+    "id": "2717",
+    "UF": "PB",
+    "name": "Remígio"
+  },
+  {
+    "id": "2718",
+    "UF": "PB",
+    "name": "Riachão"
+  },
+  {
+    "id": "2719",
+    "UF": "PB",
+    "name": "Riachão do Bacamarte"
+  },
+  {
+    "id": "2720",
+    "UF": "PB",
+    "name": "Riachão do Poço"
+  },
+  {
+    "id": "2721",
+    "UF": "PB",
+    "name": "Riacho de Santo Antônio"
+  },
+  {
+    "id": "2722",
+    "UF": "PB",
+    "name": "Riacho dos Cavalos"
+  },
+  {
+    "id": "2723",
+    "UF": "PB",
+    "name": "Rio Tinto"
+  },
+  {
+    "id": "2724",
+    "UF": "PB",
+    "name": "Salgadinho"
+  },
+  {
+    "id": "2725",
+    "UF": "PB",
+    "name": "Salgado de São Félix"
+  },
+  {
+    "id": "2726",
+    "UF": "PB",
+    "name": "Santa Cecília"
+  },
+  {
+    "id": "2727",
+    "UF": "PB",
+    "name": "Santa Cruz"
+  },
+  {
+    "id": "2728",
+    "UF": "PB",
+    "name": "Santa Helena"
+  },
+  {
+    "id": "2729",
+    "UF": "PB",
+    "name": "Santa Inês"
+  },
+  {
+    "id": "2730",
+    "UF": "PB",
+    "name": "Santa Luzia"
+  },
+  {
+    "id": "2731",
+    "UF": "PB",
+    "name": "Santa Rita"
+  },
+  {
+    "id": "2732",
+    "UF": "PB",
+    "name": "Santa Teresinha"
+  },
+  {
+    "id": "2733",
+    "UF": "PB",
+    "name": "Santana de Mangueira"
+  },
+  {
+    "id": "2734",
+    "UF": "PB",
+    "name": "Santana dos Garrotes"
+  },
+  {
+    "id": "2735",
+    "UF": "PB",
+    "name": "Santarém"
+  },
+  {
+    "id": "2736",
+    "UF": "PB",
+    "name": "Santo André"
+  },
+  {
+    "id": "2737",
+    "UF": "PB",
+    "name": "São Bentinho"
+  },
+  {
+    "id": "2738",
+    "UF": "PB",
+    "name": "São Bento"
+  },
+  {
+    "id": "2739",
+    "UF": "PB",
+    "name": "São Domingos de Pombal"
+  },
+  {
+    "id": "2740",
+    "UF": "PB",
+    "name": "São Domingos do Cariri"
+  },
+  {
+    "id": "2741",
+    "UF": "PB",
+    "name": "São Francisco"
+  },
+  {
+    "id": "2742",
+    "UF": "PB",
+    "name": "São João do Cariri"
+  },
+  {
+    "id": "2743",
+    "UF": "PB",
+    "name": "São João do Rio do Peixe"
+  },
+  {
+    "id": "2744",
+    "UF": "PB",
+    "name": "São João do Tigre"
+  },
+  {
+    "id": "2745",
+    "UF": "PB",
+    "name": "São José da Lagoa Tapada"
+  },
+  {
+    "id": "2746",
+    "UF": "PB",
+    "name": "São José de Caiana"
+  },
+  {
+    "id": "2747",
+    "UF": "PB",
+    "name": "São José de Espinharas"
+  },
+  {
+    "id": "2748",
+    "UF": "PB",
+    "name": "São José de Piranhas"
+  },
+  {
+    "id": "2749",
+    "UF": "PB",
+    "name": "São José de Princesa"
+  },
+  {
+    "id": "2750",
+    "UF": "PB",
+    "name": "São José do Bonfim"
+  },
+  {
+    "id": "2751",
+    "UF": "PB",
+    "name": "São José do Brejo do Cruz"
+  },
+  {
+    "id": "2752",
+    "UF": "PB",
+    "name": "São José do Sabugi"
+  },
+  {
+    "id": "2753",
+    "UF": "PB",
+    "name": "São José dos Cordeiros"
+  },
+  {
+    "id": "2754",
+    "UF": "PB",
+    "name": "São José dos Ramos"
+  },
+  {
+    "id": "2755",
+    "UF": "PB",
+    "name": "São Mamede"
+  },
+  {
+    "id": "2756",
+    "UF": "PB",
+    "name": "São Miguel de Taipu"
+  },
+  {
+    "id": "2757",
+    "UF": "PB",
+    "name": "São Sebastião de Lagoa de Roça"
+  },
+  {
+    "id": "2758",
+    "UF": "PB",
+    "name": "São Sebastião do Umbuzeiro"
+  },
+  {
+    "id": "2759",
+    "UF": "PB",
+    "name": "Sapé"
+  },
+  {
+    "id": "2760",
+    "UF": "PB",
+    "name": "Seridó"
+  },
+  {
+    "id": "2761",
+    "UF": "PB",
+    "name": "Serra Branca"
+  },
+  {
+    "id": "2762",
+    "UF": "PB",
+    "name": "Serra da Raiz"
+  },
+  {
+    "id": "2763",
+    "UF": "PB",
+    "name": "Serra Grande"
+  },
+  {
+    "id": "2764",
+    "UF": "PB",
+    "name": "Serra Redonda"
+  },
+  {
+    "id": "2765",
+    "UF": "PB",
+    "name": "Serraria"
+  },
+  {
+    "id": "2766",
+    "UF": "PB",
+    "name": "Sertãozinho"
+  },
+  {
+    "id": "2767",
+    "UF": "PB",
+    "name": "Sobrado"
+  },
+  {
+    "id": "2768",
+    "UF": "PB",
+    "name": "Solânea"
+  },
+  {
+    "id": "2769",
+    "UF": "PB",
+    "name": "Soledade"
+  },
+  {
+    "id": "2770",
+    "UF": "PB",
+    "name": "Sossêgo"
+  },
+  {
+    "id": "2771",
+    "UF": "PB",
+    "name": "Sousa"
+  },
+  {
+    "id": "2772",
+    "UF": "PB",
+    "name": "Sumé"
+  },
+  {
+    "id": "2773",
+    "UF": "PB",
+    "name": "Taperoá"
+  },
+  {
+    "id": "2774",
+    "UF": "PB",
+    "name": "Tavares"
+  },
+  {
+    "id": "2775",
+    "UF": "PB",
+    "name": "Teixeira"
+  },
+  {
+    "id": "2776",
+    "UF": "PB",
+    "name": "Tenório"
+  },
+  {
+    "id": "2777",
+    "UF": "PB",
+    "name": "Triunfo"
+  },
+  {
+    "id": "2778",
+    "UF": "PB",
+    "name": "Uiraúna"
+  },
+  {
+    "id": "2779",
+    "UF": "PB",
+    "name": "Umbuzeiro"
+  },
+  {
+    "id": "2780",
+    "UF": "PB",
+    "name": "Várzea"
+  },
+  {
+    "id": "2781",
+    "UF": "PB",
+    "name": "Vieirópolis"
+  },
+  {
+    "id": "2782",
+    "UF": "PB",
+    "name": "Vista Serrana"
+  },
+  {
+    "id": "2783",
+    "UF": "PB",
+    "name": "Zabelê"
+  }
 ]

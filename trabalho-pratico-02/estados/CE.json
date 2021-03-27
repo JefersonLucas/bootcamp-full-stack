@@ -1,186 +1,922 @@
 [
-  { "id": "698", "name": "Abaiara" },
-  { "id": "699", "name": "Acarape" },
-  { "id": "700", "name": "Acaraú" },
-  { "id": "701", "name": "Acopiara" },
-  { "id": "702", "name": "Aiuaba" },
-  { "id": "703", "name": "Alcântaras" },
-  { "id": "704", "name": "Altaneira" },
-  { "id": "705", "name": "Alto Santo" },
-  { "id": "706", "name": "Amontada" },
-  { "id": "707", "name": "Antonina do Norte" },
-  { "id": "708", "name": "Apuiarés" },
-  { "id": "709", "name": "Aquiraz" },
-  { "id": "710", "name": "Aracati" },
-  { "id": "711", "name": "Aracoiaba" },
-  { "id": "712", "name": "Ararendá" },
-  { "id": "713", "name": "Araripe" },
-  { "id": "714", "name": "Aratuba" },
-  { "id": "715", "name": "Arneiroz" },
-  { "id": "716", "name": "Assaré" },
-  { "id": "717", "name": "Aurora" },
-  { "id": "718", "name": "Baixio" },
-  { "id": "719", "name": "Banabuiú" },
-  { "id": "720", "name": "Barbalha" },
-  { "id": "721", "name": "Barreira" },
-  { "id": "722", "name": "Barro" },
-  { "id": "723", "name": "Barroquinha" },
-  { "id": "724", "name": "Baturité" },
-  { "id": "725", "name": "Beberibe" },
-  { "id": "726", "name": "Bela Cruz" },
-  { "id": "727", "name": "Boa Viagem" },
-  { "id": "728", "name": "Brejo Santo" },
-  { "id": "729", "name": "Camocim" },
-  { "id": "730", "name": "Campos Sales" },
-  { "id": "731", "name": "Canindé" },
-  { "id": "732", "name": "Capistrano" },
-  { "id": "733", "name": "Caridade" },
-  { "id": "734", "name": "Cariré" },
-  { "id": "735", "name": "Caririaçu" },
-  { "id": "736", "name": "Cariús" },
-  { "id": "737", "name": "Carnaubal" },
-  { "id": "738", "name": "Cascavel" },
-  { "id": "739", "name": "Catarina" },
-  { "id": "740", "name": "Catunda" },
-  { "id": "741", "name": "Caucaia" },
-  { "id": "742", "name": "Cedro" },
-  { "id": "743", "name": "Chaval" },
-  { "id": "744", "name": "Choró" },
-  { "id": "745", "name": "Chorozinho" },
-  { "id": "746", "name": "Coreaú" },
-  { "id": "747", "name": "Crateús" },
-  { "id": "748", "name": "Crato" },
-  { "id": "749", "name": "Croatá" },
-  { "id": "750", "name": "Cruz" },
-  { "id": "751", "name": "Deputado Irapuan Pinheiro" },
-  { "id": "752", "name": "Ererê" },
-  { "id": "753", "name": "Eusébio" },
-  { "id": "754", "name": "Farias Brito" },
-  { "id": "755", "name": "Forquilha" },
-  { "id": "756", "name": "Fortaleza" },
-  { "id": "757", "name": "Fortim" },
-  { "id": "758", "name": "Frecheirinha" },
-  { "id": "759", "name": "General Sampaio" },
-  { "id": "760", "name": "Graça" },
-  { "id": "761", "name": "Granja" },
-  { "id": "762", "name": "Granjeiro" },
-  { "id": "763", "name": "Groaíras" },
-  { "id": "764", "name": "Guaiúba" },
-  { "id": "765", "name": "Guaraciaba do Norte" },
-  { "id": "766", "name": "Guaramiranga" },
-  { "id": "767", "name": "Hidrolândia" },
-  { "id": "768", "name": "Horizonte" },
-  { "id": "769", "name": "Ibaretama" },
-  { "id": "770", "name": "Ibiapina" },
-  { "id": "771", "name": "Ibicuitinga" },
-  { "id": "772", "name": "Icapuí" },
-  { "id": "773", "name": "Icó" },
-  { "id": "774", "name": "Iguatu" },
-  { "id": "775", "name": "Independência" },
-  { "id": "776", "name": "Ipaporanga" },
-  { "id": "777", "name": "Ipaumirim" },
-  { "id": "778", "name": "Ipu" },
-  { "id": "779", "name": "Ipueiras" },
-  { "id": "780", "name": "Iracema" },
-  { "id": "781", "name": "Irauçuba" },
-  { "id": "782", "name": "Itaiçaba" },
-  { "id": "783", "name": "Itaitinga" },
-  { "id": "784", "name": "Itapagé" },
-  { "id": "785", "name": "Itapipoca" },
-  { "id": "786", "name": "Itapiúna" },
-  { "id": "787", "name": "Itarema" },
-  { "id": "788", "name": "Itatira" },
-  { "id": "789", "name": "Jaguaretama" },
-  { "id": "790", "name": "Jaguaribara" },
-  { "id": "791", "name": "Jaguaribe" },
-  { "id": "792", "name": "Jaguaruana" },
-  { "id": "793", "name": "Jardim" },
-  { "id": "794", "name": "Jati" },
-  { "id": "795", "name": "Jijoca de Jericoacoara" },
-  { "id": "796", "name": "Juazeiro do Norte" },
-  { "id": "797", "name": "Jucás" },
-  { "id": "798", "name": "Lavras da Mangabeira" },
-  { "id": "799", "name": "Limoeiro do Norte" },
-  { "id": "800", "name": "Madalena" },
-  { "id": "801", "name": "Maracanaú" },
-  { "id": "802", "name": "Maranguape" },
-  { "id": "803", "name": "Marco" },
-  { "id": "804", "name": "Martinópole" },
-  { "id": "805", "name": "Massapê" },
-  { "id": "806", "name": "Mauriti" },
-  { "id": "807", "name": "Meruoca" },
-  { "id": "808", "name": "Milagres" },
-  { "id": "809", "name": "Milhã" },
-  { "id": "810", "name": "Miraíma" },
-  { "id": "811", "name": "Missão Velha" },
-  { "id": "812", "name": "Mombaça" },
-  { "id": "813", "name": "Monsenhor Tabosa" },
-  { "id": "814", "name": "Morada Nova" },
-  { "id": "815", "name": "Moraújo" },
-  { "id": "816", "name": "Morrinhos" },
-  { "id": "817", "name": "Mucambo" },
-  { "id": "818", "name": "Mulungu" },
-  { "id": "819", "name": "Nova Olinda" },
-  { "id": "820", "name": "Nova Russas" },
-  { "id": "821", "name": "Novo Oriente" },
-  { "id": "822", "name": "Ocara" },
-  { "id": "823", "name": "Orós" },
-  { "id": "824", "name": "Pacajus" },
-  { "id": "825", "name": "Pacatuba" },
-  { "id": "826", "name": "Pacoti" },
-  { "id": "827", "name": "Pacujá" },
-  { "id": "828", "name": "Palhano" },
-  { "id": "829", "name": "Palmácia" },
-  { "id": "830", "name": "Paracuru" },
-  { "id": "831", "name": "Paraipaba" },
-  { "id": "832", "name": "Parambu" },
-  { "id": "833", "name": "Paramoti" },
-  { "id": "834", "name": "Pedra Branca" },
-  { "id": "835", "name": "Penaforte" },
-  { "id": "836", "name": "Pentecoste" },
-  { "id": "837", "name": "Pereiro" },
-  { "id": "838", "name": "Pindoretama" },
-  { "id": "839", "name": "Piquet Carneiro" },
-  { "id": "840", "name": "Pires Ferreira" },
-  { "id": "841", "name": "Poranga" },
-  { "id": "842", "name": "Porteiras" },
-  { "id": "843", "name": "Potengi" },
-  { "id": "844", "name": "Potiretama" },
-  { "id": "845", "name": "Quiterianópolis" },
-  { "id": "846", "name": "Quixadá" },
-  { "id": "847", "name": "Quixelô" },
-  { "id": "848", "name": "Quixeramobim" },
-  { "id": "849", "name": "Quixeré" },
-  { "id": "850", "name": "Redenção" },
-  { "id": "851", "name": "Reriutaba" },
-  { "id": "852", "name": "Russas" },
-  { "id": "853", "name": "Saboeiro" },
-  { "id": "854", "name": "Salitre" },
-  { "id": "855", "name": "Santa Quitéria" },
-  { "id": "856", "name": "Santana do Acaraú" },
-  { "id": "857", "name": "Santana do Cariri" },
-  { "id": "858", "name": "São Benedito" },
-  { "id": "859", "name": "São Gonçalo do Amarante" },
-  { "id": "860", "name": "São João do Jaguaribe" },
-  { "id": "861", "name": "São Luís do Curu" },
-  { "id": "862", "name": "Senador Pompeu" },
-  { "id": "863", "name": "Senador Sá" },
-  { "id": "864", "name": "Sobral" },
-  { "id": "865", "name": "Solonópole" },
-  { "id": "866", "name": "Tabuleiro do Norte" },
-  { "id": "867", "name": "Tamboril" },
-  { "id": "868", "name": "Tarrafas" },
-  { "id": "869", "name": "Tauá" },
-  { "id": "870", "name": "Tejuçuoca" },
-  { "id": "871", "name": "Tianguá" },
-  { "id": "872", "name": "Trairi" },
-  { "id": "873", "name": "Tururu" },
-  { "id": "874", "name": "Ubajara" },
-  { "id": "875", "name": "Umari" },
-  { "id": "876", "name": "Umirim" },
-  { "id": "877", "name": "Uruburetama" },
-  { "id": "878", "name": "Uruoca" },
-  { "id": "879", "name": "Varjota" },
-  { "id": "880", "name": "Várzea Alegre" },
-  { "id": "881", "name": "Viçosa do Ceará" }
+  {
+    "id": "698",
+    "UF": "CE",
+    "name": "Abaiara"
+  },
+  {
+    "id": "699",
+    "UF": "CE",
+    "name": "Acarape"
+  },
+  {
+    "id": "700",
+    "UF": "CE",
+    "name": "Acaraú"
+  },
+  {
+    "id": "701",
+    "UF": "CE",
+    "name": "Acopiara"
+  },
+  {
+    "id": "702",
+    "UF": "CE",
+    "name": "Aiuaba"
+  },
+  {
+    "id": "703",
+    "UF": "CE",
+    "name": "Alcântaras"
+  },
+  {
+    "id": "704",
+    "UF": "CE",
+    "name": "Altaneira"
+  },
+  {
+    "id": "705",
+    "UF": "CE",
+    "name": "Alto Santo"
+  },
+  {
+    "id": "706",
+    "UF": "CE",
+    "name": "Amontada"
+  },
+  {
+    "id": "707",
+    "UF": "CE",
+    "name": "Antonina do Norte"
+  },
+  {
+    "id": "708",
+    "UF": "CE",
+    "name": "Apuiarés"
+  },
+  {
+    "id": "709",
+    "UF": "CE",
+    "name": "Aquiraz"
+  },
+  {
+    "id": "710",
+    "UF": "CE",
+    "name": "Aracati"
+  },
+  {
+    "id": "711",
+    "UF": "CE",
+    "name": "Aracoiaba"
+  },
+  {
+    "id": "712",
+    "UF": "CE",
+    "name": "Ararendá"
+  },
+  {
+    "id": "713",
+    "UF": "CE",
+    "name": "Araripe"
+  },
+  {
+    "id": "714",
+    "UF": "CE",
+    "name": "Aratuba"
+  },
+  {
+    "id": "715",
+    "UF": "CE",
+    "name": "Arneiroz"
+  },
+  {
+    "id": "716",
+    "UF": "CE",
+    "name": "Assaré"
+  },
+  {
+    "id": "717",
+    "UF": "CE",
+    "name": "Aurora"
+  },
+  {
+    "id": "718",
+    "UF": "CE",
+    "name": "Baixio"
+  },
+  {
+    "id": "719",
+    "UF": "CE",
+    "name": "Banabuiú"
+  },
+  {
+    "id": "720",
+    "UF": "CE",
+    "name": "Barbalha"
+  },
+  {
+    "id": "721",
+    "UF": "CE",
+    "name": "Barreira"
+  },
+  {
+    "id": "722",
+    "UF": "CE",
+    "name": "Barro"
+  },
+  {
+    "id": "723",
+    "UF": "CE",
+    "name": "Barroquinha"
+  },
+  {
+    "id": "724",
+    "UF": "CE",
+    "name": "Baturité"
+  },
+  {
+    "id": "725",
+    "UF": "CE",
+    "name": "Beberibe"
+  },
+  {
+    "id": "726",
+    "UF": "CE",
+    "name": "Bela Cruz"
+  },
+  {
+    "id": "727",
+    "UF": "CE",
+    "name": "Boa Viagem"
+  },
+  {
+    "id": "728",
+    "UF": "CE",
+    "name": "Brejo Santo"
+  },
+  {
+    "id": "729",
+    "UF": "CE",
+    "name": "Camocim"
+  },
+  {
+    "id": "730",
+    "UF": "CE",
+    "name": "Campos Sales"
+  },
+  {
+    "id": "731",
+    "UF": "CE",
+    "name": "Canindé"
+  },
+  {
+    "id": "732",
+    "UF": "CE",
+    "name": "Capistrano"
+  },
+  {
+    "id": "733",
+    "UF": "CE",
+    "name": "Caridade"
+  },
+  {
+    "id": "734",
+    "UF": "CE",
+    "name": "Cariré"
+  },
+  {
+    "id": "735",
+    "UF": "CE",
+    "name": "Caririaçu"
+  },
+  {
+    "id": "736",
+    "UF": "CE",
+    "name": "Cariús"
+  },
+  {
+    "id": "737",
+    "UF": "CE",
+    "name": "Carnaubal"
+  },
+  {
+    "id": "738",
+    "UF": "CE",
+    "name": "Cascavel"
+  },
+  {
+    "id": "739",
+    "UF": "CE",
+    "name": "Catarina"
+  },
+  {
+    "id": "740",
+    "UF": "CE",
+    "name": "Catunda"
+  },
+  {
+    "id": "741",
+    "UF": "CE",
+    "name": "Caucaia"
+  },
+  {
+    "id": "742",
+    "UF": "CE",
+    "name": "Cedro"
+  },
+  {
+    "id": "743",
+    "UF": "CE",
+    "name": "Chaval"
+  },
+  {
+    "id": "744",
+    "UF": "CE",
+    "name": "Choró"
+  },
+  {
+    "id": "745",
+    "UF": "CE",
+    "name": "Chorozinho"
+  },
+  {
+    "id": "746",
+    "UF": "CE",
+    "name": "Coreaú"
+  },
+  {
+    "id": "747",
+    "UF": "CE",
+    "name": "Crateús"
+  },
+  {
+    "id": "748",
+    "UF": "CE",
+    "name": "Crato"
+  },
+  {
+    "id": "749",
+    "UF": "CE",
+    "name": "Croatá"
+  },
+  {
+    "id": "750",
+    "UF": "CE",
+    "name": "Cruz"
+  },
+  {
+    "id": "751",
+    "UF": "CE",
+    "name": "Deputado Irapuan Pinheiro"
+  },
+  {
+    "id": "752",
+    "UF": "CE",
+    "name": "Ererê"
+  },
+  {
+    "id": "753",
+    "UF": "CE",
+    "name": "Eusébio"
+  },
+  {
+    "id": "754",
+    "UF": "CE",
+    "name": "Farias Brito"
+  },
+  {
+    "id": "755",
+    "UF": "CE",
+    "name": "Forquilha"
+  },
+  {
+    "id": "756",
+    "UF": "CE",
+    "name": "Fortaleza"
+  },
+  {
+    "id": "757",
+    "UF": "CE",
+    "name": "Fortim"
+  },
+  {
+    "id": "758",
+    "UF": "CE",
+    "name": "Frecheirinha"
+  },
+  {
+    "id": "759",
+    "UF": "CE",
+    "name": "General Sampaio"
+  },
+  {
+    "id": "760",
+    "UF": "CE",
+    "name": "Graça"
+  },
+  {
+    "id": "761",
+    "UF": "CE",
+    "name": "Granja"
+  },
+  {
+    "id": "762",
+    "UF": "CE",
+    "name": "Granjeiro"
+  },
+  {
+    "id": "763",
+    "UF": "CE",
+    "name": "Groaíras"
+  },
+  {
+    "id": "764",
+    "UF": "CE",
+    "name": "Guaiúba"
+  },
+  {
+    "id": "765",
+    "UF": "CE",
+    "name": "Guaraciaba do Norte"
+  },
+  {
+    "id": "766",
+    "UF": "CE",
+    "name": "Guaramiranga"
+  },
+  {
+    "id": "767",
+    "UF": "CE",
+    "name": "Hidrolândia"
+  },
+  {
+    "id": "768",
+    "UF": "CE",
+    "name": "Horizonte"
+  },
+  {
+    "id": "769",
+    "UF": "CE",
+    "name": "Ibaretama"
+  },
+  {
+    "id": "770",
+    "UF": "CE",
+    "name": "Ibiapina"
+  },
+  {
+    "id": "771",
+    "UF": "CE",
+    "name": "Ibicuitinga"
+  },
+  {
+    "id": "772",
+    "UF": "CE",
+    "name": "Icapuí"
+  },
+  {
+    "id": "773",
+    "UF": "CE",
+    "name": "Icó"
+  },
+  {
+    "id": "774",
+    "UF": "CE",
+    "name": "Iguatu"
+  },
+  {
+    "id": "775",
+    "UF": "CE",
+    "name": "Independência"
+  },
+  {
+    "id": "776",
+    "UF": "CE",
+    "name": "Ipaporanga"
+  },
+  {
+    "id": "777",
+    "UF": "CE",
+    "name": "Ipaumirim"
+  },
+  {
+    "id": "778",
+    "UF": "CE",
+    "name": "Ipu"
+  },
+  {
+    "id": "779",
+    "UF": "CE",
+    "name": "Ipueiras"
+  },
+  {
+    "id": "780",
+    "UF": "CE",
+    "name": "Iracema"
+  },
+  {
+    "id": "781",
+    "UF": "CE",
+    "name": "Irauçuba"
+  },
+  {
+    "id": "782",
+    "UF": "CE",
+    "name": "Itaiçaba"
+  },
+  {
+    "id": "783",
+    "UF": "CE",
+    "name": "Itaitinga"
+  },
+  {
+    "id": "784",
+    "UF": "CE",
+    "name": "Itapagé"
+  },
+  {
+    "id": "785",
+    "UF": "CE",
+    "name": "Itapipoca"
+  },
+  {
+    "id": "786",
+    "UF": "CE",
+    "name": "Itapiúna"
+  },
+  {
+    "id": "787",
+    "UF": "CE",
+    "name": "Itarema"
+  },
+  {
+    "id": "788",
+    "UF": "CE",
+    "name": "Itatira"
+  },
+  {
+    "id": "789",
+    "UF": "CE",
+    "name": "Jaguaretama"
+  },
+  {
+    "id": "790",
+    "UF": "CE",
+    "name": "Jaguaribara"
+  },
+  {
+    "id": "791",
+    "UF": "CE",
+    "name": "Jaguaribe"
+  },
+  {
+    "id": "792",
+    "UF": "CE",
+    "name": "Jaguaruana"
+  },
+  {
+    "id": "793",
+    "UF": "CE",
+    "name": "Jardim"
+  },
+  {
+    "id": "794",
+    "UF": "CE",
+    "name": "Jati"
+  },
+  {
+    "id": "795",
+    "UF": "CE",
+    "name": "Jijoca de Jericoacoara"
+  },
+  {
+    "id": "796",
+    "UF": "CE",
+    "name": "Juazeiro do Norte"
+  },
+  {
+    "id": "797",
+    "UF": "CE",
+    "name": "Jucás"
+  },
+  {
+    "id": "798",
+    "UF": "CE",
+    "name": "Lavras da Mangabeira"
+  },
+  {
+    "id": "799",
+    "UF": "CE",
+    "name": "Limoeiro do Norte"
+  },
+  {
+    "id": "800",
+    "UF": "CE",
+    "name": "Madalena"
+  },
+  {
+    "id": "801",
+    "UF": "CE",
+    "name": "Maracanaú"
+  },
+  {
+    "id": "802",
+    "UF": "CE",
+    "name": "Maranguape"
+  },
+  {
+    "id": "803",
+    "UF": "CE",
+    "name": "Marco"
+  },
+  {
+    "id": "804",
+    "UF": "CE",
+    "name": "Martinópole"
+  },
+  {
+    "id": "805",
+    "UF": "CE",
+    "name": "Massapê"
+  },
+  {
+    "id": "806",
+    "UF": "CE",
+    "name": "Mauriti"
+  },
+  {
+    "id": "807",
+    "UF": "CE",
+    "name": "Meruoca"
+  },
+  {
+    "id": "808",
+    "UF": "CE",
+    "name": "Milagres"
+  },
+  {
+    "id": "809",
+    "UF": "CE",
+    "name": "Milhã"
+  },
+  {
+    "id": "810",
+    "UF": "CE",
+    "name": "Miraíma"
+  },
+  {
+    "id": "811",
+    "UF": "CE",
+    "name": "Missão Velha"
+  },
+  {
+    "id": "812",
+    "UF": "CE",
+    "name": "Mombaça"
+  },
+  {
+    "id": "813",
+    "UF": "CE",
+    "name": "Monsenhor Tabosa"
+  },
+  {
+    "id": "814",
+    "UF": "CE",
+    "name": "Morada Nova"
+  },
+  {
+    "id": "815",
+    "UF": "CE",
+    "name": "Moraújo"
+  },
+  {
+    "id": "816",
+    "UF": "CE",
+    "name": "Morrinhos"
+  },
+  {
+    "id": "817",
+    "UF": "CE",
+    "name": "Mucambo"
+  },
+  {
+    "id": "818",
+    "UF": "CE",
+    "name": "Mulungu"
+  },
+  {
+    "id": "819",
+    "UF": "CE",
+    "name": "Nova Olinda"
+  },
+  {
+    "id": "820",
+    "UF": "CE",
+    "name": "Nova Russas"
+  },
+  {
+    "id": "821",
+    "UF": "CE",
+    "name": "Novo Oriente"
+  },
+  {
+    "id": "822",
+    "UF": "CE",
+    "name": "Ocara"
+  },
+  {
+    "id": "823",
+    "UF": "CE",
+    "name": "Orós"
+  },
+  {
+    "id": "824",
+    "UF": "CE",
+    "name": "Pacajus"
+  },
+  {
+    "id": "825",
+    "UF": "CE",
+    "name": "Pacatuba"
+  },
+  {
+    "id": "826",
+    "UF": "CE",
+    "name": "Pacoti"
+  },
+  {
+    "id": "827",
+    "UF": "CE",
+    "name": "Pacujá"
+  },
+  {
+    "id": "828",
+    "UF": "CE",
+    "name": "Palhano"
+  },
+  {
+    "id": "829",
+    "UF": "CE",
+    "name": "Palmácia"
+  },
+  {
+    "id": "830",
+    "UF": "CE",
+    "name": "Paracuru"
+  },
+  {
+    "id": "831",
+    "UF": "CE",
+    "name": "Paraipaba"
+  },
+  {
+    "id": "832",
+    "UF": "CE",
+    "name": "Parambu"
+  },
+  {
+    "id": "833",
+    "UF": "CE",
+    "name": "Paramoti"
+  },
+  {
+    "id": "834",
+    "UF": "CE",
+    "name": "Pedra Branca"
+  },
+  {
+    "id": "835",
+    "UF": "CE",
+    "name": "Penaforte"
+  },
+  {
+    "id": "836",
+    "UF": "CE",
+    "name": "Pentecoste"
+  },
+  {
+    "id": "837",
+    "UF": "CE",
+    "name": "Pereiro"
+  },
+  {
+    "id": "838",
+    "UF": "CE",
+    "name": "Pindoretama"
+  },
+  {
+    "id": "839",
+    "UF": "CE",
+    "name": "Piquet Carneiro"
+  },
+  {
+    "id": "840",
+    "UF": "CE",
+    "name": "Pires Ferreira"
+  },
+  {
+    "id": "841",
+    "UF": "CE",
+    "name": "Poranga"
+  },
+  {
+    "id": "842",
+    "UF": "CE",
+    "name": "Porteiras"
+  },
+  {
+    "id": "843",
+    "UF": "CE",
+    "name": "Potengi"
+  },
+  {
+    "id": "844",
+    "UF": "CE",
+    "name": "Potiretama"
+  },
+  {
+    "id": "845",
+    "UF": "CE",
+    "name": "Quiterianópolis"
+  },
+  {
+    "id": "846",
+    "UF": "CE",
+    "name": "Quixadá"
+  },
+  {
+    "id": "847",
+    "UF": "CE",
+    "name": "Quixelô"
+  },
+  {
+    "id": "848",
+    "UF": "CE",
+    "name": "Quixeramobim"
+  },
+  {
+    "id": "849",
+    "UF": "CE",
+    "name": "Quixeré"
+  },
+  {
+    "id": "850",
+    "UF": "CE",
+    "name": "Redenção"
+  },
+  {
+    "id": "851",
+    "UF": "CE",
+    "name": "Reriutaba"
+  },
+  {
+    "id": "852",
+    "UF": "CE",
+    "name": "Russas"
+  },
+  {
+    "id": "853",
+    "UF": "CE",
+    "name": "Saboeiro"
+  },
+  {
+    "id": "854",
+    "UF": "CE",
+    "name": "Salitre"
+  },
+  {
+    "id": "855",
+    "UF": "CE",
+    "name": "Santa Quitéria"
+  },
+  {
+    "id": "856",
+    "UF": "CE",
+    "name": "Santana do Acaraú"
+  },
+  {
+    "id": "857",
+    "UF": "CE",
+    "name": "Santana do Cariri"
+  },
+  {
+    "id": "858",
+    "UF": "CE",
+    "name": "São Benedito"
+  },
+  {
+    "id": "859",
+    "UF": "CE",
+    "name": "São Gonçalo do Amarante"
+  },
+  {
+    "id": "860",
+    "UF": "CE",
+    "name": "São João do Jaguaribe"
+  },
+  {
+    "id": "861",
+    "UF": "CE",
+    "name": "São Luís do Curu"
+  },
+  {
+    "id": "862",
+    "UF": "CE",
+    "name": "Senador Pompeu"
+  },
+  {
+    "id": "863",
+    "UF": "CE",
+    "name": "Senador Sá"
+  },
+  {
+    "id": "864",
+    "UF": "CE",
+    "name": "Sobral"
+  },
+  {
+    "id": "865",
+    "UF": "CE",
+    "name": "Solonópole"
+  },
+  {
+    "id": "866",
+    "UF": "CE",
+    "name": "Tabuleiro do Norte"
+  },
+  {
+    "id": "867",
+    "UF": "CE",
+    "name": "Tamboril"
+  },
+  {
+    "id": "868",
+    "UF": "CE",
+    "name": "Tarrafas"
+  },
+  {
+    "id": "869",
+    "UF": "CE",
+    "name": "Tauá"
+  },
+  {
+    "id": "870",
+    "UF": "CE",
+    "name": "Tejuçuoca"
+  },
+  {
+    "id": "871",
+    "UF": "CE",
+    "name": "Tianguá"
+  },
+  {
+    "id": "872",
+    "UF": "CE",
+    "name": "Trairi"
+  },
+  {
+    "id": "873",
+    "UF": "CE",
+    "name": "Tururu"
+  },
+  {
+    "id": "874",
+    "UF": "CE",
+    "name": "Ubajara"
+  },
+  {
+    "id": "875",
+    "UF": "CE",
+    "name": "Umari"
+  },
+  {
+    "id": "876",
+    "UF": "CE",
+    "name": "Umirim"
+  },
+  {
+    "id": "877",
+    "UF": "CE",
+    "name": "Uruburetama"
+  },
+  {
+    "id": "878",
+    "UF": "CE",
+    "name": "Uruoca"
+  },
+  {
+    "id": "879",
+    "UF": "CE",
+    "name": "Varjota"
+  },
+  {
+    "id": "880",
+    "UF": "CE",
+    "name": "Várzea Alegre"
+  },
+  {
+    "id": "881",
+    "UF": "CE",
+    "name": "Viçosa do Ceará"
+  }
 ]

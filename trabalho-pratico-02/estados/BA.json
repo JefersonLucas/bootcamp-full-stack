@@ -1,419 +1,2087 @@
 [
-  { "id": "281", "name": "Abaíra" },
-  { "id": "282", "name": "Abaré" },
-  { "id": "283", "name": "Acajutiba" },
-  { "id": "284", "name": "Adustina" },
-  { "id": "285", "name": "Água Fria" },
-  { "id": "286", "name": "Aiquara" },
-  { "id": "287", "name": "Alagoinhas" },
-  { "id": "288", "name": "Alcobaça" },
-  { "id": "289", "name": "Almadina" },
-  { "id": "290", "name": "Amargosa" },
-  { "id": "291", "name": "Amélia Rodrigues" },
-  { "id": "292", "name": "América Dourada" },
-  { "id": "293", "name": "Anagé" },
-  { "id": "294", "name": "Andaraí" },
-  { "id": "295", "name": "Andorinha" },
-  { "id": "296", "name": "Angical" },
-  { "id": "297", "name": "Anguera" },
-  { "id": "298", "name": "Antas" },
-  { "id": "299", "name": "Antônio Cardoso" },
-  { "id": "300", "name": "Antônio Gonçalves" },
-  { "id": "301", "name": "Aporá" },
-  { "id": "302", "name": "Apuarema" },
-  { "id": "303", "name": "Araças" },
-  { "id": "304", "name": "Aracatu" },
-  { "id": "305", "name": "Araci" },
-  { "id": "306", "name": "Aramari" },
-  { "id": "307", "name": "Arataca" },
-  { "id": "308", "name": "Aratuípe" },
-  { "id": "309", "name": "Aurelino Leal" },
-  { "id": "310", "name": "Baianópolis" },
-  { "id": "311", "name": "Baixa Grande" },
-  { "id": "312", "name": "Banzaê" },
-  { "id": "313", "name": "Barra" },
-  { "id": "314", "name": "Barra da Estiva" },
-  { "id": "315", "name": "Barra do Choça" },
-  { "id": "316", "name": "Barra do Mendes" },
-  { "id": "317", "name": "Barra do Rocha" },
-  { "id": "318", "name": "Barreiras" },
-  { "id": "319", "name": "Barro Alto" },
-  { "id": "320", "name": "Barro Preto (antigo Gov. Lomanto Jr.)" },
-  { "id": "321", "name": "Barrocas" },
-  { "id": "322", "name": "Belmonte" },
-  { "id": "323", "name": "Belo Campo" },
-  { "id": "324", "name": "Biritinga" },
-  { "id": "325", "name": "Boa Nova" },
-  { "id": "326", "name": "Boa Vista do Tupim" },
-  { "id": "327", "name": "Bom Jesus da Lapa" },
-  { "id": "328", "name": "Bom Jesus da Serra" },
-  { "id": "329", "name": "Boninal" },
-  { "id": "330", "name": "Bonito" },
-  { "id": "331", "name": "Boquira" },
-  { "id": "332", "name": "Botuporã" },
-  { "id": "333", "name": "Brejões" },
-  { "id": "334", "name": "Brejolândia" },
-  { "id": "335", "name": "Brotas de Macaúbas" },
-  { "id": "336", "name": "Brumado" },
-  { "id": "337", "name": "Buerarema" },
-  { "id": "338", "name": "Buritirama" },
-  { "id": "339", "name": "Caatiba" },
-  { "id": "340", "name": "Cabaceiras do Paraguaçu" },
-  { "id": "341", "name": "Cachoeira" },
-  { "id": "342", "name": "Caculé" },
-  { "id": "343", "name": "Caém" },
-  { "id": "344", "name": "Caetanos" },
-  { "id": "345", "name": "Caetité" },
-  { "id": "346", "name": "Cafarnaum" },
-  { "id": "347", "name": "Cairu" },
-  { "id": "348", "name": "Caldeirão Grande" },
-  { "id": "349", "name": "Camacan" },
-  { "id": "350", "name": "Camaçari" },
-  { "id": "351", "name": "Camamu" },
-  { "id": "352", "name": "Campo Alegre de Lourdes" },
-  { "id": "353", "name": "Campo Formoso" },
-  { "id": "354", "name": "Canápolis" },
-  { "id": "355", "name": "Canarana" },
-  { "id": "356", "name": "Canavieiras" },
-  { "id": "357", "name": "Candeal" },
-  { "id": "358", "name": "Candeias" },
-  { "id": "359", "name": "Candiba" },
-  { "id": "360", "name": "Cândido Sales" },
-  { "id": "361", "name": "Cansanção" },
-  { "id": "362", "name": "Canudos" },
-  { "id": "363", "name": "Capela do Alto Alegre" },
-  { "id": "364", "name": "Capim Grosso" },
-  { "id": "365", "name": "Caraíbas" },
-  { "id": "366", "name": "Caravelas" },
-  { "id": "367", "name": "Cardeal da Silva" },
-  { "id": "368", "name": "Carinhanha" },
-  { "id": "369", "name": "Casa Nova" },
-  { "id": "370", "name": "Castro Alves" },
-  { "id": "371", "name": "Catolândia" },
-  { "id": "372", "name": "Catu" },
-  { "id": "373", "name": "Caturama" },
-  { "id": "374", "name": "Central" },
-  { "id": "375", "name": "Chorrochó" },
-  { "id": "376", "name": "Cícero Dantas" },
-  { "id": "377", "name": "Cipó" },
-  { "id": "378", "name": "Coaraci" },
-  { "id": "379", "name": "Cocos" },
-  { "id": "380", "name": "Conceição da Feira" },
-  { "id": "381", "name": "Conceição do Almeida" },
-  { "id": "382", "name": "Conceição do Coité" },
-  { "id": "383", "name": "Conceição do Jacuípe" },
-  { "id": "384", "name": "Conde" },
-  { "id": "385", "name": "Condeúba" },
-  { "id": "386", "name": "Contendas do Sincorá" },
-  { "id": "387", "name": "Coração de Maria" },
-  { "id": "388", "name": "Cordeiros" },
-  { "id": "389", "name": "Coribe" },
-  { "id": "390", "name": "Coronel João Sá" },
-  { "id": "391", "name": "Correntina" },
-  { "id": "392", "name": "Cotegipe" },
-  { "id": "393", "name": "Cravolândia" },
-  { "id": "394", "name": "Crisópolis" },
-  { "id": "395", "name": "Cristópolis" },
-  { "id": "396", "name": "Cruz das Almas" },
-  { "id": "397", "name": "Curaçá" },
-  { "id": "398", "name": "Dário Meira" },
-  { "id": "399", "name": "Dias d`Ávila" },
-  { "id": "400", "name": "Dom Basílio" },
-  { "id": "401", "name": "Dom Macedo Costa" },
-  { "id": "402", "name": "Elísio Medrado" },
-  { "id": "403", "name": "Encruzilhada" },
-  { "id": "404", "name": "Entre Rios" },
-  { "id": "405", "name": "Érico Cardoso" },
-  { "id": "406", "name": "Esplanada" },
-  { "id": "407", "name": "Euclides da Cunha" },
-  { "id": "408", "name": "Eunápolis" },
-  { "id": "409", "name": "Fátima" },
-  { "id": "410", "name": "Feira da Mata" },
-  { "id": "411", "name": "Feira de Santana" },
-  { "id": "412", "name": "Filadélfia" },
-  { "id": "413", "name": "Firmino Alves" },
-  { "id": "414", "name": "Floresta Azul" },
-  { "id": "415", "name": "Formosa do Rio Preto" },
-  { "id": "416", "name": "Gandu" },
-  { "id": "417", "name": "Gavião" },
-  { "id": "418", "name": "Gentio do Ouro" },
-  { "id": "419", "name": "Glória" },
-  { "id": "420", "name": "Gongogi" },
-  { "id": "421", "name": "Governador Mangabeira" },
-  { "id": "422", "name": "Guajeru" },
-  { "id": "423", "name": "Guanambi" },
-  { "id": "424", "name": "Guaratinga" },
-  { "id": "425", "name": "Heliópolis" },
-  { "id": "426", "name": "Iaçu" },
-  { "id": "427", "name": "Ibiassucê" },
-  { "id": "428", "name": "Ibicaraí" },
-  { "id": "429", "name": "Ibicoara" },
-  { "id": "430", "name": "Ibicuí" },
-  { "id": "431", "name": "Ibipeba" },
-  { "id": "432", "name": "Ibipitanga" },
-  { "id": "433", "name": "Ibiquera" },
-  { "id": "434", "name": "Ibirapitanga" },
-  { "id": "435", "name": "Ibirapuã" },
-  { "id": "436", "name": "Ibirataia" },
-  { "id": "437", "name": "Ibitiara" },
-  { "id": "438", "name": "Ibititá" },
-  { "id": "439", "name": "Ibotirama" },
-  { "id": "440", "name": "Ichu" },
-  { "id": "441", "name": "Igaporã" },
-  { "id": "442", "name": "Igrapiúna" },
-  { "id": "443", "name": "Iguaí" },
-  { "id": "444", "name": "Ilhéus" },
-  { "id": "445", "name": "Inhambupe" },
-  { "id": "446", "name": "Ipecaetá" },
-  { "id": "447", "name": "Ipiaú" },
-  { "id": "448", "name": "Ipirá" },
-  { "id": "449", "name": "Ipupiara" },
-  { "id": "450", "name": "Irajuba" },
-  { "id": "451", "name": "Iramaia" },
-  { "id": "452", "name": "Iraquara" },
-  { "id": "453", "name": "Irará" },
-  { "id": "454", "name": "Irecê" },
-  { "id": "455", "name": "Itabela" },
-  { "id": "456", "name": "Itaberaba" },
-  { "id": "457", "name": "Itabuna" },
-  { "id": "458", "name": "Itacaré" },
-  { "id": "459", "name": "Itaeté" },
-  { "id": "460", "name": "Itagi" },
-  { "id": "461", "name": "Itagibá" },
-  { "id": "462", "name": "Itagimirim" },
-  { "id": "463", "name": "Itaguaçu da Bahia" },
-  { "id": "464", "name": "Itaju do Colônia" },
-  { "id": "465", "name": "Itajuípe" },
-  { "id": "466", "name": "Itamaraju" },
-  { "id": "467", "name": "Itamari" },
-  { "id": "468", "name": "Itambé" },
-  { "id": "469", "name": "Itanagra" },
-  { "id": "470", "name": "Itanhém" },
-  { "id": "471", "name": "Itaparica" },
-  { "id": "472", "name": "Itapé" },
-  { "id": "473", "name": "Itapebi" },
-  { "id": "474", "name": "Itapetinga" },
-  { "id": "475", "name": "Itapicuru" },
-  { "id": "476", "name": "Itapitanga" },
-  { "id": "477", "name": "Itaquara" },
-  { "id": "478", "name": "Itarantim" },
-  { "id": "479", "name": "Itatim" },
-  { "id": "480", "name": "Itiruçu" },
-  { "id": "481", "name": "Itiúba" },
-  { "id": "482", "name": "Itororó" },
-  { "id": "483", "name": "Ituaçu" },
-  { "id": "484", "name": "Ituberá" },
-  { "id": "485", "name": "Iuiú" },
-  { "id": "486", "name": "Jaborandi" },
-  { "id": "487", "name": "Jacaraci" },
-  { "id": "488", "name": "Jacobina" },
-  { "id": "489", "name": "Jaguaquara" },
-  { "id": "490", "name": "Jaguarari" },
-  { "id": "491", "name": "Jaguaripe" },
-  { "id": "492", "name": "Jandaíra" },
-  { "id": "493", "name": "Jequié" },
-  { "id": "494", "name": "Jeremoabo" },
-  { "id": "495", "name": "Jiquiriçá" },
-  { "id": "496", "name": "Jitaúna" },
-  { "id": "497", "name": "João Dourado" },
-  { "id": "498", "name": "Juazeiro" },
-  { "id": "499", "name": "Jucuruçu" },
-  { "id": "500", "name": "Jussara" },
-  { "id": "501", "name": "Jussari" },
-  { "id": "502", "name": "Jussiape" },
-  { "id": "503", "name": "Lafaiete Coutinho" },
-  { "id": "504", "name": "Lagoa Real" },
-  { "id": "505", "name": "Laje" },
-  { "id": "506", "name": "Lajedão" },
-  { "id": "507", "name": "Lajedinho" },
-  { "id": "508", "name": "Lajedo do Tabocal" },
-  { "id": "509", "name": "Lamarão" },
-  { "id": "510", "name": "Lapão" },
-  { "id": "511", "name": "Lauro de Freitas" },
-  { "id": "512", "name": "Lençóis" },
-  { "id": "513", "name": "Licínio de Almeida" },
-  { "id": "514", "name": "Livramento de Nossa Senhora" },
-  { "id": "515", "name": "Luís Eduardo Magalhães" },
-  { "id": "516", "name": "Macajuba" },
-  { "id": "517", "name": "Macarani" },
-  { "id": "518", "name": "Macaúbas" },
-  { "id": "519", "name": "Macururé" },
-  { "id": "520", "name": "Madre de Deus" },
-  { "id": "521", "name": "Maetinga" },
-  { "id": "522", "name": "Maiquinique" },
-  { "id": "523", "name": "Mairi" },
-  { "id": "524", "name": "Malhada" },
-  { "id": "525", "name": "Malhada de Pedras" },
-  { "id": "526", "name": "Manoel Vitorino" },
-  { "id": "527", "name": "Mansidão" },
-  { "id": "528", "name": "Maracás" },
-  { "id": "529", "name": "Maragogipe" },
-  { "id": "530", "name": "Maraú" },
-  { "id": "531", "name": "Marcionílio Souza" },
-  { "id": "532", "name": "Mascote" },
-  { "id": "533", "name": "Mata de São João" },
-  { "id": "534", "name": "Matina" },
-  { "id": "535", "name": "Medeiros Neto" },
-  { "id": "536", "name": "Miguel Calmon" },
-  { "id": "537", "name": "Milagres" },
-  { "id": "538", "name": "Mirangaba" },
-  { "id": "539", "name": "Mirante" },
-  { "id": "540", "name": "Monte Santo" },
-  { "id": "541", "name": "Morpará" },
-  { "id": "542", "name": "Morro do Chapéu" },
-  { "id": "543", "name": "Mortugaba" },
-  { "id": "544", "name": "Mucugê" },
-  { "id": "545", "name": "Mucuri" },
-  { "id": "546", "name": "Mulungu do Morro" },
-  { "id": "547", "name": "Mundo Novo" },
-  { "id": "548", "name": "Muniz Ferreira" },
-  { "id": "549", "name": "Muquém de São Francisco" },
-  { "id": "550", "name": "Muritiba" },
-  { "id": "551", "name": "Mutuípe" },
-  { "id": "552", "name": "Nazaré" },
-  { "id": "553", "name": "Nilo Peçanha" },
-  { "id": "554", "name": "Nordestina" },
-  { "id": "555", "name": "Nova Canaã" },
-  { "id": "556", "name": "Nova Fátima" },
-  { "id": "557", "name": "Nova Ibiá" },
-  { "id": "558", "name": "Nova Itarana" },
-  { "id": "559", "name": "Nova Redenção" },
-  { "id": "560", "name": "Nova Soure" },
-  { "id": "561", "name": "Nova Viçosa" },
-  { "id": "562", "name": "Novo Horizonte" },
-  { "id": "563", "name": "Novo Triunfo" },
-  { "id": "564", "name": "Olindina" },
-  { "id": "565", "name": "Oliveira dos Brejinhos" },
-  { "id": "566", "name": "Ouriçangas" },
-  { "id": "567", "name": "Ourolândia" },
-  { "id": "568", "name": "Palmas de Monte Alto" },
-  { "id": "569", "name": "Palmeiras" },
-  { "id": "570", "name": "Paramirim" },
-  { "id": "571", "name": "Paratinga" },
-  { "id": "572", "name": "Paripiranga" },
-  { "id": "573", "name": "Pau Brasil" },
-  { "id": "574", "name": "Paulo Afonso" },
-  { "id": "575", "name": "Pé de Serra" },
-  { "id": "576", "name": "Pedrão" },
-  { "id": "577", "name": "Pedro Alexandre" },
-  { "id": "578", "name": "Piatã" },
-  { "id": "579", "name": "Pilão Arcado" },
-  { "id": "580", "name": "Pindaí" },
-  { "id": "581", "name": "Pindobaçu" },
-  { "id": "582", "name": "Pintadas" },
-  { "id": "583", "name": "Piraí do Norte" },
-  { "id": "584", "name": "Piripá" },
-  { "id": "585", "name": "Piritiba" },
-  { "id": "586", "name": "Planaltino" },
-  { "id": "587", "name": "Planalto" },
-  { "id": "588", "name": "Poções" },
-  { "id": "589", "name": "Pojuca" },
-  { "id": "590", "name": "Ponto Novo" },
-  { "id": "591", "name": "Porto Seguro" },
-  { "id": "592", "name": "Potiraguá" },
-  { "id": "593", "name": "Prado" },
-  { "id": "594", "name": "Presidente Dutra" },
-  { "id": "595", "name": "Presidente Jânio Quadros" },
-  { "id": "596", "name": "Presidente Tancredo Neves" },
-  { "id": "597", "name": "Queimadas" },
-  { "id": "598", "name": "Quijingue" },
-  { "id": "599", "name": "Quixabeira" },
-  { "id": "600", "name": "Rafael Jambeiro" },
-  { "id": "601", "name": "Remanso" },
-  { "id": "602", "name": "Retirolândia" },
-  { "id": "603", "name": "Riachão das Neves" },
-  { "id": "604", "name": "Riachão do Jacuípe" },
-  { "id": "605", "name": "Riacho de Santana" },
-  { "id": "606", "name": "Ribeira do Amparo" },
-  { "id": "607", "name": "Ribeira do Pombal" },
-  { "id": "608", "name": "Ribeirão do Largo" },
-  { "id": "609", "name": "Rio de Contas" },
-  { "id": "610", "name": "Rio do Antônio" },
-  { "id": "611", "name": "Rio do Pires" },
-  { "id": "612", "name": "Rio Real" },
-  { "id": "613", "name": "Rodelas" },
-  { "id": "614", "name": "Ruy Barbosa" },
-  { "id": "615", "name": "Salinas da Margarida" },
-  { "id": "616", "name": "Salvador" },
-  { "id": "617", "name": "Santa Bárbara" },
-  { "id": "618", "name": "Santa Brígida" },
-  { "id": "619", "name": "Santa Cruz Cabrália" },
-  { "id": "620", "name": "Santa Cruz da Vitória" },
-  { "id": "621", "name": "Santa Inês" },
-  { "id": "622", "name": "Santa Luzia" },
-  { "id": "623", "name": "Santa Maria da Vitória" },
-  { "id": "624", "name": "Santa Rita de Cássia" },
-  { "id": "625", "name": "Santa Teresinha" },
-  { "id": "626", "name": "Santaluz" },
-  { "id": "627", "name": "Santana" },
-  { "id": "628", "name": "Santanópolis" },
-  { "id": "629", "name": "Santo Amaro" },
-  { "id": "630", "name": "Santo Antônio de Jesus" },
-  { "id": "631", "name": "Santo Estêvão" },
-  { "id": "632", "name": "São Desidério" },
-  { "id": "633", "name": "São Domingos" },
-  { "id": "634", "name": "São Felipe" },
-  { "id": "635", "name": "São Félix" },
-  { "id": "636", "name": "São Félix do Coribe" },
-  { "id": "637", "name": "São Francisco do Conde" },
-  { "id": "638", "name": "São Gabriel" },
-  { "id": "639", "name": "São Gonçalo dos Campos" },
-  { "id": "640", "name": "São José da Vitória" },
-  { "id": "641", "name": "São José do Jacuípe" },
-  { "id": "642", "name": "São Miguel das Matas" },
-  { "id": "643", "name": "São Sebastião do Passé" },
-  { "id": "644", "name": "Sapeaçu" },
-  { "id": "645", "name": "Sátiro Dias" },
-  { "id": "646", "name": "Saubara" },
-  { "id": "647", "name": "Saúde" },
-  { "id": "648", "name": "Seabra" },
-  { "id": "649", "name": "Sebastião Laranjeiras" },
-  { "id": "650", "name": "Senhor do Bonfim" },
-  { "id": "651", "name": "Sento Sé" },
-  { "id": "652", "name": "Serra do Ramalho" },
-  { "id": "653", "name": "Serra Dourada" },
-  { "id": "654", "name": "Serra Preta" },
-  { "id": "655", "name": "Serrinha" },
-  { "id": "656", "name": "Serrolândia" },
-  { "id": "657", "name": "Simões Filho" },
-  { "id": "658", "name": "Sítio do Mato" },
-  { "id": "659", "name": "Sítio do Quinto" },
-  { "id": "660", "name": "Sobradinho" },
-  { "id": "661", "name": "Souto Soares" },
-  { "id": "662", "name": "Tabocas do Brejo Velho" },
-  { "id": "663", "name": "Tanhaçu" },
-  { "id": "664", "name": "Tanque Novo" },
-  { "id": "665", "name": "Tanquinho" },
-  { "id": "666", "name": "Taperoá" },
-  { "id": "667", "name": "Tapiramutá" },
-  { "id": "668", "name": "Teixeira de Freitas" },
-  { "id": "669", "name": "Teodoro Sampaio" },
-  { "id": "670", "name": "Teofilândia" },
-  { "id": "671", "name": "Teolândia" },
-  { "id": "672", "name": "Terra Nova" },
-  { "id": "673", "name": "Tremedal" },
-  { "id": "674", "name": "Tucano" },
-  { "id": "675", "name": "Uauá" },
-  { "id": "676", "name": "Ubaíra" },
-  { "id": "677", "name": "Ubaitaba" },
-  { "id": "678", "name": "Ubatã" },
-  { "id": "679", "name": "Uibaí" },
-  { "id": "680", "name": "Umburanas" },
-  { "id": "681", "name": "Una" },
-  { "id": "682", "name": "Urandi" },
-  { "id": "683", "name": "Uruçuca" },
-  { "id": "684", "name": "Utinga" },
-  { "id": "685", "name": "Valença" },
-  { "id": "686", "name": "Valente" },
-  { "id": "687", "name": "Várzea da Roça" },
-  { "id": "688", "name": "Várzea do Poço" },
-  { "id": "689", "name": "Várzea Nova" },
-  { "id": "690", "name": "Varzedo" },
-  { "id": "691", "name": "Vera Cruz" },
-  { "id": "692", "name": "Vereda" },
-  { "id": "693", "name": "Vitória da Conquista" },
-  { "id": "694", "name": "Wagner" },
-  { "id": "695", "name": "Wanderley" },
-  { "id": "696", "name": "Wenceslau Guimarães" },
-  { "id": "697", "name": "Xique-Xique" }
+  {
+    "id": "281",
+    "UF": "BA",
+    "name": "Abaíra"
+  },
+  {
+    "id": "282",
+    "UF": "BA",
+    "name": "Abaré"
+  },
+  {
+    "id": "283",
+    "UF": "BA",
+    "name": "Acajutiba"
+  },
+  {
+    "id": "284",
+    "UF": "BA",
+    "name": "Adustina"
+  },
+  {
+    "id": "285",
+    "UF": "BA",
+    "name": "Água Fria"
+  },
+  {
+    "id": "286",
+    "UF": "BA",
+    "name": "Aiquara"
+  },
+  {
+    "id": "287",
+    "UF": "BA",
+    "name": "Alagoinhas"
+  },
+  {
+    "id": "288",
+    "UF": "BA",
+    "name": "Alcobaça"
+  },
+  {
+    "id": "289",
+    "UF": "BA",
+    "name": "Almadina"
+  },
+  {
+    "id": "290",
+    "UF": "BA",
+    "name": "Amargosa"
+  },
+  {
+    "id": "291",
+    "UF": "BA",
+    "name": "Amélia Rodrigues"
+  },
+  {
+    "id": "292",
+    "UF": "BA",
+    "name": "América Dourada"
+  },
+  {
+    "id": "293",
+    "UF": "BA",
+    "name": "Anagé"
+  },
+  {
+    "id": "294",
+    "UF": "BA",
+    "name": "Andaraí"
+  },
+  {
+    "id": "295",
+    "UF": "BA",
+    "name": "Andorinha"
+  },
+  {
+    "id": "296",
+    "UF": "BA",
+    "name": "Angical"
+  },
+  {
+    "id": "297",
+    "UF": "BA",
+    "name": "Anguera"
+  },
+  {
+    "id": "298",
+    "UF": "BA",
+    "name": "Antas"
+  },
+  {
+    "id": "299",
+    "UF": "BA",
+    "name": "Antônio Cardoso"
+  },
+  {
+    "id": "300",
+    "UF": "BA",
+    "name": "Antônio Gonçalves"
+  },
+  {
+    "id": "301",
+    "UF": "BA",
+    "name": "Aporá"
+  },
+  {
+    "id": "302",
+    "UF": "BA",
+    "name": "Apuarema"
+  },
+  {
+    "id": "303",
+    "UF": "BA",
+    "name": "Araças"
+  },
+  {
+    "id": "304",
+    "UF": "BA",
+    "name": "Aracatu"
+  },
+  {
+    "id": "305",
+    "UF": "BA",
+    "name": "Araci"
+  },
+  {
+    "id": "306",
+    "UF": "BA",
+    "name": "Aramari"
+  },
+  {
+    "id": "307",
+    "UF": "BA",
+    "name": "Arataca"
+  },
+  {
+    "id": "308",
+    "UF": "BA",
+    "name": "Aratuípe"
+  },
+  {
+    "id": "309",
+    "UF": "BA",
+    "name": "Aurelino Leal"
+  },
+  {
+    "id": "310",
+    "UF": "BA",
+    "name": "Baianópolis"
+  },
+  {
+    "id": "311",
+    "UF": "BA",
+    "name": "Baixa Grande"
+  },
+  {
+    "id": "312",
+    "UF": "BA",
+    "name": "Banzaê"
+  },
+  {
+    "id": "313",
+    "UF": "BA",
+    "name": "Barra"
+  },
+  {
+    "id": "314",
+    "UF": "BA",
+    "name": "Barra da Estiva"
+  },
+  {
+    "id": "315",
+    "UF": "BA",
+    "name": "Barra do Choça"
+  },
+  {
+    "id": "316",
+    "UF": "BA",
+    "name": "Barra do Mendes"
+  },
+  {
+    "id": "317",
+    "UF": "BA",
+    "name": "Barra do Rocha"
+  },
+  {
+    "id": "318",
+    "UF": "BA",
+    "name": "Barreiras"
+  },
+  {
+    "id": "319",
+    "UF": "BA",
+    "name": "Barro Alto"
+  },
+  {
+    "id": "320",
+    "UF": "BA",
+    "name": "Barro Preto (antigo Gov. Lomanto Jr.)"
+  },
+  {
+    "id": "321",
+    "UF": "BA",
+    "name": "Barrocas"
+  },
+  {
+    "id": "322",
+    "UF": "BA",
+    "name": "Belmonte"
+  },
+  {
+    "id": "323",
+    "UF": "BA",
+    "name": "Belo Campo"
+  },
+  {
+    "id": "324",
+    "UF": "BA",
+    "name": "Biritinga"
+  },
+  {
+    "id": "325",
+    "UF": "BA",
+    "name": "Boa Nova"
+  },
+  {
+    "id": "326",
+    "UF": "BA",
+    "name": "Boa Vista do Tupim"
+  },
+  {
+    "id": "327",
+    "UF": "BA",
+    "name": "Bom Jesus da Lapa"
+  },
+  {
+    "id": "328",
+    "UF": "BA",
+    "name": "Bom Jesus da Serra"
+  },
+  {
+    "id": "329",
+    "UF": "BA",
+    "name": "Boninal"
+  },
+  {
+    "id": "330",
+    "UF": "BA",
+    "name": "Bonito"
+  },
+  {
+    "id": "331",
+    "UF": "BA",
+    "name": "Boquira"
+  },
+  {
+    "id": "332",
+    "UF": "BA",
+    "name": "Botuporã"
+  },
+  {
+    "id": "333",
+    "UF": "BA",
+    "name": "Brejões"
+  },
+  {
+    "id": "334",
+    "UF": "BA",
+    "name": "Brejolândia"
+  },
+  {
+    "id": "335",
+    "UF": "BA",
+    "name": "Brotas de Macaúbas"
+  },
+  {
+    "id": "336",
+    "UF": "BA",
+    "name": "Brumado"
+  },
+  {
+    "id": "337",
+    "UF": "BA",
+    "name": "Buerarema"
+  },
+  {
+    "id": "338",
+    "UF": "BA",
+    "name": "Buritirama"
+  },
+  {
+    "id": "339",
+    "UF": "BA",
+    "name": "Caatiba"
+  },
+  {
+    "id": "340",
+    "UF": "BA",
+    "name": "Cabaceiras do Paraguaçu"
+  },
+  {
+    "id": "341",
+    "UF": "BA",
+    "name": "Cachoeira"
+  },
+  {
+    "id": "342",
+    "UF": "BA",
+    "name": "Caculé"
+  },
+  {
+    "id": "343",
+    "UF": "BA",
+    "name": "Caém"
+  },
+  {
+    "id": "344",
+    "UF": "BA",
+    "name": "Caetanos"
+  },
+  {
+    "id": "345",
+    "UF": "BA",
+    "name": "Caetité"
+  },
+  {
+    "id": "346",
+    "UF": "BA",
+    "name": "Cafarnaum"
+  },
+  {
+    "id": "347",
+    "UF": "BA",
+    "name": "Cairu"
+  },
+  {
+    "id": "348",
+    "UF": "BA",
+    "name": "Caldeirão Grande"
+  },
+  {
+    "id": "349",
+    "UF": "BA",
+    "name": "Camacan"
+  },
+  {
+    "id": "350",
+    "UF": "BA",
+    "name": "Camaçari"
+  },
+  {
+    "id": "351",
+    "UF": "BA",
+    "name": "Camamu"
+  },
+  {
+    "id": "352",
+    "UF": "BA",
+    "name": "Campo Alegre de Lourdes"
+  },
+  {
+    "id": "353",
+    "UF": "BA",
+    "name": "Campo Formoso"
+  },
+  {
+    "id": "354",
+    "UF": "BA",
+    "name": "Canápolis"
+  },
+  {
+    "id": "355",
+    "UF": "BA",
+    "name": "Canarana"
+  },
+  {
+    "id": "356",
+    "UF": "BA",
+    "name": "Canavieiras"
+  },
+  {
+    "id": "357",
+    "UF": "BA",
+    "name": "Candeal"
+  },
+  {
+    "id": "358",
+    "UF": "BA",
+    "name": "Candeias"
+  },
+  {
+    "id": "359",
+    "UF": "BA",
+    "name": "Candiba"
+  },
+  {
+    "id": "360",
+    "UF": "BA",
+    "name": "Cândido Sales"
+  },
+  {
+    "id": "361",
+    "UF": "BA",
+    "name": "Cansanção"
+  },
+  {
+    "id": "362",
+    "UF": "BA",
+    "name": "Canudos"
+  },
+  {
+    "id": "363",
+    "UF": "BA",
+    "name": "Capela do Alto Alegre"
+  },
+  {
+    "id": "364",
+    "UF": "BA",
+    "name": "Capim Grosso"
+  },
+  {
+    "id": "365",
+    "UF": "BA",
+    "name": "Caraíbas"
+  },
+  {
+    "id": "366",
+    "UF": "BA",
+    "name": "Caravelas"
+  },
+  {
+    "id": "367",
+    "UF": "BA",
+    "name": "Cardeal da Silva"
+  },
+  {
+    "id": "368",
+    "UF": "BA",
+    "name": "Carinhanha"
+  },
+  {
+    "id": "369",
+    "UF": "BA",
+    "name": "Casa Nova"
+  },
+  {
+    "id": "370",
+    "UF": "BA",
+    "name": "Castro Alves"
+  },
+  {
+    "id": "371",
+    "UF": "BA",
+    "name": "Catolândia"
+  },
+  {
+    "id": "372",
+    "UF": "BA",
+    "name": "Catu"
+  },
+  {
+    "id": "373",
+    "UF": "BA",
+    "name": "Caturama"
+  },
+  {
+    "id": "374",
+    "UF": "BA",
+    "name": "Central"
+  },
+  {
+    "id": "375",
+    "UF": "BA",
+    "name": "Chorrochó"
+  },
+  {
+    "id": "376",
+    "UF": "BA",
+    "name": "Cícero Dantas"
+  },
+  {
+    "id": "377",
+    "UF": "BA",
+    "name": "Cipó"
+  },
+  {
+    "id": "378",
+    "UF": "BA",
+    "name": "Coaraci"
+  },
+  {
+    "id": "379",
+    "UF": "BA",
+    "name": "Cocos"
+  },
+  {
+    "id": "380",
+    "UF": "BA",
+    "name": "Conceição da Feira"
+  },
+  {
+    "id": "381",
+    "UF": "BA",
+    "name": "Conceição do Almeida"
+  },
+  {
+    "id": "382",
+    "UF": "BA",
+    "name": "Conceição do Coité"
+  },
+  {
+    "id": "383",
+    "UF": "BA",
+    "name": "Conceição do Jacuípe"
+  },
+  {
+    "id": "384",
+    "UF": "BA",
+    "name": "Conde"
+  },
+  {
+    "id": "385",
+    "UF": "BA",
+    "name": "Condeúba"
+  },
+  {
+    "id": "386",
+    "UF": "BA",
+    "name": "Contendas do Sincorá"
+  },
+  {
+    "id": "387",
+    "UF": "BA",
+    "name": "Coração de Maria"
+  },
+  {
+    "id": "388",
+    "UF": "BA",
+    "name": "Cordeiros"
+  },
+  {
+    "id": "389",
+    "UF": "BA",
+    "name": "Coribe"
+  },
+  {
+    "id": "390",
+    "UF": "BA",
+    "name": "Coronel João Sá"
+  },
+  {
+    "id": "391",
+    "UF": "BA",
+    "name": "Correntina"
+  },
+  {
+    "id": "392",
+    "UF": "BA",
+    "name": "Cotegipe"
+  },
+  {
+    "id": "393",
+    "UF": "BA",
+    "name": "Cravolândia"
+  },
+  {
+    "id": "394",
+    "UF": "BA",
+    "name": "Crisópolis"
+  },
+  {
+    "id": "395",
+    "UF": "BA",
+    "name": "Cristópolis"
+  },
+  {
+    "id": "396",
+    "UF": "BA",
+    "name": "Cruz das Almas"
+  },
+  {
+    "id": "397",
+    "UF": "BA",
+    "name": "Curaçá"
+  },
+  {
+    "id": "398",
+    "UF": "BA",
+    "name": "Dário Meira"
+  },
+  {
+    "id": "399",
+    "UF": "BA",
+    "name": "Dias d`Ávila"
+  },
+  {
+    "id": "400",
+    "UF": "BA",
+    "name": "Dom Basílio"
+  },
+  {
+    "id": "401",
+    "UF": "BA",
+    "name": "Dom Macedo Costa"
+  },
+  {
+    "id": "402",
+    "UF": "BA",
+    "name": "Elísio Medrado"
+  },
+  {
+    "id": "403",
+    "UF": "BA",
+    "name": "Encruzilhada"
+  },
+  {
+    "id": "404",
+    "UF": "BA",
+    "name": "Entre Rios"
+  },
+  {
+    "id": "405",
+    "UF": "BA",
+    "name": "Érico Cardoso"
+  },
+  {
+    "id": "406",
+    "UF": "BA",
+    "name": "Esplanada"
+  },
+  {
+    "id": "407",
+    "UF": "BA",
+    "name": "Euclides da Cunha"
+  },
+  {
+    "id": "408",
+    "UF": "BA",
+    "name": "Eunápolis"
+  },
+  {
+    "id": "409",
+    "UF": "BA",
+    "name": "Fátima"
+  },
+  {
+    "id": "410",
+    "UF": "BA",
+    "name": "Feira da Mata"
+  },
+  {
+    "id": "411",
+    "UF": "BA",
+    "name": "Feira de Santana"
+  },
+  {
+    "id": "412",
+    "UF": "BA",
+    "name": "Filadélfia"
+  },
+  {
+    "id": "413",
+    "UF": "BA",
+    "name": "Firmino Alves"
+  },
+  {
+    "id": "414",
+    "UF": "BA",
+    "name": "Floresta Azul"
+  },
+  {
+    "id": "415",
+    "UF": "BA",
+    "name": "Formosa do Rio Preto"
+  },
+  {
+    "id": "416",
+    "UF": "BA",
+    "name": "Gandu"
+  },
+  {
+    "id": "417",
+    "UF": "BA",
+    "name": "Gavião"
+  },
+  {
+    "id": "418",
+    "UF": "BA",
+    "name": "Gentio do Ouro"
+  },
+  {
+    "id": "419",
+    "UF": "BA",
+    "name": "Glória"
+  },
+  {
+    "id": "420",
+    "UF": "BA",
+    "name": "Gongogi"
+  },
+  {
+    "id": "421",
+    "UF": "BA",
+    "name": "Governador Mangabeira"
+  },
+  {
+    "id": "422",
+    "UF": "BA",
+    "name": "Guajeru"
+  },
+  {
+    "id": "423",
+    "UF": "BA",
+    "name": "Guanambi"
+  },
+  {
+    "id": "424",
+    "UF": "BA",
+    "name": "Guaratinga"
+  },
+  {
+    "id": "425",
+    "UF": "BA",
+    "name": "Heliópolis"
+  },
+  {
+    "id": "426",
+    "UF": "BA",
+    "name": "Iaçu"
+  },
+  {
+    "id": "427",
+    "UF": "BA",
+    "name": "Ibiassucê"
+  },
+  {
+    "id": "428",
+    "UF": "BA",
+    "name": "Ibicaraí"
+  },
+  {
+    "id": "429",
+    "UF": "BA",
+    "name": "Ibicoara"
+  },
+  {
+    "id": "430",
+    "UF": "BA",
+    "name": "Ibicuí"
+  },
+  {
+    "id": "431",
+    "UF": "BA",
+    "name": "Ibipeba"
+  },
+  {
+    "id": "432",
+    "UF": "BA",
+    "name": "Ibipitanga"
+  },
+  {
+    "id": "433",
+    "UF": "BA",
+    "name": "Ibiquera"
+  },
+  {
+    "id": "434",
+    "UF": "BA",
+    "name": "Ibirapitanga"
+  },
+  {
+    "id": "435",
+    "UF": "BA",
+    "name": "Ibirapuã"
+  },
+  {
+    "id": "436",
+    "UF": "BA",
+    "name": "Ibirataia"
+  },
+  {
+    "id": "437",
+    "UF": "BA",
+    "name": "Ibitiara"
+  },
+  {
+    "id": "438",
+    "UF": "BA",
+    "name": "Ibititá"
+  },
+  {
+    "id": "439",
+    "UF": "BA",
+    "name": "Ibotirama"
+  },
+  {
+    "id": "440",
+    "UF": "BA",
+    "name": "Ichu"
+  },
+  {
+    "id": "441",
+    "UF": "BA",
+    "name": "Igaporã"
+  },
+  {
+    "id": "442",
+    "UF": "BA",
+    "name": "Igrapiúna"
+  },
+  {
+    "id": "443",
+    "UF": "BA",
+    "name": "Iguaí"
+  },
+  {
+    "id": "444",
+    "UF": "BA",
+    "name": "Ilhéus"
+  },
+  {
+    "id": "445",
+    "UF": "BA",
+    "name": "Inhambupe"
+  },
+  {
+    "id": "446",
+    "UF": "BA",
+    "name": "Ipecaetá"
+  },
+  {
+    "id": "447",
+    "UF": "BA",
+    "name": "Ipiaú"
+  },
+  {
+    "id": "448",
+    "UF": "BA",
+    "name": "Ipirá"
+  },
+  {
+    "id": "449",
+    "UF": "BA",
+    "name": "Ipupiara"
+  },
+  {
+    "id": "450",
+    "UF": "BA",
+    "name": "Irajuba"
+  },
+  {
+    "id": "451",
+    "UF": "BA",
+    "name": "Iramaia"
+  },
+  {
+    "id": "452",
+    "UF": "BA",
+    "name": "Iraquara"
+  },
+  {
+    "id": "453",
+    "UF": "BA",
+    "name": "Irará"
+  },
+  {
+    "id": "454",
+    "UF": "BA",
+    "name": "Irecê"
+  },
+  {
+    "id": "455",
+    "UF": "BA",
+    "name": "Itabela"
+  },
+  {
+    "id": "456",
+    "UF": "BA",
+    "name": "Itaberaba"
+  },
+  {
+    "id": "457",
+    "UF": "BA",
+    "name": "Itabuna"
+  },
+  {
+    "id": "458",
+    "UF": "BA",
+    "name": "Itacaré"
+  },
+  {
+    "id": "459",
+    "UF": "BA",
+    "name": "Itaeté"
+  },
+  {
+    "id": "460",
+    "UF": "BA",
+    "name": "Itagi"
+  },
+  {
+    "id": "461",
+    "UF": "BA",
+    "name": "Itagibá"
+  },
+  {
+    "id": "462",
+    "UF": "BA",
+    "name": "Itagimirim"
+  },
+  {
+    "id": "463",
+    "UF": "BA",
+    "name": "Itaguaçu da Bahia"
+  },
+  {
+    "id": "464",
+    "UF": "BA",
+    "name": "Itaju do Colônia"
+  },
+  {
+    "id": "465",
+    "UF": "BA",
+    "name": "Itajuípe"
+  },
+  {
+    "id": "466",
+    "UF": "BA",
+    "name": "Itamaraju"
+  },
+  {
+    "id": "467",
+    "UF": "BA",
+    "name": "Itamari"
+  },
+  {
+    "id": "468",
+    "UF": "BA",
+    "name": "Itambé"
+  },
+  {
+    "id": "469",
+    "UF": "BA",
+    "name": "Itanagra"
+  },
+  {
+    "id": "470",
+    "UF": "BA",
+    "name": "Itanhém"
+  },
+  {
+    "id": "471",
+    "UF": "BA",
+    "name": "Itaparica"
+  },
+  {
+    "id": "472",
+    "UF": "BA",
+    "name": "Itapé"
+  },
+  {
+    "id": "473",
+    "UF": "BA",
+    "name": "Itapebi"
+  },
+  {
+    "id": "474",
+    "UF": "BA",
+    "name": "Itapetinga"
+  },
+  {
+    "id": "475",
+    "UF": "BA",
+    "name": "Itapicuru"
+  },
+  {
+    "id": "476",
+    "UF": "BA",
+    "name": "Itapitanga"
+  },
+  {
+    "id": "477",
+    "UF": "BA",
+    "name": "Itaquara"
+  },
+  {
+    "id": "478",
+    "UF": "BA",
+    "name": "Itarantim"
+  },
+  {
+    "id": "479",
+    "UF": "BA",
+    "name": "Itatim"
+  },
+  {
+    "id": "480",
+    "UF": "BA",
+    "name": "Itiruçu"
+  },
+  {
+    "id": "481",
+    "UF": "BA",
+    "name": "Itiúba"
+  },
+  {
+    "id": "482",
+    "UF": "BA",
+    "name": "Itororó"
+  },
+  {
+    "id": "483",
+    "UF": "BA",
+    "name": "Ituaçu"
+  },
+  {
+    "id": "484",
+    "UF": "BA",
+    "name": "Ituberá"
+  },
+  {
+    "id": "485",
+    "UF": "BA",
+    "name": "Iuiú"
+  },
+  {
+    "id": "486",
+    "UF": "BA",
+    "name": "Jaborandi"
+  },
+  {
+    "id": "487",
+    "UF": "BA",
+    "name": "Jacaraci"
+  },
+  {
+    "id": "488",
+    "UF": "BA",
+    "name": "Jacobina"
+  },
+  {
+    "id": "489",
+    "UF": "BA",
+    "name": "Jaguaquara"
+  },
+  {
+    "id": "490",
+    "UF": "BA",
+    "name": "Jaguarari"
+  },
+  {
+    "id": "491",
+    "UF": "BA",
+    "name": "Jaguaripe"
+  },
+  {
+    "id": "492",
+    "UF": "BA",
+    "name": "Jandaíra"
+  },
+  {
+    "id": "493",
+    "UF": "BA",
+    "name": "Jequié"
+  },
+  {
+    "id": "494",
+    "UF": "BA",
+    "name": "Jeremoabo"
+  },
+  {
+    "id": "495",
+    "UF": "BA",
+    "name": "Jiquiriçá"
+  },
+  {
+    "id": "496",
+    "UF": "BA",
+    "name": "Jitaúna"
+  },
+  {
+    "id": "497",
+    "UF": "BA",
+    "name": "João Dourado"
+  },
+  {
+    "id": "498",
+    "UF": "BA",
+    "name": "Juazeiro"
+  },
+  {
+    "id": "499",
+    "UF": "BA",
+    "name": "Jucuruçu"
+  },
+  {
+    "id": "500",
+    "UF": "BA",
+    "name": "Jussara"
+  },
+  {
+    "id": "501",
+    "UF": "BA",
+    "name": "Jussari"
+  },
+  {
+    "id": "502",
+    "UF": "BA",
+    "name": "Jussiape"
+  },
+  {
+    "id": "503",
+    "UF": "BA",
+    "name": "Lafaiete Coutinho"
+  },
+  {
+    "id": "504",
+    "UF": "BA",
+    "name": "Lagoa Real"
+  },
+  {
+    "id": "505",
+    "UF": "BA",
+    "name": "Laje"
+  },
+  {
+    "id": "506",
+    "UF": "BA",
+    "name": "Lajedão"
+  },
+  {
+    "id": "507",
+    "UF": "BA",
+    "name": "Lajedinho"
+  },
+  {
+    "id": "508",
+    "UF": "BA",
+    "name": "Lajedo do Tabocal"
+  },
+  {
+    "id": "509",
+    "UF": "BA",
+    "name": "Lamarão"
+  },
+  {
+    "id": "510",
+    "UF": "BA",
+    "name": "Lapão"
+  },
+  {
+    "id": "511",
+    "UF": "BA",
+    "name": "Lauro de Freitas"
+  },
+  {
+    "id": "512",
+    "UF": "BA",
+    "name": "Lençóis"
+  },
+  {
+    "id": "513",
+    "UF": "BA",
+    "name": "Licínio de Almeida"
+  },
+  {
+    "id": "514",
+    "UF": "BA",
+    "name": "Livramento de Nossa Senhora"
+  },
+  {
+    "id": "515",
+    "UF": "BA",
+    "name": "Luís Eduardo Magalhães"
+  },
+  {
+    "id": "516",
+    "UF": "BA",
+    "name": "Macajuba"
+  },
+  {
+    "id": "517",
+    "UF": "BA",
+    "name": "Macarani"
+  },
+  {
+    "id": "518",
+    "UF": "BA",
+    "name": "Macaúbas"
+  },
+  {
+    "id": "519",
+    "UF": "BA",
+    "name": "Macururé"
+  },
+  {
+    "id": "520",
+    "UF": "BA",
+    "name": "Madre de Deus"
+  },
+  {
+    "id": "521",
+    "UF": "BA",
+    "name": "Maetinga"
+  },
+  {
+    "id": "522",
+    "UF": "BA",
+    "name": "Maiquinique"
+  },
+  {
+    "id": "523",
+    "UF": "BA",
+    "name": "Mairi"
+  },
+  {
+    "id": "524",
+    "UF": "BA",
+    "name": "Malhada"
+  },
+  {
+    "id": "525",
+    "UF": "BA",
+    "name": "Malhada de Pedras"
+  },
+  {
+    "id": "526",
+    "UF": "BA",
+    "name": "Manoel Vitorino"
+  },
+  {
+    "id": "527",
+    "UF": "BA",
+    "name": "Mansidão"
+  },
+  {
+    "id": "528",
+    "UF": "BA",
+    "name": "Maracás"
+  },
+  {
+    "id": "529",
+    "UF": "BA",
+    "name": "Maragogipe"
+  },
+  {
+    "id": "530",
+    "UF": "BA",
+    "name": "Maraú"
+  },
+  {
+    "id": "531",
+    "UF": "BA",
+    "name": "Marcionílio Souza"
+  },
+  {
+    "id": "532",
+    "UF": "BA",
+    "name": "Mascote"
+  },
+  {
+    "id": "533",
+    "UF": "BA",
+    "name": "Mata de São João"
+  },
+  {
+    "id": "534",
+    "UF": "BA",
+    "name": "Matina"
+  },
+  {
+    "id": "535",
+    "UF": "BA",
+    "name": "Medeiros Neto"
+  },
+  {
+    "id": "536",
+    "UF": "BA",
+    "name": "Miguel Calmon"
+  },
+  {
+    "id": "537",
+    "UF": "BA",
+    "name": "Milagres"
+  },
+  {
+    "id": "538",
+    "UF": "BA",
+    "name": "Mirangaba"
+  },
+  {
+    "id": "539",
+    "UF": "BA",
+    "name": "Mirante"
+  },
+  {
+    "id": "540",
+    "UF": "BA",
+    "name": "Monte Santo"
+  },
+  {
+    "id": "541",
+    "UF": "BA",
+    "name": "Morpará"
+  },
+  {
+    "id": "542",
+    "UF": "BA",
+    "name": "Morro do Chapéu"
+  },
+  {
+    "id": "543",
+    "UF": "BA",
+    "name": "Mortugaba"
+  },
+  {
+    "id": "544",
+    "UF": "BA",
+    "name": "Mucugê"
+  },
+  {
+    "id": "545",
+    "UF": "BA",
+    "name": "Mucuri"
+  },
+  {
+    "id": "546",
+    "UF": "BA",
+    "name": "Mulungu do Morro"
+  },
+  {
+    "id": "547",
+    "UF": "BA",
+    "name": "Mundo Novo"
+  },
+  {
+    "id": "548",
+    "UF": "BA",
+    "name": "Muniz Ferreira"
+  },
+  {
+    "id": "549",
+    "UF": "BA",
+    "name": "Muquém de São Francisco"
+  },
+  {
+    "id": "550",
+    "UF": "BA",
+    "name": "Muritiba"
+  },
+  {
+    "id": "551",
+    "UF": "BA",
+    "name": "Mutuípe"
+  },
+  {
+    "id": "552",
+    "UF": "BA",
+    "name": "Nazaré"
+  },
+  {
+    "id": "553",
+    "UF": "BA",
+    "name": "Nilo Peçanha"
+  },
+  {
+    "id": "554",
+    "UF": "BA",
+    "name": "Nordestina"
+  },
+  {
+    "id": "555",
+    "UF": "BA",
+    "name": "Nova Canaã"
+  },
+  {
+    "id": "556",
+    "UF": "BA",
+    "name": "Nova Fátima"
+  },
+  {
+    "id": "557",
+    "UF": "BA",
+    "name": "Nova Ibiá"
+  },
+  {
+    "id": "558",
+    "UF": "BA",
+    "name": "Nova Itarana"
+  },
+  {
+    "id": "559",
+    "UF": "BA",
+    "name": "Nova Redenção"
+  },
+  {
+    "id": "560",
+    "UF": "BA",
+    "name": "Nova Soure"
+  },
+  {
+    "id": "561",
+    "UF": "BA",
+    "name": "Nova Viçosa"
+  },
+  {
+    "id": "562",
+    "UF": "BA",
+    "name": "Novo Horizonte"
+  },
+  {
+    "id": "563",
+    "UF": "BA",
+    "name": "Novo Triunfo"
+  },
+  {
+    "id": "564",
+    "UF": "BA",
+    "name": "Olindina"
+  },
+  {
+    "id": "565",
+    "UF": "BA",
+    "name": "Oliveira dos Brejinhos"
+  },
+  {
+    "id": "566",
+    "UF": "BA",
+    "name": "Ouriçangas"
+  },
+  {
+    "id": "567",
+    "UF": "BA",
+    "name": "Ourolândia"
+  },
+  {
+    "id": "568",
+    "UF": "BA",
+    "name": "Palmas de Monte Alto"
+  },
+  {
+    "id": "569",
+    "UF": "BA",
+    "name": "Palmeiras"
+  },
+  {
+    "id": "570",
+    "UF": "BA",
+    "name": "Paramirim"
+  },
+  {
+    "id": "571",
+    "UF": "BA",
+    "name": "Paratinga"
+  },
+  {
+    "id": "572",
+    "UF": "BA",
+    "name": "Paripiranga"
+  },
+  {
+    "id": "573",
+    "UF": "BA",
+    "name": "Pau Brasil"
+  },
+  {
+    "id": "574",
+    "UF": "BA",
+    "name": "Paulo Afonso"
+  },
+  {
+    "id": "575",
+    "UF": "BA",
+    "name": "Pé de Serra"
+  },
+  {
+    "id": "576",
+    "UF": "BA",
+    "name": "Pedrão"
+  },
+  {
+    "id": "577",
+    "UF": "BA",
+    "name": "Pedro Alexandre"
+  },
+  {
+    "id": "578",
+    "UF": "BA",
+    "name": "Piatã"
+  },
+  {
+    "id": "579",
+    "UF": "BA",
+    "name": "Pilão Arcado"
+  },
+  {
+    "id": "580",
+    "UF": "BA",
+    "name": "Pindaí"
+  },
+  {
+    "id": "581",
+    "UF": "BA",
+    "name": "Pindobaçu"
+  },
+  {
+    "id": "582",
+    "UF": "BA",
+    "name": "Pintadas"
+  },
+  {
+    "id": "583",
+    "UF": "BA",
+    "name": "Piraí do Norte"
+  },
+  {
+    "id": "584",
+    "UF": "BA",
+    "name": "Piripá"
+  },
+  {
+    "id": "585",
+    "UF": "BA",
+    "name": "Piritiba"
+  },
+  {
+    "id": "586",
+    "UF": "BA",
+    "name": "Planaltino"
+  },
+  {
+    "id": "587",
+    "UF": "BA",
+    "name": "Planalto"
+  },
+  {
+    "id": "588",
+    "UF": "BA",
+    "name": "Poções"
+  },
+  {
+    "id": "589",
+    "UF": "BA",
+    "name": "Pojuca"
+  },
+  {
+    "id": "590",
+    "UF": "BA",
+    "name": "Ponto Novo"
+  },
+  {
+    "id": "591",
+    "UF": "BA",
+    "name": "Porto Seguro"
+  },
+  {
+    "id": "592",
+    "UF": "BA",
+    "name": "Potiraguá"
+  },
+  {
+    "id": "593",
+    "UF": "BA",
+    "name": "Prado"
+  },
+  {
+    "id": "594",
+    "UF": "BA",
+    "name": "Presidente Dutra"
+  },
+  {
+    "id": "595",
+    "UF": "BA",
+    "name": "Presidente Jânio Quadros"
+  },
+  {
+    "id": "596",
+    "UF": "BA",
+    "name": "Presidente Tancredo Neves"
+  },
+  {
+    "id": "597",
+    "UF": "BA",
+    "name": "Queimadas"
+  },
+  {
+    "id": "598",
+    "UF": "BA",
+    "name": "Quijingue"
+  },
+  {
+    "id": "599",
+    "UF": "BA",
+    "name": "Quixabeira"
+  },
+  {
+    "id": "600",
+    "UF": "BA",
+    "name": "Rafael Jambeiro"
+  },
+  {
+    "id": "601",
+    "UF": "BA",
+    "name": "Remanso"
+  },
+  {
+    "id": "602",
+    "UF": "BA",
+    "name": "Retirolândia"
+  },
+  {
+    "id": "603",
+    "UF": "BA",
+    "name": "Riachão das Neves"
+  },
+  {
+    "id": "604",
+    "UF": "BA",
+    "name": "Riachão do Jacuípe"
+  },
+  {
+    "id": "605",
+    "UF": "BA",
+    "name": "Riacho de Santana"
+  },
+  {
+    "id": "606",
+    "UF": "BA",
+    "name": "Ribeira do Amparo"
+  },
+  {
+    "id": "607",
+    "UF": "BA",
+    "name": "Ribeira do Pombal"
+  },
+  {
+    "id": "608",
+    "UF": "BA",
+    "name": "Ribeirão do Largo"
+  },
+  {
+    "id": "609",
+    "UF": "BA",
+    "name": "Rio de Contas"
+  },
+  {
+    "id": "610",
+    "UF": "BA",
+    "name": "Rio do Antônio"
+  },
+  {
+    "id": "611",
+    "UF": "BA",
+    "name": "Rio do Pires"
+  },
+  {
+    "id": "612",
+    "UF": "BA",
+    "name": "Rio Real"
+  },
+  {
+    "id": "613",
+    "UF": "BA",
+    "name": "Rodelas"
+  },
+  {
+    "id": "614",
+    "UF": "BA",
+    "name": "Ruy Barbosa"
+  },
+  {
+    "id": "615",
+    "UF": "BA",
+    "name": "Salinas da Margarida"
+  },
+  {
+    "id": "616",
+    "UF": "BA",
+    "name": "Salvador"
+  },
+  {
+    "id": "617",
+    "UF": "BA",
+    "name": "Santa Bárbara"
+  },
+  {
+    "id": "618",
+    "UF": "BA",
+    "name": "Santa Brígida"
+  },
+  {
+    "id": "619",
+    "UF": "BA",
+    "name": "Santa Cruz Cabrália"
+  },
+  {
+    "id": "620",
+    "UF": "BA",
+    "name": "Santa Cruz da Vitória"
+  },
+  {
+    "id": "621",
+    "UF": "BA",
+    "name": "Santa Inês"
+  },
+  {
+    "id": "622",
+    "UF": "BA",
+    "name": "Santa Luzia"
+  },
+  {
+    "id": "623",
+    "UF": "BA",
+    "name": "Santa Maria da Vitória"
+  },
+  {
+    "id": "624",
+    "UF": "BA",
+    "name": "Santa Rita de Cássia"
+  },
+  {
+    "id": "625",
+    "UF": "BA",
+    "name": "Santa Teresinha"
+  },
+  {
+    "id": "626",
+    "UF": "BA",
+    "name": "Santaluz"
+  },
+  {
+    "id": "627",
+    "UF": "BA",
+    "name": "Santana"
+  },
+  {
+    "id": "628",
+    "UF": "BA",
+    "name": "Santanópolis"
+  },
+  {
+    "id": "629",
+    "UF": "BA",
+    "name": "Santo Amaro"
+  },
+  {
+    "id": "630",
+    "UF": "BA",
+    "name": "Santo Antônio de Jesus"
+  },
+  {
+    "id": "631",
+    "UF": "BA",
+    "name": "Santo Estêvão"
+  },
+  {
+    "id": "632",
+    "UF": "BA",
+    "name": "São Desidério"
+  },
+  {
+    "id": "633",
+    "UF": "BA",
+    "name": "São Domingos"
+  },
+  {
+    "id": "634",
+    "UF": "BA",
+    "name": "São Felipe"
+  },
+  {
+    "id": "635",
+    "UF": "BA",
+    "name": "São Félix"
+  },
+  {
+    "id": "636",
+    "UF": "BA",
+    "name": "São Félix do Coribe"
+  },
+  {
+    "id": "637",
+    "UF": "BA",
+    "name": "São Francisco do Conde"
+  },
+  {
+    "id": "638",
+    "UF": "BA",
+    "name": "São Gabriel"
+  },
+  {
+    "id": "639",
+    "UF": "BA",
+    "name": "São Gonçalo dos Campos"
+  },
+  {
+    "id": "640",
+    "UF": "BA",
+    "name": "São José da Vitória"
+  },
+  {
+    "id": "641",
+    "UF": "BA",
+    "name": "São José do Jacuípe"
+  },
+  {
+    "id": "642",
+    "UF": "BA",
+    "name": "São Miguel das Matas"
+  },
+  {
+    "id": "643",
+    "UF": "BA",
+    "name": "São Sebastião do Passé"
+  },
+  {
+    "id": "644",
+    "UF": "BA",
+    "name": "Sapeaçu"
+  },
+  {
+    "id": "645",
+    "UF": "BA",
+    "name": "Sátiro Dias"
+  },
+  {
+    "id": "646",
+    "UF": "BA",
+    "name": "Saubara"
+  },
+  {
+    "id": "647",
+    "UF": "BA",
+    "name": "Saúde"
+  },
+  {
+    "id": "648",
+    "UF": "BA",
+    "name": "Seabra"
+  },
+  {
+    "id": "649",
+    "UF": "BA",
+    "name": "Sebastião Laranjeiras"
+  },
+  {
+    "id": "650",
+    "UF": "BA",
+    "name": "Senhor do Bonfim"
+  },
+  {
+    "id": "651",
+    "UF": "BA",
+    "name": "Sento Sé"
+  },
+  {
+    "id": "652",
+    "UF": "BA",
+    "name": "Serra do Ramalho"
+  },
+  {
+    "id": "653",
+    "UF": "BA",
+    "name": "Serra Dourada"
+  },
+  {
+    "id": "654",
+    "UF": "BA",
+    "name": "Serra Preta"
+  },
+  {
+    "id": "655",
+    "UF": "BA",
+    "name": "Serrinha"
+  },
+  {
+    "id": "656",
+    "UF": "BA",
+    "name": "Serrolândia"
+  },
+  {
+    "id": "657",
+    "UF": "BA",
+    "name": "Simões Filho"
+  },
+  {
+    "id": "658",
+    "UF": "BA",
+    "name": "Sítio do Mato"
+  },
+  {
+    "id": "659",
+    "UF": "BA",
+    "name": "Sítio do Quinto"
+  },
+  {
+    "id": "660",
+    "UF": "BA",
+    "name": "Sobradinho"
+  },
+  {
+    "id": "661",
+    "UF": "BA",
+    "name": "Souto Soares"
+  },
+  {
+    "id": "662",
+    "UF": "BA",
+    "name": "Tabocas do Brejo Velho"
+  },
+  {
+    "id": "663",
+    "UF": "BA",
+    "name": "Tanhaçu"
+  },
+  {
+    "id": "664",
+    "UF": "BA",
+    "name": "Tanque Novo"
+  },
+  {
+    "id": "665",
+    "UF": "BA",
+    "name": "Tanquinho"
+  },
+  {
+    "id": "666",
+    "UF": "BA",
+    "name": "Taperoá"
+  },
+  {
+    "id": "667",
+    "UF": "BA",
+    "name": "Tapiramutá"
+  },
+  {
+    "id": "668",
+    "UF": "BA",
+    "name": "Teixeira de Freitas"
+  },
+  {
+    "id": "669",
+    "UF": "BA",
+    "name": "Teodoro Sampaio"
+  },
+  {
+    "id": "670",
+    "UF": "BA",
+    "name": "Teofilândia"
+  },
+  {
+    "id": "671",
+    "UF": "BA",
+    "name": "Teolândia"
+  },
+  {
+    "id": "672",
+    "UF": "BA",
+    "name": "Terra Nova"
+  },
+  {
+    "id": "673",
+    "UF": "BA",
+    "name": "Tremedal"
+  },
+  {
+    "id": "674",
+    "UF": "BA",
+    "name": "Tucano"
+  },
+  {
+    "id": "675",
+    "UF": "BA",
+    "name": "Uauá"
+  },
+  {
+    "id": "676",
+    "UF": "BA",
+    "name": "Ubaíra"
+  },
+  {
+    "id": "677",
+    "UF": "BA",
+    "name": "Ubaitaba"
+  },
+  {
+    "id": "678",
+    "UF": "BA",
+    "name": "Ubatã"
+  },
+  {
+    "id": "679",
+    "UF": "BA",
+    "name": "Uibaí"
+  },
+  {
+    "id": "680",
+    "UF": "BA",
+    "name": "Umburanas"
+  },
+  {
+    "id": "681",
+    "UF": "BA",
+    "name": "Una"
+  },
+  {
+    "id": "682",
+    "UF": "BA",
+    "name": "Urandi"
+  },
+  {
+    "id": "683",
+    "UF": "BA",
+    "name": "Uruçuca"
+  },
+  {
+    "id": "684",
+    "UF": "BA",
+    "name": "Utinga"
+  },
+  {
+    "id": "685",
+    "UF": "BA",
+    "name": "Valença"
+  },
+  {
+    "id": "686",
+    "UF": "BA",
+    "name": "Valente"
+  },
+  {
+    "id": "687",
+    "UF": "BA",
+    "name": "Várzea da Roça"
+  },
+  {
+    "id": "688",
+    "UF": "BA",
+    "name": "Várzea do Poço"
+  },
+  {
+    "id": "689",
+    "UF": "BA",
+    "name": "Várzea Nova"
+  },
+  {
+    "id": "690",
+    "UF": "BA",
+    "name": "Varzedo"
+  },
+  {
+    "id": "691",
+    "UF": "BA",
+    "name": "Vera Cruz"
+  },
+  {
+    "id": "692",
+    "UF": "BA",
+    "name": "Vereda"
+  },
+  {
+    "id": "693",
+    "UF": "BA",
+    "name": "Vitória da Conquista"
+  },
+  {
+    "id": "694",
+    "UF": "BA",
+    "name": "Wagner"
+  },
+  {
+    "id": "695",
+    "UF": "BA",
+    "name": "Wanderley"
+  },
+  {
+    "id": "696",
+    "UF": "BA",
+    "name": "Wenceslau Guimarães"
+  },
+  {
+    "id": "697",
+    "UF": "BA",
+    "name": "Xique-Xique"
+  }
 ]

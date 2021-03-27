@@ -1,80 +1,392 @@
 [
-  { "id": "1487", "name": "Água Clara" },
-  { "id": "1488", "name": "Alcinópolis" },
-  { "id": "1489", "name": "Amambaí" },
-  { "id": "1490", "name": "Anastácio" },
-  { "id": "1491", "name": "Anaurilândia" },
-  { "id": "1492", "name": "Angélica" },
-  { "id": "1493", "name": "Antônio João" },
-  { "id": "1494", "name": "Aparecida do Taboado" },
-  { "id": "1495", "name": "Aquidauana" },
-  { "id": "1496", "name": "Aral Moreira" },
-  { "id": "1497", "name": "Bandeirantes" },
-  { "id": "1498", "name": "Bataguassu" },
-  { "id": "1499", "name": "Bataiporã" },
-  { "id": "1500", "name": "Bela Vista" },
-  { "id": "1501", "name": "Bodoquena" },
-  { "id": "1502", "name": "Bonito" },
-  { "id": "1503", "name": "Brasilândia" },
-  { "id": "1504", "name": "Caarapó" },
-  { "id": "1505", "name": "Camapuã" },
-  { "id": "1506", "name": "Campo Grande" },
-  { "id": "1507", "name": "Caracol" },
-  { "id": "1508", "name": "Cassilândia" },
-  { "id": "1509", "name": "Chapadão do Sul" },
-  { "id": "1510", "name": "Corguinho" },
-  { "id": "1511", "name": "Coronel Sapucaia" },
-  { "id": "1512", "name": "Corumbá" },
-  { "id": "1513", "name": "Costa Rica" },
-  { "id": "1514", "name": "Coxim" },
-  { "id": "1515", "name": "Deodápolis" },
-  { "id": "1516", "name": "Dois Irmãos do Buriti" },
-  { "id": "1517", "name": "Douradina" },
-  { "id": "1518", "name": "Dourados" },
-  { "id": "1519", "name": "Eldorado" },
-  { "id": "1520", "name": "Fátima do Sul" },
-  { "id": "1521", "name": "Figueirão" },
-  { "id": "1522", "name": "Glória de Dourados" },
-  { "id": "1523", "name": "Guia Lopes da Laguna" },
-  { "id": "1524", "name": "Iguatemi" },
-  { "id": "1525", "name": "Inocência" },
-  { "id": "1526", "name": "Itaporã" },
-  { "id": "1527", "name": "Itaquiraí" },
-  { "id": "1528", "name": "Ivinhema" },
-  { "id": "1529", "name": "Japorã" },
-  { "id": "1530", "name": "Jaraguari" },
-  { "id": "1531", "name": "Jardim" },
-  { "id": "1532", "name": "Jateí" },
-  { "id": "1533", "name": "Juti" },
-  { "id": "1534", "name": "Ladário" },
-  { "id": "1535", "name": "Laguna Carapã" },
-  { "id": "1536", "name": "Maracaju" },
-  { "id": "1537", "name": "Miranda" },
-  { "id": "1538", "name": "Mundo Novo" },
-  { "id": "1539", "name": "Naviraí" },
-  { "id": "1540", "name": "Nioaque" },
-  { "id": "1541", "name": "Nova Alvorada do Sul" },
-  { "id": "1542", "name": "Nova Andradina" },
-  { "id": "1543", "name": "Novo Horizonte do Sul" },
-  { "id": "1544", "name": "Paranaíba" },
-  { "id": "1545", "name": "Paranhos" },
-  { "id": "1546", "name": "Pedro Gomes" },
-  { "id": "1547", "name": "Ponta Porã" },
-  { "id": "1548", "name": "Porto Murtinho" },
-  { "id": "1549", "name": "Ribas do Rio Pardo" },
-  { "id": "1550", "name": "Rio Brilhante" },
-  { "id": "1551", "name": "Rio Negro" },
-  { "id": "1552", "name": "Rio Verde de Mato Grosso" },
-  { "id": "1553", "name": "Rochedo" },
-  { "id": "1554", "name": "Santa Rita do Pardo" },
-  { "id": "1555", "name": "São Gabriel do Oeste" },
-  { "id": "1556", "name": "Selvíria" },
-  { "id": "1557", "name": "Sete Quedas" },
-  { "id": "1558", "name": "Sidrolândia" },
-  { "id": "1559", "name": "Sonora" },
-  { "id": "1560", "name": "Tacuru" },
-  { "id": "1561", "name": "Taquarussu" },
-  { "id": "1562", "name": "Terenos" },
-  { "id": "1563", "name": "Três Lagoas" },
-  { "id": "1564", "name": "Vicentina" }
+  {
+    "id": "1487",
+    "UF": "MS",
+    "name": "Água Clara"
+  },
+  {
+    "id": "1488",
+    "UF": "MS",
+    "name": "Alcinópolis"
+  },
+  {
+    "id": "1489",
+    "UF": "MS",
+    "name": "Amambaí"
+  },
+  {
+    "id": "1490",
+    "UF": "MS",
+    "name": "Anastácio"
+  },
+  {
+    "id": "1491",
+    "UF": "MS",
+    "name": "Anaurilândia"
+  },
+  {
+    "id": "1492",
+    "UF": "MS",
+    "name": "Angélica"
+  },
+  {
+    "id": "1493",
+    "UF": "MS",
+    "name": "Antônio João"
+  },
+  {
+    "id": "1494",
+    "UF": "MS",
+    "name": "Aparecida do Taboado"
+  },
+  {
+    "id": "1495",
+    "UF": "MS",
+    "name": "Aquidauana"
+  },
+  {
+    "id": "1496",
+    "UF": "MS",
+    "name": "Aral Moreira"
+  },
+  {
+    "id": "1497",
+    "UF": "MS",
+    "name": "Bandeirantes"
+  },
+  {
+    "id": "1498",
+    "UF": "MS",
+    "name": "Bataguassu"
+  },
+  {
+    "id": "1499",
+    "UF": "MS",
+    "name": "Bataiporã"
+  },
+  {
+    "id": "1500",
+    "UF": "MS",
+    "name": "Bela Vista"
+  },
+  {
+    "id": "1501",
+    "UF": "MS",
+    "name": "Bodoquena"
+  },
+  {
+    "id": "1502",
+    "UF": "MS",
+    "name": "Bonito"
+  },
+  {
+    "id": "1503",
+    "UF": "MS",
+    "name": "Brasilândia"
+  },
+  {
+    "id": "1504",
+    "UF": "MS",
+    "name": "Caarapó"
+  },
+  {
+    "id": "1505",
+    "UF": "MS",
+    "name": "Camapuã"
+  },
+  {
+    "id": "1506",
+    "UF": "MS",
+    "name": "Campo Grande"
+  },
+  {
+    "id": "1507",
+    "UF": "MS",
+    "name": "Caracol"
+  },
+  {
+    "id": "1508",
+    "UF": "MS",
+    "name": "Cassilândia"
+  },
+  {
+    "id": "1509",
+    "UF": "MS",
+    "name": "Chapadão do Sul"
+  },
+  {
+    "id": "1510",
+    "UF": "MS",
+    "name": "Corguinho"
+  },
+  {
+    "id": "1511",
+    "UF": "MS",
+    "name": "Coronel Sapucaia"
+  },
+  {
+    "id": "1512",
+    "UF": "MS",
+    "name": "Corumbá"
+  },
+  {
+    "id": "1513",
+    "UF": "MS",
+    "name": "Costa Rica"
+  },
+  {
+    "id": "1514",
+    "UF": "MS",
+    "name": "Coxim"
+  },
+  {
+    "id": "1515",
+    "UF": "MS",
+    "name": "Deodápolis"
+  },
+  {
+    "id": "1516",
+    "UF": "MS",
+    "name": "Dois Irmãos do Buriti"
+  },
+  {
+    "id": "1517",
+    "UF": "MS",
+    "name": "Douradina"
+  },
+  {
+    "id": "1518",
+    "UF": "MS",
+    "name": "Dourados"
+  },
+  {
+    "id": "1519",
+    "UF": "MS",
+    "name": "Eldorado"
+  },
+  {
+    "id": "1520",
+    "UF": "MS",
+    "name": "Fátima do Sul"
+  },
+  {
+    "id": "1521",
+    "UF": "MS",
+    "name": "Figueirão"
+  },
+  {
+    "id": "1522",
+    "UF": "MS",
+    "name": "Glória de Dourados"
+  },
+  {
+    "id": "1523",
+    "UF": "MS",
+    "name": "Guia Lopes da Laguna"
+  },
+  {
+    "id": "1524",
+    "UF": "MS",
+    "name": "Iguatemi"
+  },
+  {
+    "id": "1525",
+    "UF": "MS",
+    "name": "Inocência"
+  },
+  {
+    "id": "1526",
+    "UF": "MS",
+    "name": "Itaporã"
+  },
+  {
+    "id": "1527",
+    "UF": "MS",
+    "name": "Itaquiraí"
+  },
+  {
+    "id": "1528",
+    "UF": "MS",
+    "name": "Ivinhema"
+  },
+  {
+    "id": "1529",
+    "UF": "MS",
+    "name": "Japorã"
+  },
+  {
+    "id": "1530",
+    "UF": "MS",
+    "name": "Jaraguari"
+  },
+  {
+    "id": "1531",
+    "UF": "MS",
+    "name": "Jardim"
+  },
+  {
+    "id": "1532",
+    "UF": "MS",
+    "name": "Jateí"
+  },
+  {
+    "id": "1533",
+    "UF": "MS",
+    "name": "Juti"
+  },
+  {
+    "id": "1534",
+    "UF": "MS",
+    "name": "Ladário"
+  },
+  {
+    "id": "1535",
+    "UF": "MS",
+    "name": "Laguna Carapã"
+  },
+  {
+    "id": "1536",
+    "UF": "MS",
+    "name": "Maracaju"
+  },
+  {
+    "id": "1537",
+    "UF": "MS",
+    "name": "Miranda"
+  },
+  {
+    "id": "1538",
+    "UF": "MS",
+    "name": "Mundo Novo"
+  },
+  {
+    "id": "1539",
+    "UF": "MS",
+    "name": "Naviraí"
+  },
+  {
+    "id": "1540",
+    "UF": "MS",
+    "name": "Nioaque"
+  },
+  {
+    "id": "1541",
+    "UF": "MS",
+    "name": "Nova Alvorada do Sul"
+  },
+  {
+    "id": "1542",
+    "UF": "MS",
+    "name": "Nova Andradina"
+  },
+  {
+    "id": "1543",
+    "UF": "MS",
+    "name": "Novo Horizonte do Sul"
+  },
+  {
+    "id": "1544",
+    "UF": "MS",
+    "name": "Paranaíba"
+  },
+  {
+    "id": "1545",
+    "UF": "MS",
+    "name": "Paranhos"
+  },
+  {
+    "id": "1546",
+    "UF": "MS",
+    "name": "Pedro Gomes"
+  },
+  {
+    "id": "1547",
+    "UF": "MS",
+    "name": "Ponta Porã"
+  },
+  {
+    "id": "1548",
+    "UF": "MS",
+    "name": "Porto Murtinho"
+  },
+  {
+    "id": "1549",
+    "UF": "MS",
+    "name": "Ribas do Rio Pardo"
+  },
+  {
+    "id": "1550",
+    "UF": "MS",
+    "name": "Rio Brilhante"
+  },
+  {
+    "id": "1551",
+    "UF": "MS",
+    "name": "Rio Negro"
+  },
+  {
+    "id": "1552",
+    "UF": "MS",
+    "name": "Rio Verde de Mato Grosso"
+  },
+  {
+    "id": "1553",
+    "UF": "MS",
+    "name": "Rochedo"
+  },
+  {
+    "id": "1554",
+    "UF": "MS",
+    "name": "Santa Rita do Pardo"
+  },
+  {
+    "id": "1555",
+    "UF": "MS",
+    "name": "São Gabriel do Oeste"
+  },
+  {
+    "id": "1556",
+    "UF": "MS",
+    "name": "Selvíria"
+  },
+  {
+    "id": "1557",
+    "UF": "MS",
+    "name": "Sete Quedas"
+  },
+  {
+    "id": "1558",
+    "UF": "MS",
+    "name": "Sidrolândia"
+  },
+  {
+    "id": "1559",
+    "UF": "MS",
+    "name": "Sonora"
+  },
+  {
+    "id": "1560",
+    "UF": "MS",
+    "name": "Tacuru"
+  },
+  {
+    "id": "1561",
+    "UF": "MS",
+    "name": "Taquarussu"
+  },
+  {
+    "id": "1562",
+    "UF": "MS",
+    "name": "Terenos"
+  },
+  {
+    "id": "1563",
+    "UF": "MS",
+    "name": "Três Lagoas"
+  },
+  {
+    "id": "1564",
+    "UF": "MS",
+    "name": "Vicentina"
+  }
 ]

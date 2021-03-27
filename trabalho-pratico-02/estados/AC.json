@@ -1,24 +1,112 @@
 [
-  { "id": "79", "name": "Acrelândia" },
-  { "id": "80", "name": "Assis Brasil" },
-  { "id": "81", "name": "Brasiléia" },
-  { "id": "82", "name": "Bujari" },
-  { "id": "83", "name": "Capixaba" },
-  { "id": "84", "name": "Cruzeiro do Sul" },
-  { "id": "85", "name": "Epitaciolândia" },
-  { "id": "86", "name": "Feijó" },
-  { "id": "87", "name": "Jordão" },
-  { "id": "88", "name": "Mâncio Lima" },
-  { "id": "89", "name": "Manoel Urbano" },
-  { "id": "90", "name": "Marechal Thaumaturgo" },
-  { "id": "91", "name": "Plácido de Castro" },
-  { "id": "92", "name": "Porto Acre" },
-  { "id": "93", "name": "Porto Walter" },
-  { "id": "94", "name": "Rio Branco" },
-  { "id": "95", "name": "Rodrigues Alves" },
-  { "id": "96", "name": "Santa Rosa do Purus" },
-  { "id": "97", "name": "Sena Madureira" },
-  { "id": "98", "name": "Senador Guiomard" },
-  { "id": "99", "name": "Tarauacá" },
-  { "id": "100", "name": "Xapuri" }
+  {
+    "id": "79",
+    "UF": "AC",
+    "name": "Acrelândia"
+  },
+  {
+    "id": "80",
+    "UF": "AC",
+    "name": "Assis Brasil"
+  },
+  {
+    "id": "81",
+    "UF": "AC",
+    "name": "Brasiléia"
+  },
+  {
+    "id": "82",
+    "UF": "AC",
+    "name": "Bujari"
+  },
+  {
+    "id": "83",
+    "UF": "AC",
+    "name": "Capixaba"
+  },
+  {
+    "id": "84",
+    "UF": "AC",
+    "name": "Cruzeiro do Sul"
+  },
+  {
+    "id": "85",
+    "UF": "AC",
+    "name": "Epitaciolândia"
+  },
+  {
+    "id": "86",
+    "UF": "AC",
+    "name": "Feijó"
+  },
+  {
+    "id": "87",
+    "UF": "AC",
+    "name": "Jordão"
+  },
+  {
+    "id": "88",
+    "UF": "AC",
+    "name": "Mâncio Lima"
+  },
+  {
+    "id": "89",
+    "UF": "AC",
+    "name": "Manoel Urbano"
+  },
+  {
+    "id": "90",
+    "UF": "AC",
+    "name": "Marechal Thaumaturgo"
+  },
+  {
+    "id": "91",
+    "UF": "AC",
+    "name": "Plácido de Castro"
+  },
+  {
+    "id": "92",
+    "UF": "AC",
+    "name": "Porto Acre"
+  },
+  {
+    "id": "93",
+    "UF": "AC",
+    "name": "Porto Walter"
+  },
+  {
+    "id": "94",
+    "UF": "AC",
+    "name": "Rio Branco"
+  },
+  {
+    "id": "95",
+    "UF": "AC",
+    "name": "Rodrigues Alves"
+  },
+  {
+    "id": "96",
+    "UF": "AC",
+    "name": "Santa Rosa do Purus"
+  },
+  {
+    "id": "97",
+    "UF": "AC",
+    "name": "Sena Madureira"
+  },
+  {
+    "id": "98",
+    "UF": "AC",
+    "name": "Senador Guiomard"
+  },
+  {
+    "id": "99",
+    "UF": "AC",
+    "name": "Tarauacá"
+  },
+  {
+    "id": "100",
+    "UF": "AC",
+    "name": "Xapuri"
+  }
 ]

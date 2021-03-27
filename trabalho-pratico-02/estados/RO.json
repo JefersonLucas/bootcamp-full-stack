@@ -1,54 +1,262 @@
 [
-  { "id": "4346", "name": "Alta Floresta d`Oeste" },
-  { "id": "4347", "name": "Alto Alegre dos Parecis" },
-  { "id": "4348", "name": "Alto Paraíso" },
-  { "id": "4349", "name": "Alvorada d`Oeste" },
-  { "id": "4350", "name": "Ariquemes" },
-  { "id": "4351", "name": "Buritis" },
-  { "id": "4352", "name": "Cabixi" },
-  { "id": "4353", "name": "Cacaulândia" },
-  { "id": "4354", "name": "Cacoal" },
-  { "id": "4355", "name": "Campo Novo de Rondônia" },
-  { "id": "4356", "name": "Candeias do Jamari" },
-  { "id": "4357", "name": "Castanheiras" },
-  { "id": "4358", "name": "Cerejeiras" },
-  { "id": "4359", "name": "Chupinguaia" },
-  { "id": "4360", "name": "Colorado do Oeste" },
-  { "id": "4361", "name": "Corumbiara" },
-  { "id": "4362", "name": "Costa Marques" },
-  { "id": "4363", "name": "Cujubim" },
-  { "id": "4364", "name": "Espigão d`Oeste" },
-  { "id": "4365", "name": "Governador Jorge Teixeira" },
-  { "id": "4366", "name": "Guajará-Mirim" },
-  { "id": "4367", "name": "Itapuã do Oeste" },
-  { "id": "4368", "name": "Jaru" },
-  { "id": "4369", "name": "Ji-Paraná" },
-  { "id": "4370", "name": "Machadinho d`Oeste" },
-  { "id": "4371", "name": "Ministro Andreazza" },
-  { "id": "4372", "name": "Mirante da Serra" },
-  { "id": "4373", "name": "Monte Negro" },
-  { "id": "4374", "name": "Nova Brasilândia d`Oeste" },
-  { "id": "4375", "name": "Nova Mamoré" },
-  { "id": "4376", "name": "Nova União" },
-  { "id": "4377", "name": "Novo Horizonte do Oeste" },
-  { "id": "4378", "name": "Ouro Preto do Oeste" },
-  { "id": "4379", "name": "Parecis" },
-  { "id": "4380", "name": "Pimenta Bueno" },
-  { "id": "4381", "name": "Pimenteiras do Oeste" },
-  { "id": "4382", "name": "Porto Velho" },
-  { "id": "4383", "name": "Presidente Médici" },
-  { "id": "4384", "name": "Primavera de Rondônia" },
-  { "id": "4385", "name": "Rio Crespo" },
-  { "id": "4386", "name": "Rolim de Moura" },
-  { "id": "4387", "name": "Santa Luzia d`Oeste" },
-  { "id": "4388", "name": "São Felipe d`Oeste" },
-  { "id": "4389", "name": "São Francisco do Guaporé" },
-  { "id": "4390", "name": "São Miguel do Guaporé" },
-  { "id": "4391", "name": "Seringueiras" },
-  { "id": "4392", "name": "Teixeirópolis" },
-  { "id": "4393", "name": "Theobroma" },
-  { "id": "4394", "name": "Urupá" },
-  { "id": "4395", "name": "Vale do Anari" },
-  { "id": "4396", "name": "Vale do Paraíso" },
-  { "id": "4397", "name": "Vilhena" }
+  {
+    "id": "4346",
+    "UF": "RO",
+    "name": "Alta Floresta d`Oeste"
+  },
+  {
+    "id": "4347",
+    "UF": "RO",
+    "name": "Alto Alegre dos Parecis"
+  },
+  {
+    "id": "4348",
+    "UF": "RO",
+    "name": "Alto Paraíso"
+  },
+  {
+    "id": "4349",
+    "UF": "RO",
+    "name": "Alvorada d`Oeste"
+  },
+  {
+    "id": "4350",
+    "UF": "RO",
+    "name": "Ariquemes"
+  },
+  {
+    "id": "4351",
+    "UF": "RO",
+    "name": "Buritis"
+  },
+  {
+    "id": "4352",
+    "UF": "RO",
+    "name": "Cabixi"
+  },
+  {
+    "id": "4353",
+    "UF": "RO",
+    "name": "Cacaulândia"
+  },
+  {
+    "id": "4354",
+    "UF": "RO",
+    "name": "Cacoal"
+  },
+  {
+    "id": "4355",
+    "UF": "RO",
+    "name": "Campo Novo de Rondônia"
+  },
+  {
+    "id": "4356",
+    "UF": "RO",
+    "name": "Candeias do Jamari"
+  },
+  {
+    "id": "4357",
+    "UF": "RO",
+    "name": "Castanheiras"
+  },
+  {
+    "id": "4358",
+    "UF": "RO",
+    "name": "Cerejeiras"
+  },
+  {
+    "id": "4359",
+    "UF": "RO",
+    "name": "Chupinguaia"
+  },
+  {
+    "id": "4360",
+    "UF": "RO",
+    "name": "Colorado do Oeste"
+  },
+  {
+    "id": "4361",
+    "UF": "RO",
+    "name": "Corumbiara"
+  },
+  {
+    "id": "4362",
+    "UF": "RO",
+    "name": "Costa Marques"
+  },
+  {
+    "id": "4363",
+    "UF": "RO",
+    "name": "Cujubim"
+  },
+  {
+    "id": "4364",
+    "UF": "RO",
+    "name": "Espigão d`Oeste"
+  },
+  {
+    "id": "4365",
+    "UF": "RO",
+    "name": "Governador Jorge Teixeira"
+  },
+  {
+    "id": "4366",
+    "UF": "RO",
+    "name": "Guajará-Mirim"
+  },
+  {
+    "id": "4367",
+    "UF": "RO",
+    "name": "Itapuã do Oeste"
+  },
+  {
+    "id": "4368",
+    "UF": "RO",
+    "name": "Jaru"
+  },
+  {
+    "id": "4369",
+    "UF": "RO",
+    "name": "Ji-Paraná"
+  },
+  {
+    "id": "4370",
+    "UF": "RO",
+    "name": "Machadinho d`Oeste"
+  },
+  {
+    "id": "4371",
+    "UF": "RO",
+    "name": "Ministro Andreazza"
+  },
+  {
+    "id": "4372",
+    "UF": "RO",
+    "name": "Mirante da Serra"
+  },
+  {
+    "id": "4373",
+    "UF": "RO",
+    "name": "Monte Negro"
+  },
+  {
+    "id": "4374",
+    "UF": "RO",
+    "name": "Nova Brasilândia d`Oeste"
+  },
+  {
+    "id": "4375",
+    "UF": "RO",
+    "name": "Nova Mamoré"
+  },
+  {
+    "id": "4376",
+    "UF": "RO",
+    "name": "Nova União"
+  },
+  {
+    "id": "4377",
+    "UF": "RO",
+    "name": "Novo Horizonte do Oeste"
+  },
+  {
+    "id": "4378",
+    "UF": "RO",
+    "name": "Ouro Preto do Oeste"
+  },
+  {
+    "id": "4379",
+    "UF": "RO",
+    "name": "Parecis"
+  },
+  {
+    "id": "4380",
+    "UF": "RO",
+    "name": "Pimenta Bueno"
+  },
+  {
+    "id": "4381",
+    "UF": "RO",
+    "name": "Pimenteiras do Oeste"
+  },
+  {
+    "id": "4382",
+    "UF": "RO",
+    "name": "Porto Velho"
+  },
+  {
+    "id": "4383",
+    "UF": "RO",
+    "name": "Presidente Médici"
+  },
+  {
+    "id": "4384",
+    "UF": "RO",
+    "name": "Primavera de Rondônia"
+  },
+  {
+    "id": "4385",
+    "UF": "RO",
+    "name": "Rio Crespo"
+  },
+  {
+    "id": "4386",
+    "UF": "RO",
+    "name": "Rolim de Moura"
+  },
+  {
+    "id": "4387",
+    "UF": "RO",
+    "name": "Santa Luzia d`Oeste"
+  },
+  {
+    "id": "4388",
+    "UF": "RO",
+    "name": "São Felipe d`Oeste"
+  },
+  {
+    "id": "4389",
+    "UF": "RO",
+    "name": "São Francisco do Guaporé"
+  },
+  {
+    "id": "4390",
+    "UF": "RO",
+    "name": "São Miguel do Guaporé"
+  },
+  {
+    "id": "4391",
+    "UF": "RO",
+    "name": "Seringueiras"
+  },
+  {
+    "id": "4392",
+    "UF": "RO",
+    "name": "Teixeirópolis"
+  },
+  {
+    "id": "4393",
+    "UF": "RO",
+    "name": "Theobroma"
+  },
+  {
+    "id": "4394",
+    "UF": "RO",
+    "name": "Urupá"
+  },
+  {
+    "id": "4395",
+    "UF": "RO",
+    "name": "Vale do Anari"
+  },
+  {
+    "id": "4396",
+    "UF": "RO",
+    "name": "Vale do Paraíso"
+  },
+  {
+    "id": "4397",
+    "UF": "RO",
+    "name": "Vilhena"
+  }
 ]

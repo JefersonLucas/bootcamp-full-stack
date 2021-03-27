@@ -1,1 +1,7 @@
-[{ "id": "882", "name": "Brasília" }]
+[
+  {
+    "id": "882",
+    "UF": "DF",
+    "name": "Brasília"
+  }
+]
