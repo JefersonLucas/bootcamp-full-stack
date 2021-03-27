@@ -1,7 +1,7 @@
 /** Importação da biblioteca `fs`:
  * Importamos as `promises` e criamos um alias chamado `fileSystem`.
  */
-import { promises as fileSystem, stat } from "fs";
+import { promises as fileSystem } from "fs";
 
 /** Desestruturando:
  * Desestruturamos os métodos de `fileSytem`:
@@ -31,7 +31,9 @@ async function start() {
   // Chamada da atividade 01
   await activity01();
   // Chamada da atividade 02
-  console.log(await activity02("AC"));
+  // console.log(await activity02("AC"));
+  // Chamada da atividade 03
+  await activity03();
 }
 
 /** Atividade 01:
@@ -95,7 +97,7 @@ async function activity01() {
        * 3.2 *replacer* (opicional): o valor nulo todas as propriedades do objeto são incluídas na string JSON;
        * 3.3 *espaço* (opicional): é usado para inserir espaço na string JSON para propósito de legibilidade.
        */
-      write(`./estados/${UF}.json`, stringify(content, null, 2));
+      write(`./states/${UF}.json`, stringify(content, null, 2));
     });
   } catch (erro) {
     /** `catch()`:
@@ -116,12 +118,58 @@ async function activity02(UF) {
     /** Constante `state`:
      * Recebe um estado passado por parâmetro e retorna o tamanho de cidades que esse estado possui.
      */
-    const state = JSON.parse(await read(`./estados/${UF}.json`));
+    const state = JSON.parse(await read(`./states/${UF}.json`));
     // Retorno
     return state.length;
   } catch (erro) {
     console.log(erro);
   }
 }
+
+/** Atividade 03:
+ * 1. Criar um **método** que imprima no `console` um `Array` com o **UF** dos **cinco estados que mais possuem cidades**.
+ * 2. Seguidos de: **quantidade**, em **ordem decrescente**.
+ * Você pode usar a função criada no tópico 2. Exemplo de impressão:
+ * ["UF - 93", "UF - 82", "UF - 74", "UF - 72", "UF - 65"];
+ */
+async function activity03() {
+  try {
+    /** Constante `states`:
+     * recebe todos os estados em formato JSON.
+     */
+    const states = parse(await read("./database/Estados.json"));
+
+    /** Constante `list`:
+     * nela que faremos as manipulações das informações `UF` e `cities`.
+     */
+    const list = [];
+
+    // Mapeamento na constante `states`.
+    states.map(async ({ Sigla: UF }) => {
+      /** Constante `cities`:
+       * puxamos as informações da quantidade de cidades da função `activity02()`.
+       */
+      const cities = await activity02(UF);
+
+      // Incluindo na constante `list` um Objeto com os campos chave/valor: `UF` e `cities`.
+      list.push({ UF: UF, cities });
+
+      // Quando a constante `list` obtiver o tamanho de 27 itens (Que correspondem ao tamanho dos estados).
+      if (list.length === 27) {
+        // Ordena os estados pela quatidade de cidades
+        list.sort((a, b) => {
+          if (a.cities < b.cities) return 1;
+          else if (a.cities > b.cities) return -1;
+          else return 0;
+        });
+        // Imprime os cinco primeiros estados
+        console.log(list.slice(0, 5));
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 // Chamanda da função `start()`
 start();
