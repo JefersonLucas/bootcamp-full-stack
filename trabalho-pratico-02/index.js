@@ -38,6 +38,8 @@ async function start() {
   await activity04();
   // Chamada da função `ativity05()`
   await activity05();
+  // Chamada da função `ativity06()`
+  await activity06();
 }
 
 /** Atividade 01:
@@ -221,8 +223,7 @@ async function activity04() {
 }
 
 /** Atividade 05:
- * Criar um **método** que imprima no `console` um `Array` com a **cidade de maior nome** de cada **estado**, seguida de seu **UF**.
- * Por exemplo:
+ * Criar um **método** que imprima no `console` um `Array` com a **cidade de maior nome** de cada **estado**, seguida de seu **UF**. Por exemplo:
  * ["Nome da Cidade – UF", "Nome da Cidade – UF", ...];
  */
 async function activity05() {
@@ -250,6 +251,42 @@ async function activity05() {
           else return 0;
         });
         // Imprime a cidade com o maior nome
+        console.log(list.slice(0, 1));
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+/** Atividade 06:
+ * Criar um **método** que imprima no `console` um `Array`com a **cidade de menor nome** de cada **estado**, seguida de seu **UF**. Por exemplo:
+ * ["Nome da Cidade – UF", "Nome da Cidade – UF", ...];
+ */
+async function activity06() {
+  try {
+    /** Constante `cities`:
+     * recebe todos as cidades em formato JSON.
+     */
+    const cities = parse(await read("./database/Cidades.json"));
+
+    /** Constante `list`:
+     * nela que faremos as manipulações das informações `name` e `UF`.
+     */
+    const list = [];
+
+    // Mapeamento na constante `cities`.
+    cities.map(async ({ Nome: name, Estado: UF }) => {
+      // Incluindo na constante `list` um Objeto com os campos chave/valor: `name` e `UF`.
+      list.push({ name, UF });
+      // Quando a constante `list` obtiver o tamanho de 5563 itens (Que correspondem a quantidade de cidades).
+      if (list.length === 5563) {
+        // Ordena as cidades pelo tamanho do nome
+        list.sort((a, b) => {
+          if (a.name.length > b.name.length) return 1;
+          else if (a.name.length < b.name.length) return -1;
+          else return 0;
+        });
+        // Imprime a cidade com o menor nome
         console.log(list.slice(0, 1));
       }
     });
