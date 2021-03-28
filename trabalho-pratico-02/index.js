@@ -28,14 +28,16 @@ const { parse, stringify } = JSON;
  * sua chamada estará no final do arquivo.
  */
 async function start() {
-  // Chamada da atividade 01
+  // Chamada da função `ativity01()`
   await activity01();
-  // Chamada da atividade 02
+  // Chamada da função `ativity02()`
   // console.log(await activity02("AC"));
-  // Chamada da atividade 03
+  // Chamada da função `ativity03()`
   await activity03();
-  // Chamada da atividade 04
+  // Chamada da função `ativity04()`
   await activity04();
+  // Chamada da função `ativity05()`
+  await activity05();
 }
 
 /** Atividade 01:
@@ -211,6 +213,44 @@ async function activity04() {
         });
         // Imprime os cinco primeiros estados
         console.log(list.slice(0, 5));
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/** Atividade 05:
+ * Criar um **método** que imprima no `console` um `Array` com a **cidade de maior nome** de cada **estado**, seguida de seu **UF**.
+ * Por exemplo:
+ * ["Nome da Cidade – UF", "Nome da Cidade – UF", ...];
+ */
+async function activity05() {
+  try {
+    /** Constante `cities`:
+     * recebe todos as cidades em formato JSON.
+     */
+    const cities = parse(await read("./database/Cidades.json"));
+
+    /** Constante `list`:
+     * nela que faremos as manipulações das informações `name` e `UF`.
+     */
+    const list = [];
+
+    // Mapeamento na constante `cities`.
+    cities.map(async ({ Nome: name, Estado: UF }) => {
+      // Incluindo na constante `list` um Objeto com os campos chave/valor: `name` e `UF`.
+      list.push({ name, UF });
+      // Quando a constante `list` obtiver o tamanho de 5563 itens (Que correspondem a quantidade de cidades).
+      if (list.length === 5563) {
+        // Ordena as cidades pelo tamanho do nome
+        list.sort((a, b) => {
+          if (a.name.length < b.name.length) return 1;
+          else if (a.name.length > b.name.length) return -1;
+          else return 0;
+        });
+        // Imprime a cidade com o maior nome
+        console.log(list.slice(0, 1));
       }
     });
   } catch (error) {
