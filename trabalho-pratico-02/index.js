@@ -172,8 +172,23 @@ async function activity03() {
           else if (a.cities > b.cities) return -1;
           else return 0;
         });
-        // Imprime os cinco primeiros estados
-        console.log(list.slice(0, 5));
+
+        // Imprime as cidades com o menor nome
+        /** Constante `result`:
+         *  recebe inicialmente um `Array`.
+         * Para receber o resultado dos métodos `slice`e `forEach` da constante `list`.
+         */
+        const result = [];
+
+        /** Métodos em `list`:
+         * aqui aplicamos dois métodos no Array `list` para enviar os resultados no Array `result`.
+         */
+        list
+          .slice(0, 5)
+          .forEach((item) => result.push(`${item.UF} - ${item.cities}`));
+
+        // Aqui imprimimos o `result` no console: *cinco estados que mais possuem cidades**, seguidos de: **quantidade**, em **ordem decrescente***.
+        console.log(result);
       }
     });
   } catch (error) {
@@ -213,12 +228,26 @@ async function activity04() {
       if (list.length === 27) {
         // Ordena os estados pela quatidade de cidades
         list.sort((a, b) => {
-          if (a.cities > b.cities) return 1;
-          else if (a.cities < b.cities) return -1;
+          if (a.cities < b.cities) return 1;
+          else if (a.cities > b.cities) return -1;
           else return 0;
         });
-        // Imprime os cinco primeiros estados
-        console.log(list.slice(0, 5));
+        // Imprime as cidades com o menor nome
+        /** Constante `result`:
+         *  recebe inicialmente um `Array`.
+         * Para receber o resultado dos métodos `slice`e `forEach` da constante `list`.
+         */
+        const result = [];
+
+        /** Métodos em `list`:
+         * aqui aplicamos dois métodos no Array `list` para enviar os resultados no Array `result`.
+         */
+        list
+          .slice(-5)
+          .forEach((item) => result.push(`${item.UF} - ${item.cities}`));
+
+        // Aqui imprimimos o `result` no console: *cinco estados que menos possuem cidades**, seguidos de: **quantidade**, em **ordem decrescente***.
+        console.log(result);
       }
     });
   } catch (error) {
@@ -254,8 +283,22 @@ async function activity05() {
           else if (a.name.length > b.name.length) return -1;
           else return 0;
         });
-        // Imprime a cidade com o maior nome
-        console.log(list.slice(0, 5));
+        // Imprime as cidades com o menor nome
+        /** Constante `result`:
+         *  recebe inicialmente um `Array`.
+         * Para receber o resultado dos métodos `slice`e `forEach` da constante `list`.
+         */
+        const result = [];
+
+        /** Métodos em `list`:
+         * aqui aplicamos dois métodos no Array `list` para enviar os resultados no Array `result`.
+         */
+        list
+          .slice(0, 5)
+          .forEach((item) => result.push(`${item.name} - ${item.UF}`));
+
+        // Aqui imprimimos o `result` no console: **cidade de maior nome** de cada **estado**, seguida de seu **UF**.
+        console.log(result);
       }
     });
   } catch (error) {
@@ -286,12 +329,26 @@ async function activity06() {
       if (list.length === 5563) {
         // Ordena as cidades pelo tamanho do nome
         list.sort((a, b) => {
-          if (a.name.length > b.name.length) return 1;
-          else if (a.name.length < b.name.length) return -1;
+          if (a.name.length < b.name.length) return 1;
+          else if (a.name.length > b.name.length) return -1;
           else return 0;
         });
         // Imprime as cidades com o menor nome
-        console.log(list.slice(0, 5));
+        /** Constante `result`:
+         *  recebe inicialmente um `Array`.
+         * Para receber o resultado dos métodos `slice`e `forEach` da constante `list`.
+         */
+        const result = [];
+
+        /** Métodos em `list`:
+         * aqui aplicamos dois métodos no Array `list` para enviar os resultados no Array `result`.
+         */
+        list
+          .slice(-5)
+          .forEach((item) => result.push(`${item.name} - ${item.UF}`));
+
+        // Aqui imprimimos o `result` no console: **cidade de menor nome** de cada **estado**, seguida de seu **UF**.
+        console.log(result);
       }
     });
   } catch (error) {
@@ -341,7 +398,7 @@ async function activity07() {
           .slice(0, 1)
           .forEach((item) => result.push(`${item.name} - ${item.UF}`));
 
-        // Aqui imprimimos o `result` no console: *a cidades com o maior nome*.
+        // Aqui imprimimos o `result` no console: **cidade de maior nome** entre **todos os estados**, seguido do seu **UF**.
         console.log(result);
       }
     });
@@ -392,7 +449,7 @@ async function activity08() {
           .slice(-1)
           .forEach((item) => result.push(`${item.name} - ${item.UF}`));
 
-        // Aqui imprimimos o `result` no console: *a cidades com o maior nome*.
+        // Aqui imprimimos o `result` no console: **cidade de menor nome** entre **todos os estados**, seguido do seu **UF**.
         console.log(result);
       }
     });
