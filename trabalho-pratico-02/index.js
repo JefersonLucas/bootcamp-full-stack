@@ -32,14 +32,16 @@ async function start() {
   await activity01();
   // Chamada da função `ativity02()`
   // console.log(await activity02("AC"));
-  // Chamada da função `ativity03()`
+  // Chamada da função `activity03()`
   await activity03();
-  // Chamada da função `ativity04()`
+  // Chamada da função `activity04()`
   await activity04();
-  // Chamada da função `ativity05()`
+  // Chamada da função `activity05()`
   await activity05();
-  // Chamada da função `ativity06()`
+  // Chamada da função `activity06()`
   await activity06();
+  // Chamada da função `activity07()`
+  await activity07();
 }
 
 /** Atividade 01:
@@ -251,7 +253,7 @@ async function activity05() {
           else return 0;
         });
         // Imprime a cidade com o maior nome
-        console.log(list.slice(0, 1));
+        console.log(list.slice(0, 5));
       }
     });
   } catch (error) {
@@ -286,8 +288,59 @@ async function activity06() {
           else if (a.name.length < b.name.length) return -1;
           else return 0;
         });
-        // Imprime a cidade com o menor nome
-        console.log(list.slice(0, 1));
+        // Imprime as cidades com o menor nome
+        console.log(list.slice(0, 5));
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/** Atividade 07:
+ * Criar **método** que imprima no `console` a **cidade de maior nome** entre **todos os estados**, seguido do seu **UF**. Exemplo:
+ * "Nome da Cidade – UF";
+ */
+async function activity07() {
+  try {
+    /** Constante `cities`:
+     * recebe todos as cidades em formato JSON.
+     */
+    const cities = parse(await read("./database/Cidades.json"));
+
+    /** Constante `list`:
+     * nela que faremos as manipulações das informações `name` e `UF`.
+     */
+    const list = [];
+
+    // Mapeamento na constante `cities`.
+    cities.map(async ({ Nome: name, Estado: UF }) => {
+      // Incluindo na constante `list` um Objeto com os campos chave/valor: `name` e `UF`.
+      list.push({ name, UF });
+      // Quando a constante `list` obtiver o tamanho de 5563 itens (Que correspondem a quantidade de cidades).
+      if (list.length === 5563) {
+        // Ordena as cidades pelo tamanho do nome
+        list.sort((a, b) => {
+          if (a.name.length < b.name.length) return 1;
+          else if (a.name.length > b.name.length) return -1;
+          else return 0;
+        });
+
+        /** Constante `result`:
+         *  recebe inicialmente um `Array`.
+         * Para receber o resultado dos métodos `slice`e `forEach` da constante `list`.
+         */
+        const result = [];
+
+        /** Métodos em `list`:
+         * aqui aplicamos dois métodos no Array `list` para enviar os resultados no Array `result`.
+         */
+        list
+          .slice(0, 1)
+          .forEach((item) => result.push(`${item.name} - ${item.UF}`));
+
+        // Aqui imprimimos o `result` no console: *a cidades com o maior nome*.
+        console.log(result);
       }
     });
   } catch (error) {
