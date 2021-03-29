@@ -42,6 +42,8 @@ async function start() {
   await activity06();
   // Chamada da função `activity07()`
   await activity07();
+  // Chamada da função `activity08()`
+  await activity08();
 }
 
 /** Atividade 01:
@@ -337,6 +339,57 @@ async function activity07() {
          */
         list
           .slice(0, 1)
+          .forEach((item) => result.push(`${item.name} - ${item.UF}`));
+
+        // Aqui imprimimos o `result` no console: *a cidades com o maior nome*.
+        console.log(result);
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/** Atividade 08:
+ * Criar **método** que imprima no `console` a **cidade de menor nome** entre **todos os estados**, seguido do seu **UF**. Exemplo:
+ * "Nome da Cidade – UF";
+ */
+async function activity08() {
+  try {
+    /** Constante `cities`:
+     * recebe todos as cidades em formato JSON.
+     */
+    const cities = parse(await read("./database/Cidades.json"));
+
+    /** Constante `list`:
+     * nela que faremos as manipulações das informações `name` e `UF`.
+     */
+    const list = [];
+
+    // Mapeamento na constante `cities`.
+    cities.map(async ({ Nome: name, Estado: UF }) => {
+      // Incluindo na constante `list` um Objeto com os campos chave/valor: `name` e `UF`.
+      list.push({ name, UF });
+      // Quando a constante `list` obtiver o tamanho de 5563 itens (Que correspondem a quantidade de cidades).
+      if (list.length === 5563) {
+        // Ordena as cidades pelo tamanho do nome
+        list.sort((a, b) => {
+          if (a.name.length < b.name.length) return 1;
+          else if (a.name.length > b.name.length) return -1;
+          else return 0;
+        });
+
+        /** Constante `result`:
+         *  recebe inicialmente um `Array`.
+         * Para receber o resultado dos métodos `slice`e `forEach` da constante `list`.
+         */
+        const result = [];
+
+        /** Métodos em `list`:
+         * aqui aplicamos dois métodos no Array `list` para enviar os resultados no Array `result`.
+         */
+        list
+          .slice(-1)
           .forEach((item) => result.push(`${item.name} - ${item.UF}`));
 
         // Aqui imprimimos o `result` no console: *a cidades com o maior nome*.
