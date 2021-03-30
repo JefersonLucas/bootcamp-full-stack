@@ -108,7 +108,7 @@ router.put("/", async (req, res) => {
 });
 
 /** Atividade 03:
- * 1. Crie um **endpoint** para **excluir uma grade**. Este endpoint deverá receber como parâmetro o `"id"` da grade e **realizar sua exclusão** do arquivo `grades.json`.
+ * 1. [x] Crie um **endpoint** para **excluir uma grade**. Este endpoint deverá receber como parâmetro o `"id"` da grade e **realizar sua exclusão** do arquivo `grades.json`.
  */
 router.delete("/:id", async (req, res) => {
   try {
@@ -142,5 +142,39 @@ router.delete("/:id", async (req, res) => {
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
+
+/** Atividade 04:
+ * 1. Crie um **endpoint** para **consultar uma grade em específico**.
+ * 2. Este endpoint deverá receber como parâmetro o `"id"` da grade e **retornar suas informações**.
+ */
+router.get("/:id", async (req, res) => {
+  try {
+    /** Constante `id`:
+     * Essa constante recebe o `id` passado por por parâmetro na requisição.
+     */
+    const id = req.params.id;
+
+    /** Constante `data`:
+     * essa constante rebece a leitura assíncrona do arquivo `accounts.json` e também analizada em formato JSON.
+     */
+    const data = parse(await readFile(global.pathAPI));
+
+    /** Constante `grade`:
+     * recebe o resultado do método `find` com o `id` passado por parâmetro.
+     */
+    const grade = data.grades.find((grade) => grade.id === parseInt(id));
+
+    // Devolvendo o resultado para o usuário
+    res.send(grade);
+
+    // Finaliza a requisição
+    res.end();
+  } catch (error) {
+    // Informando o erro, caso ocorra
+    res.status(400).send({ error: error.menssage });
+    log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
+  }
+});
+
 // Exportação
 export default router;
