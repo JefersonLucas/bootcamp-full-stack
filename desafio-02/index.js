@@ -1,6 +1,6 @@
 // Importações
 import express from "express";
-import gradesRouter from "./routers/grades.js";
+import gradesRouter from "./routers/grade.js";
 import { promises as fileSystem } from "fs";
 
 // Instanciação do Express
