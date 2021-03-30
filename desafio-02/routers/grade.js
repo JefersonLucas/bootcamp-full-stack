@@ -106,5 +106,41 @@ router.put("/", async (req, res) => {
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
+
+/** Atividade 03:
+ * 1. Crie um **endpoint** para **excluir uma grade**. Este endpoint deverá receber como parâmetro o `"id"` da grade e **realizar sua exclusão** do arquivo `grades.json`.
+ */
+router.delete("/:id", async (req, res) => {
+  try {
+    /** Constante `id`:
+     * Essa constante recebe o `id` passado por por parâmetro na requisição.
+     */
+    const id = req.params.id;
+
+    /** Constante `data`:
+     * essa constante rebece a leitura assíncrona do arquivo `accounts.json` e também analizada em formato JSON.
+     */
+    const data = parse(await readFile(global.pathAPI));
+
+    /** Filtrando o `id`:
+     * Ao filtrar o `id`, estamos fazendo uma filtragem de todos os itens excluindo o intem que passamos por parâmetro.
+     * Assim temos todos os itens, menos o que foi passado por parâmetro.
+     */
+    data.grades = data.grades.filter((grade) => grade.id !== parseInt(id));
+
+    // Escrevendo no aquivo `grades.json` os novos dados
+    await writeFile(global.pathAPI, stringify(data, null, 2));
+
+    // Debugging
+    log("\u001b[34m\nGrade deleted successfully! (^_^)/");
+
+    // Finaliza a requisição
+    res.end();
+  } catch (error) {
+    // Informando o erro, caso ocorra
+    res.status(400).send({ error: error.menssage });
+    log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
+  }
+});
 // Exportação
 export default router;
