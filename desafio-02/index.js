@@ -8,6 +8,10 @@ const app = express();
 
 // Desestruturações
 const { writeFile, readFile } = fileSystem;
+const { log, clear } = console;
+
+// Variáveis globais
+global.pathAPI = "./api/grades.json";
 
 // Usando o JSON com o Express
 app.use(express.json());
@@ -16,6 +20,15 @@ app.use(express.json());
 app.use("/grade", gradesRouter);
 
 // Criação da API
-app.listen(3001, () => {
-  console.log("grades-control-api created with sucess! ＼(^o^)／");
+app.listen(3001, async () => {
+  try {
+    // Fazendo a leitura da API
+    await readFile(global.pathAPI);
+    // Debugging
+    clear();
+    log("\u001b[34mgrades-control-api started with success! ＼(^o^)／");
+  } catch (error) {
+    log("\u001b[31m\nThere was a problem starting grades-control-api! ╮(╯_╰)╭");
+    log(error);
+  }
 });

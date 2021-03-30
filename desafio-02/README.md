@@ -16,15 +16,15 @@ Uma grade deve possuir os campos abaixo:
 
 - `"id"` (int): identificador único da grade. Deve ser gerado automaticamente pela API, e garantido que não se repita.
 - `"student"` (string): nome do aluno.
-  - Exemplo: “Jeferson Lucas”.
+  - Exemplo: "Jeferson Lucas".
 - `"subject"` (string): nome da matéria.
-  - Exemplo: “Matemática”.
+  - Exemplo: "Matemática".
 - `"type"` (string): nome da atividade.
-  - Exemplo: “Prova final”.
+  - Exemplo: "Prova final".
 - `"value"` (float): nota da atividade.
   - Exemplo: 10.
 - `"timestamp"` (string): horário do lançamento.
-  - **Exemplo**: “2021-07-12T14:20:00.000Z”.
+  - **Exemplo**: "2021-07-12T14:20:00.000Z".
   - **Dica**: utilizar o `new Date()` do JavaScript.
 
 O arquivo `grades.json` será previamente fornecido com alguns registros inseridos, e seus endpoints devem trabalhar considerando a existência deles, não devendo criar um arquivo limpo para utilização. A estrutura do arquivo é a seguinte:
