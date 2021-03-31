@@ -22,7 +22,7 @@ const { log } = console;
  * 7. [x] Dentro do arquivo `grades.json`, o campo `"nextId"` já está com um **valor definido**.
  * 8. [x] Após a inserção, é preciso que esse `"nextId"` seja **incrementado** e **salvo no próprio arquivo**, de forma que na próxima inserção ele possa ser utilizado.
  */
-router.post("/", async (req, res) => {
+router.post("/create-grade", async (req, res) => {
   try {
     /** Variável `grade`:
      * recebe do corpo da requisição, as informações em formato JSON.
@@ -67,7 +67,7 @@ router.post("/", async (req, res) => {
  * 3. [ ] O endpoint deverá **validar** se a grade informada **existe** e, caso **não exista**, deverá retornar um **erro**.
  * 4. [x] Caso exista, o endpoint deverá **atualizar as informações recebidas** por **parâmetros no registro** e realizar sua atualização com os **novos dados** alterados no arquivo `grades.json`.
  */
-router.put("/", async (req, res) => {
+router.put("/update-grade", async (req, res) => {
   try {
     /** Variável `grade`:
      * recebe do corpo da requisição, as informações em formato JSON.
@@ -167,6 +167,9 @@ router.get("/:id", async (req, res) => {
     // Devolvendo o resultado para o usuário
     res.send(grade);
 
+    // Debugging
+    log("\u001b[34m\nGrade consulted successfully! (^_^)/");
+
     // Finaliza a requisição
     res.end();
   } catch (error) {
@@ -176,5 +179,52 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+/** Atividade 05:
+ * 1. Crie um **endpoint** para **consultar a nota total de um aluno** em uma **disciplina**.
+ * 2. O endpoint deverá receber como parâmetro o `"student"` e o `"subject"`, e realizar a **soma de todas as notas de atividades correspondentes** a aquele `"subject"` para aquele `"student"`.
+ * 3. O endpoint deverá **retornar a soma da propriedade** `"value"` dos **registros encontrados**.
+ */
+router.post("/total-value", async (req, res) => {
+  try {
+    /** Variável `grades`:
+     * recebe o resultado da requisição feita no endpoint.
+     */
+    let grade = req.body;
+
+    /** Constante `data`:
+     * essa constante rebece a leitura assíncrona do arquivo `accounts.json` e também analizada em formato JSON.
+     */
+    const data = parse(await readFile(global.pathAPI));
+
+    /** Variável `grades`:
+     * está obtendo o filtro da API.
+     */
+    grade = data.grades.filter(
+      ({ student, subject }) =>
+        student === grade.student && subject === grade.subject,
+    );
+
+    /** Constante `result`:
+     * Obtém o resultado da soma de todos os valores somados.
+     */
+    const result = grade.reduce(
+      (accumulator, { value }) => accumulator + value,
+      0,
+    );
+
+    // Devolvendo o resultado para o usuário
+    res.send({ value: result });
+
+    // Debugging
+    log("\u001b[34m\nGrade consulted the total value successfully! (^_^)/");
+
+    // Finaliza a requisição
+    res.end();
+  } catch (error) {
+    // Informando o erro, caso ocorra
+    res.status(400).send({ error: error.menssage });
+    log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
+  }
+});
 // Exportação
 export default router;
