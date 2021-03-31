@@ -226,5 +226,53 @@ router.post("/total-value", async (req, res) => {
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
+
+/** Atividade 06:
+ * 1. Crie um **endpoint** para **consultar a média das grades de determinado** `"subject"` **e** `"type"`.
+ * 2. O endpoint deverá receber como parâmetro um `"subject"` e um `"type"` e **retornar a média**.
+ * 3. A média é calculada **somando o registro** `"value"` de todos os registros que possuem o `"subject"` **e** `"type"` informados e dividindo pelo total de registros que possuem este mesmo `"subject"` e `"type"`.
+ */
+router.post("/average-grid", async (req, res) => {
+  try {
+    /** Variável `grades`:
+     * recebe o resultado da requisição feita no endpoint.
+     */
+    let grade = req.body;
+
+    /** Constante `data`:
+     * essa constante rebece a leitura assíncrona do arquivo `accounts.json` e também analizada em formato JSON.
+     */
+    const data = parse(await readFile(global.pathAPI));
+
+    /** Variável `grades`:
+     * está obtendo o filtro da API.
+     */
+    grade = data.grades.filter(
+      ({ subject, type }) => subject === grade.subject && type === grade.type,
+    );
+
+    /** Constante `result`:
+     * Obtém o resultado da soma de todos os valores somados.
+     */
+    let result = grade.reduce(
+      (accumulator, { value }) => accumulator + value,
+      0,
+    );
+
+    // Devolvendo o resultado para o usuário
+    res.send({ value: result / grade.length });
+
+    // Debugging
+    log("\u001b[34m\nGrade consulted the total value successfully! (^_^)/");
+
+    // Finaliza a requisição
+    res.end();
+  } catch (error) {
+    // Informando o erro, caso ocorra
+    res.status(400).send({ error: error.menssage });
+    log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
+  }
+});
+
 // Exportação
 export default router;
