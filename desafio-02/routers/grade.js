@@ -263,7 +263,57 @@ router.post("/average-grid", async (req, res) => {
     res.send({ value: result / grade.length });
 
     // Debugging
-    log("\u001b[34m\nGrade consulted the total value successfully! (^_^)/");
+    log("\u001b[34m\nGrade average consulted successfully! (^_^)/");
+
+    // Finaliza a requisição
+    res.end();
+  } catch (error) {
+    // Informando o erro, caso ocorra
+    res.status(400).send({ error: error.menssage });
+    log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
+  }
+});
+
+/** Atividade 07:
+ * 1. Crie um **endpoint** para **retornar as três melhores grades de acordo com determinado** `"subject"` **e** `"type"`.
+ * 2. O endpoint deve receber como parâmetro um `"subject"` e um `"type"` retornar um **Array** com os **três registros** de **maior** `"value"` daquele `"subject"` **e** `"type"`.
+ * 3. A ordem deve ser do **maior para o menor**.
+ */
+router.post("/best-grade", async (req, res) => {
+  try {
+    /** Variável `grades`:
+     * recebe o resultado da requisição feita no endpoint.
+     */
+    let grade = req.body;
+
+    /** Constante `data`:
+     * essa constante rebece a leitura assíncrona do arquivo `accounts.json` e também analizada em formato JSON.
+     */
+    const data = parse(await readFile(global.pathAPI));
+
+    /** Variável `grades`:
+     * está obtendo o filtro da API.
+     */
+    grade = data.grades.filter(
+      ({ subject, type }) => subject === grade.subject && type === grade.type,
+    );
+
+    /** Constante `result`:
+     * Obtém o resultado ordenado de `grades`.
+     */
+    let result = grade
+      .sort((a, b) => {
+        if (a.value > b.value) return -1;
+        else if (a.value < b.value) return 1;
+        else return 0;
+      })
+      .slice(0, 3);
+
+    // Devolvendo o resultado para o usuário
+    res.send(result);
+
+    // Debugging
+    log("\u001b[34m\nThree best grades successfully returned! (^_^)/");
 
     // Finaliza a requisição
     res.end();
