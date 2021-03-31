@@ -7,7 +7,7 @@ import { promises as fileSystem } from "fs";
 const app = express();
 
 // Desestruturações
-const { writeFile, readFile } = fileSystem;
+const { readFile } = fileSystem;
 const { log, clear } = console;
 
 // Variáveis globais

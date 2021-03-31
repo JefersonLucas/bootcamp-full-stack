@@ -13,14 +13,14 @@ const { log } = console;
 // Criação dos endpoints
 
 /** Atividade 01:
- * 1. [x] Crie um **endpoint** para **criar uma grade**.
- * 2. [x] Este endpoint deverá receber como parâmetros os campos: `"student"`, `"subject"`, `"type"` e `"value"`.
- * 3. [x] Esta grade deverá ser salva no arquivo JSON `grades.json`, e deverá ter um `"id"`único associado.
- * 4. [x] No campo `"timestamp"`, deverá ser salvo a **data** e **hora** do momento da inserção.
- * 5. [x] O endpoint deverá retornar o **Objeto da grade que foi criada**.
- * 6. [x] A API deverá garantir o **incremento automático** deste **identificador**, de forma que ele **não se repita entre os registros**.
- * 7. [x] Dentro do arquivo `grades.json`, o campo `"nextId"` já está com um **valor definido**.
- * 8. [x] Após a inserção, é preciso que esse `"nextId"` seja **incrementado** e **salvo no próprio arquivo**, de forma que na próxima inserção ele possa ser utilizado.
+ * 1. Crie um **endpoint** para **criar uma grade**.
+ * 2. Este endpoint deverá receber como parâmetros os campos: `"student"`, `"subject"`, `"type"` e `"value"`.
+ * 3. Esta grade deverá ser salva no arquivo JSON `grades.json`, e deverá ter um `"id"`único associado.
+ * 4. No campo `"timestamp"`, deverá ser salvo a **data** e **hora** do momento da inserção.
+ * 5. O endpoint deverá retornar o **Objeto da grade que foi criada**.
+ * 6. A API deverá garantir o **incremento automático** deste **identificador**, de forma que ele **não se repita entre os registros**.
+ * 7. Dentro do arquivo `grades.json`, o campo `"nextId"` já está com um **valor definido**.
+ * 8. Após a inserção, é preciso que esse `"nextId"` seja **incrementado** e **salvo no próprio arquivo**, de forma que na próxima inserção ele possa ser utilizado.
  */
 router.post("/create-grade", async (req, res) => {
   try {
@@ -39,7 +39,10 @@ router.post("/create-grade", async (req, res) => {
     // Variável `grade` recebendo um Objeto de novos itens
     grade = {
       id: data.nextId++, // Incremento de um novo ID
-      ...grade, // Recebendo os itens de `grade` com o `spread`
+      student: grade.student,
+      subject: grade.subject,
+      type: grade.type,
+      value: grade.value,
       timestamp: new Date(), // Recebendo a data e a hora do registro
     };
 
@@ -56,16 +59,16 @@ router.post("/create-grade", async (req, res) => {
     log("\u001b[34m\nNew grade successfully added! (^_^)/");
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
 
 /** Atividade 02:
- * 1. [x] Crie um **endpoint** para **atualizar uma grade**.
- * 2. [x] Este endpoint deverá receber como parâmetros o `"id"` da grade a ser alterada e os campos `"student"`, `"subject"`, `"type"` e `"value"`.
- * 3. [ ] O endpoint deverá **validar** se a grade informada **existe** e, caso **não exista**, deverá retornar um **erro**.
- * 4. [x] Caso exista, o endpoint deverá **atualizar as informações recebidas** por **parâmetros no registro** e realizar sua atualização com os **novos dados** alterados no arquivo `grades.json`.
+ * 1. Crie um **endpoint** para **atualizar uma grade**.
+ * 2. Este endpoint deverá receber como parâmetros o `"id"` da grade a ser alterada e os campos `"student"`, `"subject"`, `"type"` e `"value"`.
+ * 3. O endpoint deverá **validar** se a grade informada **existe** e, caso **não exista**, deverá retornar um **erro**.
+ * 4. Caso exista, o endpoint deverá **atualizar as informações recebidas** por **parâmetros no registro** e realizar sua atualização com os **novos dados** alterados no arquivo `grades.json`.
  */
 router.put("/update-grade", async (req, res) => {
   try {
@@ -86,6 +89,9 @@ router.put("/update-grade", async (req, res) => {
       (index) => index.id === parseInt(grade.id),
     );
 
+    if (parseInt(index) === -1) {
+      throw new Error("Grade informada não existe");
+    }
     // Inserindo no index os dados em `data.grades[index]`
     data.grades[index] = grade;
 
@@ -97,18 +103,17 @@ router.put("/update-grade", async (req, res) => {
 
     // Debugging
     log("\u001b[34m\nGrade updated successfully! (^_^)/");
-
     // Finaliza a requisição
     res.end();
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
 
 /** Atividade 03:
- * 1. [x] Crie um **endpoint** para **excluir uma grade**. Este endpoint deverá receber como parâmetro o `"id"` da grade e **realizar sua exclusão** do arquivo `grades.json`.
+ * 1. Crie um **endpoint** para **excluir uma grade**. Este endpoint deverá receber como parâmetro o `"id"` da grade e **realizar sua exclusão** do arquivo `grades.json`.
  */
 router.delete("/:id", async (req, res) => {
   try {
@@ -138,7 +143,7 @@ router.delete("/:id", async (req, res) => {
     res.end();
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
@@ -174,7 +179,7 @@ router.get("/:id", async (req, res) => {
     res.end();
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
@@ -222,7 +227,7 @@ router.post("/total-value", async (req, res) => {
     res.end();
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
@@ -269,7 +274,7 @@ router.post("/average-grid", async (req, res) => {
     res.end();
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
@@ -319,7 +324,7 @@ router.post("/best-grade", async (req, res) => {
     res.end();
   } catch (error) {
     // Informando o erro, caso ocorra
-    res.status(400).send({ error: error.menssage });
+    res.status(400).send({ error: error.message });
     log("\u001b[31m\nThere was a problem adding a new grade! ╮(╯_╰)╭");
   }
 });
