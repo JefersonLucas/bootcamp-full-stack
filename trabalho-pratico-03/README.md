@@ -57,7 +57,7 @@ Os alunos deverão desempenhar as seguintes atividades:
   - 3. A imagem abaixo ilustra um exemplo de implementação. Será também disponibilizado um vídeo no formato `.gif` no **Fórum de Avisos**.
 
 <p aling="center">
-  <img src="./img/example.jpg"/>
+  <img src="./img/trabalho-pratico-react-2.gif"/>
 </p>
 
 # Dicas
