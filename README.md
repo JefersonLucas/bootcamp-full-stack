@@ -80,7 +80,7 @@ Como aplicação prático dos conteúdos abordados, no meio dos módulos são de
   <ul>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-01">Trabalho prático do Módulo 01</a></li>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-02">Trabalho prático do Módulo 02</a></li>
-    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-02">Trabalho prático do Módulo 03</a></li>
+    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-03">Trabalho prático do Módulo 03</a></li>
   </ul>
 </details>
 

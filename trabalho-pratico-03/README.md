@@ -16,7 +16,7 @@ Construa, utilizando React e **preferencialmente** Class Components, uma aplica�
 
 Os alunos deverão desempenhar as seguintes atividades:
 
-- 1. **Implementar**, utilizando React e preferencialmente Class Components, uma aplicação denominada “**react-text-transformer**” que possuirá um `input` **editável** e diversos outros inputs **somente-leitura**, para exibir transformações a partir do texto informado pelo usuário. As transformações a serem realizadas são:
+- 1. **Implementar**, utilizando React e preferencialmente Class Components, uma aplicação denominada “**React Text Transformerr**” que possuirá um `input` **editável** e diversos outros inputs **somente-leitura**, para exibir transformações a partir do texto informado pelo usuário. As transformações a serem realizadas são:
 
   - 1.1 Texto invertido.
 
@@ -81,3 +81,32 @@ Os alunos deverão desempenhar as seguintes atividades:
 ## Respostas finais
 
 - Os alunos deverão desenvolver a prática e, depois, responder às seguintes questões objetivas:
+
+## Iniciando
+
+Dentro da pasta `trabalho-pratico-03/` **instale as depências** de necessárias do [package.json](https://github.com/JefersonLucas/bootcamp-full-stack/blob/main/trabalho-pratico-03/package.json) para esse projeto:
+
+```bash
+npm install
+#or
+yarn install
+```
+
+Inicie o projeto:
+
+```bash
+npm start
+#or
+yarn start
+```
+
+Espere o projeto ser compilado na porta [local](http://localhost:3000) ou na rede [rede](http://192.168.132.9:3000):
+
+```bash
+Compiled successfully!
+
+You can now view trabalho-pratico-03 in the browser.
+
+Local:            http://localhost:3000
+On Your Network:  http://192.168.132.9:3000
+```
