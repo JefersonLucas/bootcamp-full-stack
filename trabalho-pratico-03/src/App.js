@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import Form from './components/form/Form';
 import Header from './components/header/Header';
-import Title from './components/header/Title';
 
 export default class App extends Component {
   render() {
     return (
       <div className="container grey lighten-5">
-        <Title />
         <Header />
+        <Form />
       </div>
     );
   }
