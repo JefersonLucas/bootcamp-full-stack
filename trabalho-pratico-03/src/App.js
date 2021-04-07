@@ -47,7 +47,7 @@ export default class App extends Component {
         <Subtitle />
         {/* Passando o valor `text` via `props` para os componentes */}
         <Input01 onValue01={text} />
-        <Input02 />
+        <Input02 onValue02={text} />
         <Input03 />
         <Input04 />
         <Input05 />
