@@ -13,19 +13,19 @@ export default class Input02 extends Component {
     - h. Troca de T por 7.
    */
   Activity02(text) {
-    // Faz uma verificação pelo tamanho do texto
-    for (let i = 0; i <= text.length; i++) {
-      return text
-        .toUpperCase() // Texto convertido para maiúsculas.
-        .normalize('NFD')
-        .replace(/[^a-zA-Zs]/g, '') // Texto com remoção de acentos (opcional).
-        .replace('O', '0') // Troca de O por 0 (zero).
-        .replace('L', '1') // Troca de L por 1.
-        .replace('E', '3') // Troca de E por 3.
-        .replace('A', '4') // Troca de A por 4.
-        .replace('S', '5') // Troca de S por 5.
-        .replace('T', '7'); // Troca de T por 7.
-    }
+    return text
+      .toUpperCase() // Texto convertido para maiúsculas.
+      .split('') // Tranforma o texto em Array.
+      .map((char) => {
+        if (char === 'O') return '0'; // Troca de O por 0 (zero).
+        if (char === 'L') return '1'; // Troca de L por 1.
+        if (char === 'E') return '3'; // Troca de E por 3.
+        if (char === 'A') return '4'; // Troca de A por 4.
+        if (char === 'S') return '5'; // Troca de S por 5.
+        if (char === 'T') return '7'; // Troca de T por 7.
+        return char;
+      })
+      .join(''); // Tranforma o texto em string.
   }
 
   render() {
