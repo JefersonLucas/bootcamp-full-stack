@@ -22,7 +22,7 @@ export default class Input06 extends Component {
             className="validate"
             disabled
             type="text"
-            id="input05"
+            id="input06"
             // Aqui o `value` do `input` está recebendo um método, passando uma `props` como parâmetro.
             value={this.Activity06(this.props.onValue06)}
           />

@@ -52,7 +52,7 @@ export default class App extends Component {
         <Input04 onValue04={text} />
         <Input05 onValue05={text} />
         <Input06 onValue06={text} />
-        <Input07 />
+        <Input07 onValue07={text} />
       </div>
     );
   }
