@@ -14,10 +14,10 @@ node_modules/
 .pnp.js
 
 # Dependency for this project
-desafio-01/backend/node_modules/
-desafio-01/backend/package-lock.json
-desafio-01/backend/package.json
-desafio-03/
+desafio-04/
+desafio-05/
+
+trabalho-pratico-04/
 
 # Optional npm cache directory
 .npm

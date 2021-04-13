@@ -93,6 +93,7 @@ Como aplicação prático dos conteúdos abordados, ao fim dos módulos são des
   <ul>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-01">Desafio do Módulo 01</a></li>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-02">Desafio do Módulo 02</a></li>
+    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-03">Desafio do Módulo 03</a></li>
   </ul>
 </details>
 
