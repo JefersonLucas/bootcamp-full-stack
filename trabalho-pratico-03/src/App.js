@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import Title from './components/header/Title';
-import Subtitle from './components/form/Subtitle';
-import Input01 from './components/form/Input01';
-import Input02 from './components/form/Input02';
-import Input03 from './components/form/Input03';
-import Input04 from './components/form/Input04';
-import Input05 from './components/form/Input05';
-import Input06 from './components/form/Input06';
-import Input07 from './components/form/Input07';
+import React, { Component } from "react";
+import Title from "./components/header/Title";
+import Subtitle from "./components/form/Subtitle";
+import Input01 from "./components/form/Input01";
+import Input02 from "./components/form/Input02";
+import Input03 from "./components/form/Input03";
+import Input04 from "./components/form/Input04";
+import Input05 from "./components/form/Input05";
+import Input06 from "./components/form/Input06";
+import Input07 from "./components/form/Input07";
 
 export default class App extends Component {
   // Criação do `constructor()` de Class Component
@@ -16,7 +16,7 @@ export default class App extends Component {
     // Definindo o `state`
     this.state = {
       // Valor `text` recebendo uma `string` vazia
-      text: '',
+      text: "",
     };
   }
   // Captura o input
@@ -50,7 +50,7 @@ export default class App extends Component {
         <Input02 onValue02={text} />
         <Input03 onValue03={text} />
         <Input04 onValue04={text} />
-        <Input05 />
+        <Input05 onValue05={text} />
         <Input06 />
         <Input07 />
       </div>
