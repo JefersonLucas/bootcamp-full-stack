@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as stringHelpers from '../helpers/Helpers';
+import { isVowel } from '../helpers/Helpers';
 
 export default class Input05 extends Component {
   /** Atividade 05:
@@ -7,9 +7,9 @@ export default class Input05 extends Component {
    */
   Activity05(text) {
     return text
-      .split('') // Envolve em aspas duplas.
-      .filter((char) => char === ' ' || stringHelpers.isVowel(char))
-      .join(''); // Separa por hífen.
+      .split('') // Transforma o texto em Array.
+      .filter((char) => char === ' ' || isVowel(char)) // Verifica cada palavra e verifica se há alguma vogal.
+      .join(''); // Transforma o texto em string.
   }
   render() {
     return (
