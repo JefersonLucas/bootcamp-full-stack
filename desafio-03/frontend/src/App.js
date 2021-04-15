@@ -1,6 +1,39 @@
 import React, { Component } from 'react';
 
 export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      allTodos: [],
+    };
+  }
+
+  async componentDidMount() {
+    const res = await fetch('http://localhost:3001/todos');
+    const json = await res.json();
+    /** Constante `allTodos`:
+     * 1. recebe a API levantada no backend.
+     * 2. Faz um mapeamento dos seus elementos.
+     * 3. Faz uma filtragem de ano e mês.
+     */
+    const allTodos = json
+      .map((todo) => {
+        return {
+          id: todo.id,
+          description: todo.description,
+          day: todo.day,
+          month: todo.month,
+          year: todo.year,
+          period: todo.period,
+          done: todo.done,
+        };
+      })
+      .filter((todo) => todo.year === 2019 && todo.month === 1);
+    // Setando o valor de allTodos
+    this.setState({
+      allTodos: allTodos,
+    });
+  }
   render() {
     return (
       <div className="container grey lighten-5">
