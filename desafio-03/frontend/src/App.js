@@ -35,6 +35,8 @@ export default class App extends Component {
     });
   }
   render() {
+    const { allTodos } = this.state;
+
     return (
       <div className="container grey lighten-5">
         {/* Title */}
@@ -83,15 +85,25 @@ export default class App extends Component {
             <div className="collection">
               <a className="collection-item black-text">
                 Tarefas
-                <span className="badge white-text blue">0</span>
+                <span className="badge white-text blue">
+                  &nbsp;{allTodos.length}&nbsp;
+                </span>{' '}
               </a>
               <a className="collection-item black-text">
                 Cumpridas
-                <span className="badge white-text green">0</span>
+                <span className="badge white-text green">
+                  &nbsp;
+                  {allTodos.filter((todo) => todo.done === true).length}
+                  &nbsp;
+                </span>{' '}
               </a>
               <a className="collection-item black-text">
                 Não cumpridas
-                <span className="badge white-text red">0</span>
+                <span className="badge white-text red">
+                  &nbsp;
+                  {allTodos.filter((todo) => todo.done === false).length}
+                  &nbsp;
+                </span>{' '}
               </a>
             </div>
           </div>
@@ -104,10 +116,23 @@ export default class App extends Component {
               <li className="collection-header center">
                 <h4>Lista de TODO's</h4>
               </li>
-              <li className="collection-item black-text">
-                Exemplo de tarefa
-                <span className="black-text badge">01/01/2019</span>
-              </li>
+              {allTodos.map((todo) => {
+                return (
+                  <li
+                    key={todo.id}
+                    className={
+                      (todo.done === true &&
+                        'collection-item black-text green lighten-5') ||
+                      'collection-item black-text red lighten-4'
+                    }
+                  >
+                    <span className="black-text badge">
+                      {`${todo.day}/${todo.month}/${todo.year}`}
+                    </span>
+                    {todo.description}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
