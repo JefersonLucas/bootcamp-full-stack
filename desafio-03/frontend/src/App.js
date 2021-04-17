@@ -5,6 +5,8 @@ export default class App extends Component {
     super();
     this.state = {
       allTodos: [],
+      todoYear: 2019,
+      todoMonth: 1,
     };
   }
 
@@ -16,24 +18,42 @@ export default class App extends Component {
      * 2. Faz um mapeamento dos seus elementos.
      * 3. Faz uma filtragem de ano e mês.
      */
-    const allTodos = json
-      .map((todo) => {
-        return {
-          id: todo.id,
-          description: todo.description,
-          day: todo.day,
-          month: todo.month,
-          year: todo.year,
-          period: todo.period,
-          done: todo.done,
-        };
-      })
-      .filter((todo) => todo.year === 2019 && todo.month === 1);
+    const allTodos = json.map(({ id, description, day, month, year, done }) => {
+      return {
+        id,
+        description,
+        day,
+        month,
+        year,
+        done,
+      };
+    });
     // Setando o valor de allTodos
     this.setState({
       allTodos: allTodos,
     });
   }
+  handleMonth = (event) => {
+    const { allTodos, todoYear } = this.state;
+    const newMonth = parseInt(event.target.value);
+    const newAllTodos = allTodos.filter(({ month }) => month === newMonth);
+    this.setState({
+      allTodos: newAllTodos,
+      todoMonth: newMonth,
+      todoYear,
+    });
+  };
+
+  handleYear = (event) => {
+    const { allTodos, todoMonth } = this.state;
+    const newYear = parseInt(event.target.value);
+    const newAllTodos = allTodos.filter(({ year }) => year === newYear);
+    this.setState({
+      allTodos: newAllTodos,
+      todoMonth,
+      todoYear: newYear,
+    });
+  };
   render() {
     const { allTodos } = this.state;
 
@@ -42,14 +62,11 @@ export default class App extends Component {
         {/* Title */}
         <h1 className="center">React TODO</h1>
 
-        {/* Labels */}
+        {/* Selects */}
         <div className="row">
           <div className="col s12">
             <label>Selecione o ano</label>
-            <select className="browser-default">
-              <option value="" disabled defaultValue selected>
-                Selecione o ano
-              </option>
+            <select className="browser-default" onChange={this.handleYear}>
               <option value="2019">2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
@@ -59,10 +76,7 @@ export default class App extends Component {
         <div className="row">
           <div className="col s12">
             <label>Selecione o mês</label>
-            <select className="browser-default">
-              <option value="" disabled selected>
-                Selecione o mês
-              </option>
+            <select className="browser-default" onChange={this.handleMonth}>
               <option value="1">Janeiro</option>
               <option value="2">Fevereiro</option>
               <option value="3">Março</option>
@@ -83,25 +97,25 @@ export default class App extends Component {
         <div className="row">
           <div className="col s12">
             <div className="collection">
-              <a className="collection-item black-text">
+              <a href="!#" className="collection-item black-text">
                 Tarefas
                 <span className="badge white-text blue">
                   &nbsp;{allTodos.length}&nbsp;
                 </span>{' '}
               </a>
-              <a className="collection-item black-text">
+              <a href="!#" className="collection-item black-text">
                 Cumpridas
                 <span className="badge white-text green">
                   &nbsp;
-                  {allTodos.filter((todo) => todo.done === true).length}
+                  {allTodos.filter(({ done }) => done === true).length}
                   &nbsp;
                 </span>{' '}
               </a>
-              <a className="collection-item black-text">
+              <a href="!#" className="collection-item black-text">
                 Não cumpridas
                 <span className="badge white-text red">
                   &nbsp;
-                  {allTodos.filter((todo) => todo.done === false).length}
+                  {allTodos.filter(({ done }) => done === false).length}
                   &nbsp;
                 </span>{' '}
               </a>
@@ -116,20 +130,21 @@ export default class App extends Component {
               <li className="collection-header center">
                 <h4>Lista de TODO's</h4>
               </li>
-              {allTodos.map((todo) => {
+
+              {allTodos.map(({ day, month, year, description, id, done }) => {
                 return (
                   <li
-                    key={todo.id}
+                    key={id}
                     className={
-                      (todo.done === true &&
+                      (done === true &&
                         'collection-item black-text green lighten-5') ||
                       'collection-item black-text red lighten-4'
                     }
                   >
                     <span className="black-text badge">
-                      {`${todo.day}/${todo.month}/${todo.year}`}
+                      {`${day}/${month}/${year}`}
                     </span>
-                    {todo.description}
+                    {description}
                   </li>
                 );
               })}
