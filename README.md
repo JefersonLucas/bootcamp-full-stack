@@ -81,6 +81,7 @@ Como aplicação prático dos conteúdos abordados, no meio dos módulos são de
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-01">Trabalho prático do Módulo 01</a></li>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-02">Trabalho prático do Módulo 02</a></li>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-03">Trabalho prático do Módulo 03</a></li>
+    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/trabalho-pratico-04">Trabalho prático do Módulo 04</a></li>
   </ul>
 </details>
 
@@ -109,7 +110,8 @@ Meus sinceros agradecimentos:
 - Aos meus professores:
   - [Raphael Gomide](https://www.linkedin.com/in/rrgomide/)
   - [Guilherme Assis](https://www.linkedin.com/in/ghdeassis/)
-- e tutores(as) monitores(as):
+  - [Bruno Teixeira](https://www.linkedin.com/in/brunoaugustoteixeira/)
+- Tutores(as) monitores(as):
   - [Iberê Abondanza](https://www.linkedin.com/in/bereco/)
   - [Manuella Biagioni](https://www.linkedin.com/in/manuella-biagioni-026543158/)
 - E a todos os meus colegas do Bootcamp Desenvolvedor Full Stack turma 2021-1B.
