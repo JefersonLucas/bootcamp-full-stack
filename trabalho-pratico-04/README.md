@@ -42,7 +42,9 @@ O aluno deverá baixar o arquivo com os dados para a carga inicial na base de da
 
 ## Iniciando
 
-Dentro da pasta `trabalho-pratico-03/` **instale as depências** de necessárias do [package.json](https://github.com/JefersonLucas/bootcamp-full-stack/blob/main/trabalho-pratico-03/package.json) para esse projeto:
+### Instalando dependências
+
+Dentro da pasta `trabalho-pratico-04/` **instale as depências** de necessárias do [package.json](https://github.com/JefersonLucas/bootcamp-full-stack/blob/main/trabalho-pratico-04/package.json) para esse projeto:
 
 ```bash
 npm install
@@ -58,13 +60,34 @@ npm start
 yarn start
 ```
 
-Espere o projeto ser compilado na porta [local](http://localhost:3000) ou na rede [rede](http://192.168.132.9:3000):
+### Conectando o MongoDB Atlas
 
-```bash
-Compiled successfully!
+Após **configurar conexão segura** no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), escolha um **método de conexão**.
 
-You can now view trabalho-pratico-03 in the browser.
+1. Esconhendo um método de conexão.
+   ![Print 01](./img/print-01.jpg)
 
-Local:            http://localhost:3000
-On Your Network:  http://192.168.132.9:3000
-```
+**Obs**.: Escolhi por meio do [MongoDB Compass](https://downloads.mongodb.com/compass/mongodb-compass-1.26.1-win32-x64.exe).
+
+2. Copie a **string de conexão** e abra o **MongoDB Compass**.
+   ![Print 02](./img/print-02.jpg)
+
+3. Com o MongoDB Compass aberto, **cole a string de conexão**.
+   ![Print 03](./img/print-03.jpg)
+
+4. Conexão com o MongoDB Compass concluída!
+   ![Print 04](./img/print-04.jpg)
+
+### Criando uma base de dados
+
+No MongoDB Compass já configurado e conectado, escolha a opção **Create Database**.
+
+- Criando uma base de dados.
+  ![Print 05](./img/print-05.jpg)
+
+### Importando dados do arquivo
+
+1. Dentro da base de dados `trabalho-pratico-04` e na coleção `account`, importe os dados do arquivo “`accounts.json`” na coleção.
+   ![Print 06](./img/print-06.jpg)
+2. Aguarde a importação ser concluída.
+   ![Print 07](./img/print-07.jpg)
