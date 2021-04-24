@@ -2,30 +2,38 @@
 import mongoose from "mongoose";
 
 // Importando configurações
-import { dbConfig } from "../config/accountConfig.js";
+import { settings } from "../config/accountConfig.js";
+
+// Desestruturando as configurações e logs
+const { user, password, cluster, database, filter } = settings;
+const { log } = console;
+
+// Montando string de conexão
+const URI = `mongodb+srv://${user}:${password}@${cluster}.earhx.mongodb.net/${database}?${filter}`;
 
 // Conectando ao MongoDB pelo Mongoose
-async function connectionToMongoDB() {
-  // Desestruturando as configurações
-  const { user, password, cluster, database, filter } = dbConfig;
+const connectMongoDB = async () => {
   try {
     const connection = await mongoose.connect(
-      `mongodb+srv://${user}:${password}@${cluster}.earhx.mongodb.net/${database}?${filter}`,
+      // Passando a string de conexão
+      URI,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       },
     );
-    console.log(
-      `\u001b[34mConnected to MongoDB\n\nType Ctrl + C to end the session...`,
-    );
+    // Log de sucesso
+    log(`\u001b[0m[2/2] \x1b[32mDatabase connection started successfully\n`);
+    log(`\u001b[0mType \x1b[34mCtrl + C\u001b[0m to end the session...`);
+    // Retornando a conexão
     return connection;
   } catch (error) {
-    console.log(
-      `\u001b[31mError connecting to MongoDB...\n\n${error}\n\nType Ctrl + C to end the session...`,
-    );
+    // Log de erro
+    log(`\u001b[31mError connecting to the database`);
+    log(`\n\x1b[0m${error}\n`);
+    log(`\u001b[0mType \x1b[34mCtrl + C\u001b[0m to end the session...`);
   }
-}
+};
 
 // Exportação da Conexão
-export { connectionToMongoDB };
+export { connectMongoDB };
