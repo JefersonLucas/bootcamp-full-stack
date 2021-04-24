@@ -2,15 +2,15 @@
   "name": "trabalho-pratico-04",
   "version": "1.0.0",
   "description": "O aluno deverá implementar uma API integrada ao MongoDB Atlas cujo o schema dos dados será definido pelo mongoose. Esta API terá alguns endpoints para manipulação dos dados.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
   "author": "Jeferson Lucas",
   "license": "MIT",
   "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "start chrome http://localhost:3000/account && node server.js"
+  },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.5"
   }

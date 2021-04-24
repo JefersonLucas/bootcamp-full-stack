@@ -55,28 +55,39 @@ yarn install
 Inicie o projeto:
 
 ```bash
-npm start
+npm run start
 #or
-yarn start
+yarn run start
 ```
 
 ### Conectando o MongoDB Atlas
 
 Após **configurar conexão segura** no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), escolha um **método de conexão**.
 
-1. Esconhendo um método de conexão.
-   ![Print 01](./img/print-01.jpg)
+- Conectando por meio do [MongoDB Compass](https://downloads.mongodb.com/compass/mongodb-compass-1.26.1-win32-x64.exe):
 
-**Obs**.: Escolhi por meio do [MongoDB Compass](https://downloads.mongodb.com/compass/mongodb-compass-1.26.1-win32-x64.exe).
+  - Esconha o MongoDB Compass como método de conexão.
+    ![Print 01](./img/print-01.jpg)
 
-2. Copie a **string de conexão** e abra o **MongoDB Compass**.
-   ![Print 02](./img/print-02.jpg)
+  - Copie a **string de conexão** e abra o **MongoDB Compass**.
+    ![Print 02](./img/print-02.jpg)
 
-3. Com o MongoDB Compass aberto, **cole a string de conexão**.
-   ![Print 03](./img/print-03.jpg)
+  - Com o MongoDB Compass aberto, **cole a string de conexão**.
+    ![Print 03](./img/print-03.jpg)
 
-4. Conexão com o MongoDB Compass concluída!
-   ![Print 04](./img/print-04.jpg)
+  - Conexão com o MongoDB Compass concluída!
+    ![Print 04](./img/print-04.jpg)
+
+- Conectando por meio do Node.js:
+
+  - Escolha a opção **Escolha um método de conexão**:
+    ![Print 08](./img/print-08.jpg)
+  - Escolha o driver do Node.js e a versão, depois copie a string de conexão:
+    ![Print 09](./img/print-09.jpg)
+  - Instale o driver com a string de conexão:
+    ![Print 10](./img/print-10.jpg)
+
+**Obs**.: Substitua `<password>` pela senha do usuário `dbUser`. Substitua `myFirstDatabase` pelo nome do banco de dados que as conexões usarão por padrão. Certifique-se de que todos os parâmetros de opção sejam [codificados por URL](https://dochub.mongodb.org/core/atlas-url-encoding).
 
 ### Criando uma base de dados
 

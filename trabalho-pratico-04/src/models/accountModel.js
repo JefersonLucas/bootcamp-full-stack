@@ -18,15 +18,15 @@ const accountSchema = mongoose.Schema({
   balance: {
     type: Number,
     require: true,
+    // Função de validação
+    validate(balance) {
+      if (balance < 0) {
+        throw new Error("Valor negativo para o saldo não é permitido!");
+      }
+    },
+    // Definindo o valor mínimo
+    min: 0,
   },
-  // Função de validação
-  validate(balance) {
-    if (balance < 0) {
-      throw new Error("Valor negativo para o saldo não é permitido!");
-    }
-  },
-  // Definindo o valor mínimo
-  min: 0,
 });
 
 // Definindo o modelo da coleção
