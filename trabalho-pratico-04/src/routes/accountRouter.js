@@ -9,7 +9,8 @@ const app = express.Router();
 // Rota inicial
 app.get("/account", controller.activity00);
 
-// Atividade 04
+// Atividade 04: endpoint para registrar um depósito em uma conta.
+app.patch("/account/activity04", controller.activity04);
 
 // Exportando a Rota
 export { app as accountRouter };

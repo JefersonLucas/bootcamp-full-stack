@@ -1,5 +1,5 @@
 // Importação de modelos
-import { accountModel as model } from "../models/accountModel.js";
+import { accountModel as Account } from "../models/accountModel.js";
 
 /** Rota inicial:
  * essa rota irá buscar todos os dados da coleção do MongoDB.
@@ -7,7 +7,7 @@ import { accountModel as model } from "../models/accountModel.js";
 const activity00 = async (_, response) => {
   try {
     // Obtendo a informação do Request
-    const account = await model.find({});
+    const account = await Account.find({});
 
     // Retorno de sucesso!
     response.send(account);
@@ -22,10 +22,24 @@ const activity00 = async (_, response) => {
 
 /** Atividade 04:
  * 1. Crie um endpoint para registrar um depósito em uma conta.
- * 2. Esse endpoint deverá receber como parâmetros a “agencia”, o número da conta e o valor do depósito.
- * 3. Ele deverá atualizar o “balance” da conta, incrementando-o com o valor recebido como parâmetro.
+ * 2. Esse endpoint deverá receber como parâmetros a "agencia", o "número da conta" e o "valor do depósito".
+ * 3. Ele deverá atualizar o "balance" da conta, incrementando-o com o valor recebido como parâmetro.
  * 4. O endpoint deverá validar se a conta informada existe, caso não exista deverá retornar um erro, caso exista retornar o saldo atual da conta.
  */
+
+const activity04 = async (request, response) => {
+  const account = request.body;
+  try {
+    // Retorno de sucesso
+    response.send(account);
+
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response.status(500).send({ "Erro ao efetuar o deposito": error.message });
+  }
+};
 
 /** Atividade 05.
  * 1. Crie um endpoint para registrar um saque em uma conta.
@@ -76,4 +90,5 @@ const activity00 = async (_, response) => {
 // Exportação
 export default {
   activity00,
+  activity04,
 };

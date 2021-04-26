@@ -11,27 +11,34 @@ const { log } = console;
 // Montando string de conexão
 const URI = `mongodb+srv://${user}:${password}@${cluster}.earhx.mongodb.net/${database}?${filter}`;
 
+// Cores do console
+let white = "\u001b[0m";
+let red = "\u001b[31m";
+let green = "\x1b[32m";
+let blue = "\x1b[34m";
+
 // Conectando ao MongoDB pelo Mongoose
 const connectMongoDB = async () => {
   try {
     const connection = await mongoose.connect(
-      // Passando a string de conexão
+      // Passando a string de conexão com o MongoDB Atlas
       URI,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       },
     );
+
     // Log de sucesso
-    log(`\u001b[0m[2/2] \x1b[32mDatabase connection started successfully\n`);
-    log(`\u001b[0mType \x1b[34mCtrl + C\u001b[0m to end the session...`);
+    log(`${white}[2/2] ${green}Database connection started successfully\n`);
+    log(`${white}Type ${blue}Ctrl + C${white} to end the session...\n`);
     // Retornando a conexão
     return connection;
   } catch (error) {
     // Log de erro
-    log(`\u001b[31mError connecting to the database`);
-    log(`\n\x1b[0m${error}\n`);
-    log(`\u001b[0mType \x1b[34mCtrl + C\u001b[0m to end the session...`);
+    log(`${red}Error connecting to the database`);
+    log(`\n${white}${error}\n`);
+    log(`${white}Type ${blue}Ctrl + C${white} to end the session...\n`);
   }
 };
 

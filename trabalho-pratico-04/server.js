@@ -22,16 +22,22 @@ app.use(accountRouter);
 // Desestruturando o log
 const { log } = console;
 
+// Cores do console
+let white = "\u001b[0m";
+let red = "\u001b[31m";
+let green = "\x1b[32m";
+let blue = "\x1b[34m";
+
 // Escultando uma porta com Express
 app.listen(3000, () => {
   try {
     // Log de sucesso
-    log(`Welcome to \x1b[34mmy-bank-api\u001b[0m! \\(^_^)/\n`);
-    log(`[1/2] \x1b[32mServer started successfully`);
+    log(`Welcome to ${blue}my-bank-api${white}! \\(^_^)/\n`);
+    log(`[1/2] ${green}Server started successfully`);
   } catch (error) {
     // Log de erro
-    log(`\u001b[31mError starting the server`);
-    log(`\n\x1b[0m${error}\n`);
-    log(`\u001b[0mType \x1b[34mCtrl + C\u001b[0m to end the session...`);
+    log(`${red}Error starting the server`);
+    log(`\n${white}${error}\n`);
+    log(`${white}Type ${blue}Ctrl + C${white} to end the session...`);
   }
 });
