@@ -21,7 +21,7 @@ Os alunos deverão desempenhar as seguintes atividades:
 
 3. A API desenvolvida está disponibilizada no repositório [grades-api](https://github.com/brunoaugustoteixeira/grades-api.git), entretanto, suas rotas e funcionalidades estão em vários branches que devem ser mergeados com o branch master. Portanto, para essa atividade deve ser realizado o clone do repositório e o merge do branch das melhorias `feature/CriaRotas`.
 
-4. Criar um novo branch denominado ‘`feature/modeloMongoose`’ e implementar neste novo branch um modelo de dados, utilizando o mongoose para a sua API. Nessa mesma instalação deverá ser implementada a lógica no controller, utilizando o schema criado. Ao final dessa implementação, o branch deve ser mergeado para o master
+4. Criar um novo branch denominado ‘`feature/modeloMongoose`’ e implementar neste novo branch um modelo de dados, utilizando o mongoose para a sua API. Nessa mesma instalação deverá ser implementada a lógica no controller, utilizando o schema criado. Ao final dessa implementação, o branch deve ser mergeado para o master.
 
 5. Excluir os branches de features e manter somente o branch master.
 
