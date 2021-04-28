@@ -30,5 +30,8 @@ app.get("/account/activity09/:agencia", controller.activity09);
 // Atividade 10: endpoint para consultar os clientes com o menor saldo em conta.
 app.get("/account/activity10/:limit", controller.activity10);
 
+// Atividade 11: endpoint para consultar os clientes mais ricos do banco.
+app.get("/account/activity11/:limit", controller.activity11);
+
 // Exportando a Rota
 export { app as accountRouter };
