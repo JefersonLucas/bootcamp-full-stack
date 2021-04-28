@@ -24,5 +24,8 @@ app.delete("/account/activity07", controller.activity07);
 // Atividade 08: endpoint para realizar transferências entre contas.
 app.patch("/account/activity08", controller.activity08);
 
+// Atividade 09: endpoint para consultar a média do saldo dos clientes de determinada agência.
+app.get("/account/activity09/:agencia", controller.activity09);
+
 // Exportando a Rota
 export { app as accountRouter };

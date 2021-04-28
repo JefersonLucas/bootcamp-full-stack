@@ -190,8 +190,56 @@ const activity08 = async (request, response) => {
 
 /** Atividade 09:
  * 1. Crie um endpoint para consultar a média do saldo dos clientes de determinada agência.
- * 2. O endpoint deverá receber como parâmetro a “agência” e deverá retornar o balance médio da conta.
+ * 2. O endpoint deverá receber como parâmetro a "agência" e deverá retornar o balance médio da conta.
  */
+
+const activity09 = async (request, response) => {
+  // Pegando o objeto da requisição
+  const agencia = request.params.agencia;
+  try {
+    // Query para obter a média dos saldos
+    const account = await Account.aggregate([
+      {
+        // Operador `match`, ele faz a busca pela `agencia` passada por parâmetro
+        $match: {
+          agencia: parseInt(agencia), // Importante! A `agencia` deve ser parseada para inteiro
+        },
+      },
+      {
+        // Agrupando pela `agencia`
+        $group: {
+          _id: "$agencia",
+          media: {
+            // Operador `$avg` btendo a média do `balance`
+            $avg: "$balance",
+          },
+        },
+      },
+      {
+        // Projetando a informação obtendo somente a média
+        $project: {
+          _id: 0,
+        },
+      },
+    ]);
+
+    // Validando a `agencia`
+    if (account.length === 0) {
+      throw new Error("Agência não encontrada");
+    }
+
+    // Retornando o `balance` médio da conta.
+    response.send(account);
+
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response
+      .status(500)
+      .send({ "Erro ao obter saldo da agência": error.message });
+  }
+};
 
 /** Atividade 10:
  * 1. Crie um endpoint para consultar os clientes com o menor saldo em conta.
@@ -242,4 +290,5 @@ export default {
   activity06,
   activity07,
   activity08,
+  activity09,
 };
