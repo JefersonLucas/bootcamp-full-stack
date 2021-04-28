@@ -18,8 +18,11 @@ app.patch("/account/activity05", controller.activity05);
 // Atividade 06: endpoint para consultar o saldo da conta.
 app.get("/account/activity06/:agencia/:conta", controller.activity06);
 
-// Atividade 07: endpoint para consultar o saldo da conta.
-app.delete("/account/activity07/", controller.activity07);
+// Atividade 07: endpoint para excluir uma conta.
+app.delete("/account/activity07", controller.activity07);
+
+// Atividade 08: endpoint para realizar transferências entre contas.
+app.patch("/account/activity08", controller.activity08);
 
 // Exportando a Rota
 export { app as accountRouter };

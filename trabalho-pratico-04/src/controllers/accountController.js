@@ -136,10 +136,57 @@ const activity07 = async (request, response) => {
 
 /** Atividade 08:
  * 1. Crie um endpoint para realizar transferências entre contas.
- * 2. Esse endpoint deverá receber como parâmetro o número da “conta” origem, o número da “conta” destino e o valor de transferência.
+ * 2. Esse endpoint deverá receber como parâmetro o número da "conta origem", o número da "conta destino" e o "valor" de transferência.
  * 3. Esse endpoint deve validar se as contas são da mesma agência para realizar a transferência, caso seja de agências distintas o valor de tarifa de transferência (8) deve ser debitado na conta origem.
  * 4. O endpoint deverá retornar o saldo da conta origem.
  */
+
+const activity08 = async (request, response) => {
+  // Pegando o objeto da requisição
+  const account = request.body;
+  // Pegando o valor da transferência
+  const value = account.valor;
+  try {
+    // Validação da requisição
+    let sourceAccount = await validate({ conta: account.contaOrigem });
+    let targetAccount = await validate({ conta: account.contaDestino });
+
+    // Validação da taxa de transferência
+    if (sourceAccount.agencia !== targetAccount.agencia) {
+      sourceAccount.balance -= 8;
+    }
+
+    // Subtração do saldo da conta origem com o valor da transferência
+    sourceAccount.balance -= value;
+
+    // Validação para verificar o `balance` da conta de origem
+    if (sourceAccount.balance < 0) {
+      throw new Error("Saldo insuficiente para realizar transferência");
+    }
+
+    // Efetuando o depósito
+    targetAccount.balance += value;
+
+    // Salvando as alterações na conta de origem
+    sourceAccount = new Account(sourceAccount);
+    await sourceAccount.save();
+
+    // Salvando as alterações na conta de destino
+    targetAccount = new Account(targetAccount);
+    await targetAccount.save();
+
+    // Retornando o saldo da conta de de origem
+    response.send(sourceAccount);
+
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response
+      .status(500)
+      .send({ "Erro ao realizar a transferência": error.message });
+  }
+};
 
 /** Atividade 09:
  * 1. Crie um endpoint para consultar a média do saldo dos clientes de determinada agência.
@@ -194,4 +241,5 @@ export default {
   activity05,
   activity06,
   activity07,
+  activity08,
 };
