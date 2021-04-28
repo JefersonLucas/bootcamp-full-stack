@@ -246,6 +246,37 @@ const activity09 = async (request, response) => {
  * 2. O endpoint deverá receber como parâmetro um valor numérico para determinar a quantidade de clientes a serem listados, e o endpoint deverá retornar em ordem crescente pelo saldo a lista dos clientes (agência, conta, saldo).
  */
 
+const activity10 = async (request, response) => {
+  // Pegando o objeto da requisição
+  const limit = request.params.limit;
+  try {
+    const account = await Account.find(
+      {},
+      { _id: 0, agencia: 1, conta: 1, balance: 1 }, // Dados a serem exibidos
+    )
+      // Exibindo em ordem crescente
+      .limit(parseInt(limit)) // Importante! O `limit` deve ser parseado para inteiro
+      .sort({ saldo: 1 });
+
+    // Validando o `account`
+
+    if (account.length === 0) {
+      throw new Error("Nenhum cliente encontrado");
+    }
+
+    // Retornando a lista dos clientes.
+    response.send(account);
+
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response
+      .status(500)
+      .send({ "Erro ao obter lista de clientes": error.message });
+  }
+};
+
 /** Atividade 11:
  * 1. Crie um endpoint para consultar os clientes mais ricos do banco.
  * 2. O endpoint deverá receber como parâmetro um valor numérico para determinar a quantidade de clientes a serem listados, e o endpoint deverá retornar em ordem decrescente pelo saldo, crescente pelo nome, a lista dos clientes (agência, conta, nome e saldo).
@@ -291,4 +322,5 @@ export default {
   activity07,
   activity08,
   activity09,
+  activity10,
 };

@@ -27,5 +27,8 @@ app.patch("/account/activity08", controller.activity08);
 // Atividade 09: endpoint para consultar a média do saldo dos clientes de determinada agência.
 app.get("/account/activity09/:agencia", controller.activity09);
 
+// Atividade 10: endpoint para consultar os clientes com o menor saldo em conta.
+app.get("/account/activity10/:limit", controller.activity10);
+
 // Exportando a Rota
 export { app as accountRouter };
