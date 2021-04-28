@@ -103,14 +103,36 @@ const activity06 = async (request, response) => {
     response.end();
   } catch (error) {
     // Retorno de erro
-    response.status(500).send({ "Erro ao consultar o saldo": error.message });
+    response.status(500).send({ "Erro ao consultar saldo": error.message });
   }
 };
 
 /** Atividade 07:
  * 1. Crie um endpoint para excluir uma conta.
- * 2. Esse endpoint deverá receber como parâmetro a “agência” e o número da conta e retornar o número de contas ativas para esta agência.
+ * 2. Esse endpoint deverá receber como parâmetro a "agência" e o número da "conta" e retornar o número de contas ativas para esta agência.
  */
+
+const activity07 = async (request, response) => {
+  // Pegando o objeto da requisição
+  const account = request.body;
+  try {
+    // Validação da requisição
+    let newAccount = await validate(account);
+    // Passando para o modelo de accout o documento a ser removido
+    await Account.findByIdAndRemove({ _id: newAccount._id });
+    // Buscando o total de documentos pela `agencia`
+    newAccount = await Account.find({
+      agencia: newAccount.agencia,
+    }).countDocuments();
+    // Retornando o número de contas ativas para esta agência.
+    response.send({ agencias: newAccount });
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response.status(500).send({ "Erro ao excluir conta": error.message });
+  }
+};
 
 /** Atividade 08:
  * 1. Crie um endpoint para realizar transferências entre contas.
@@ -171,4 +193,5 @@ export default {
   activity04,
   activity05,
   activity06,
+  activity07,
 };
