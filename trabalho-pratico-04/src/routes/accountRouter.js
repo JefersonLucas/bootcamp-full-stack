@@ -12,5 +12,8 @@ app.get("/account", controller.activity00);
 // Atividade 04: endpoint para registrar um depósito em uma conta.
 app.patch("/account/activity04", controller.activity04);
 
+// Atividade 05: endpoint para registrar um saque em uma conta.
+app.patch("/account/activity05", controller.activity05);
+
 // Exportando a Rota
 export { app as accountRouter };

@@ -28,7 +28,7 @@ const activity00 = async (_, response) => {
  */
 
 const activity04 = async (request, response) => {
-  // Pegando o corpo da requisição
+  // Pegando o objeto da requisição
   const account = request.body;
 
   try {
@@ -36,12 +36,12 @@ const activity04 = async (request, response) => {
     let newAccount = await validate(account);
     // Incrementadno o novo valor de `balance`
     newAccount.balance += account.balance;
-    // Atualizando o "balance" da conta, incrementando-o com o valor recebido como parâmetro
+    // Instanciando um novo modelo Account
     newAccount = new Account(newAccount);
-    // Salvando o novo account
+    // Salvando o novo modelo account com a operação realizada
     await newAccount.save();
     // Retornando o saldo atual da conta
-    response.send(account);
+    response.send(newAccount);
     // Finalizando a seção
     response.end();
   } catch (error) {
@@ -52,11 +52,37 @@ const activity04 = async (request, response) => {
 
 /** Atividade 05.
  * 1. Crie um endpoint para registrar um saque em uma conta.
- * 2. Esse endpoint deverá receber como parâmetros a “agência”, o número da conta e o valor do saque.
+ * 2. Esse endpoint deverá receber como parâmetros a "agência", o número da "conta" e o valor do "saque".
  * 3. Ele deverá atualizar o “balance” da conta, decrementando-o com o valor recebido com parâmetro e cobrando uma tarifa de saque de (1).
  * 4. O endpoint deverá validar se a conta informada existe, caso não exista deverá retornar um erro, caso exista retornar o saldo atual da conta.
  * 5. Também deverá validar se a conta possui saldo suficiente para aquele saque, se não tiver deverá retornar um erro, não permitindo assim que o saque fique negativo.
  */
+
+const activity05 = async (request, response) => {
+  // Pegando o objeto da requisição
+  const account = request.body;
+  try {
+    // Validação da requisição
+    let newAccount = await validate(account);
+    // Atualizando o "balance" da conta, decrementando-o com o valor recebido com parâmetro e cobrando uma tarifa de saque de (1).
+    newAccount.balance -= account.balance + 1;
+    // Validando o "balance" da conta, se a conta possui saldo suficiente para aquele saque, se não tiver deverá retornar um erro, não permitindo assim que o saque fique negativo.
+    if (newAccount.balance < 0) {
+      throw new Error("Saldo insuficiente");
+    }
+    // Instanciando um novo modelo Account
+    newAccount = new Account(newAccount);
+    // Salvando esse novo modelo account com a operação realizada
+    await newAccount.save();
+    // Retornando o saldo atual da conta
+    response.send(newAccount);
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response.status(500).send({ "Erro ao efetuar o saque": error.message });
+  }
+};
 
 /** Atividade 06:
  * 1. Crie um endpoint para consultar o saldo da conta.
@@ -126,4 +152,5 @@ const validate = async (account) => {
 export default {
   activity00,
   activity04,
+  activity05,
 };

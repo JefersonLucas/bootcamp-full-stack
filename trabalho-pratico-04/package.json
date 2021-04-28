@@ -7,7 +7,7 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "start chrome http://localhost:3000/account && node server.js"
+    "start": "start chrome http://localhost:3000/account && nodemon server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
