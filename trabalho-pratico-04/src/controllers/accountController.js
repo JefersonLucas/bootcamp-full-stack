@@ -28,11 +28,20 @@ const activity00 = async (_, response) => {
  */
 
 const activity04 = async (request, response) => {
+  // Pegando o corpo da requisição
   const account = request.body;
-  try {
-    // Retorno de sucesso
-    response.send(account);
 
+  try {
+    // Validação da requisição
+    let newAccount = await validate(account);
+    // Incrementadno o novo valor de `balance`
+    newAccount.balance += account.balance;
+    // Atualizando o "balance" da conta, incrementando-o com o valor recebido como parâmetro
+    newAccount = new Account(newAccount);
+    // Salvando o novo account
+    await newAccount.save();
+    // Retornando o saldo atual da conta
+    response.send(account);
     // Finalizando a seção
     response.end();
   } catch (error) {
@@ -86,6 +95,32 @@ const activity04 = async (request, response) => {
  * 1. Crie um endpoint que irá transferir o cliente com maior saldo em conta de cada agência para a agência private agencia=99.
  * 2. O endpoint deverá retornar a lista dos clientes da agencia private.
  */
+
+/** Validador:
+ * valida se existe agencia e conta.
+ */
+
+const validate = async (account) => {
+  // Desestruturando a agencia e a conta
+  const { agencia, conta } = account;
+  // Montando um objeto account
+  account = { agencia, conta };
+  try {
+    // Validação
+    if (typeof account.agencia !== "undefined") {
+      account = await Account.findOne(account);
+    } else {
+      account = await Account.findOne({ conta: account.conta });
+    }
+    if (!account) {
+      throw new Error(`(${agencia}/${conta}) agencia/conta inválida!`);
+    }
+    // Retorno da conta
+    return account;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
 
 // Exportação
 export default {
