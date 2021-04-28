@@ -40,8 +40,8 @@ const activity04 = async (request, response) => {
     newAccount = new Account(newAccount);
     // Salvando o novo modelo account com a operação realizada
     await newAccount.save();
-    // Retornando o saldo atual da conta
-    response.send(newAccount);
+    // Retornando o `balance` da conta
+    response.send({ balance: newAccount.balance });
     // Finalizando a seção
     response.end();
   } catch (error) {
@@ -74,8 +74,8 @@ const activity05 = async (request, response) => {
     newAccount = new Account(newAccount);
     // Salvando esse novo modelo account com a operação realizada
     await newAccount.save();
-    // Retornando o saldo atual da conta
-    response.send(newAccount);
+    // Retornando o `balance` da conta
+    response.send({ balance: newAccount.balance });
     // Finalizando a seção
     response.end();
   } catch (error) {
@@ -86,9 +86,26 @@ const activity05 = async (request, response) => {
 
 /** Atividade 06:
  * 1. Crie um endpoint para consultar o saldo da conta.
- * 2. Esse endpoint deverá receber como parâmetro a “agência” e o número da conta, e deverá retornar seu “balance”.
+ * 2. Esse endpoint deverá receber como parâmetro a "agência" e o número da "conta", e deverá retornar seu "balance".
  * 3. Caso a conta informada não exista, retornar um erro.
  */
+
+const activity06 = async (request, response) => {
+  // Pegando os parâmetros da requisição
+  const agencia = request.params.agencia;
+  const conta = request.params.conta;
+  try {
+    // Validação da requisição
+    const account = await validate({ agencia, conta });
+    // Retornando o `balance` da conta
+    response.send({ balance: account.balance });
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response.status(500).send({ "Erro ao consultar o saldo": error.message });
+  }
+};
 
 /** Atividade 07:
  * 1. Crie um endpoint para excluir uma conta.
@@ -153,4 +170,5 @@ export default {
   activity00,
   activity04,
   activity05,
+  activity06,
 };

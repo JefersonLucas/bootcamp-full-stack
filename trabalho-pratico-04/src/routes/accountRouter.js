@@ -15,5 +15,8 @@ app.patch("/account/activity04", controller.activity04);
 // Atividade 05: endpoint para registrar um saque em uma conta.
 app.patch("/account/activity05", controller.activity05);
 
+// Atividade 06: endpoint para consultar o saldo da conta.
+app.get("/account/activity06/:agencia/:conta", controller.activity06);
+
 // Exportando a Rota
 export { app as accountRouter };
