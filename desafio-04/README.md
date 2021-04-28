@@ -39,20 +39,13 @@ Os alunos deverão desempenhar as seguintes atividades:
 - Configuração do host de origem e destino entre o back e front.
 - Configuração das variáveis de processo no ambiente do Heroku.
 
-## Iniciando
+## Repositórios e Deploy
 
-Dentro da pasta `desafio-03/backend/` e `desafio-03/frontend/` **instale as depências** de necessárias do package.json para esse projeto:
+Por conta dos repositórios ter que serem separados, os repositórios e deploys estão separados da seguinte forma:
 
-```bash
-npm install
-#or
-yarn install
-```
-
-Inicie o projeto:
-
-```bash
-npm start
-#or
-yarn start
-```
+- **Backend**
+  - Repositório remoto: [GitHub](https://github.com/JefersonLucas/desafio-04-backend);
+  - Deploy: [Heroku](https://desafio-04-backend.herokuapp.com/).
+- **Frontend**
+  - Repositório remoto: [GitHub](https://github.com/JefersonLucas/desafio-04-frontend);
+  - Deploy: [Heroku](https://desafio-04-frontend.herokuapp.com/).

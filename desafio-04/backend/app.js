@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: "https://desafio-04-frontend.herokuapp.com", // Link do aplicativo frontend
   }),
 );
 

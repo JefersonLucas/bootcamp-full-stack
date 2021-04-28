@@ -1,5 +1,5 @@
-import winston from 'winston';
-import winstondb from 'winston-mongodb';
+import winston from "winston";
+import winstondb from "winston-mongodb";
 
 const { combine, timestamp, label, printf } = winston.format;
 
@@ -13,9 +13,9 @@ const logger = createLogger({
   transports: [
     new transports.Console(),
     new transports.MongoDB({
-      level: 'info',
+      level: "info",
       db: process.env.MONGODB,
-      collection: 'logs_grades',
+      collection: "logs_grades",
       capped: true,
       cappedMax: 20,
       options: {
@@ -25,9 +25,9 @@ const logger = createLogger({
     }),
   ],
   format: format.combine(
-    label({ label: 'grade-api' }),
+    label({ label: "grade-api" }),
     format.timestamp(),
-    myFormat
+    myFormat,
   ),
 });
 
