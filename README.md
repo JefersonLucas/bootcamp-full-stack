@@ -69,7 +69,18 @@ O Bootcamp é constistuído de 5 (cinco) módulos, sendo eles:
 
 **Módulo 05 – Desafio Final**
 
-1. Aula interativa com uma demonstração da resolução do Desafio Final e resolução de dúvidas.
+<p>
+	<img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-21262d?fff&style=plastic&logo=mongodb" title="MongoDB" />
+	<img alt="Node.js" src="https://img.shields.io/badge/-Node.js-21262d?style=plastic&logo=node.js&logoColor=509941" title="Node.js" />
+  <img alt="React" src="https://img.shields.io/badge/-React-21262d?style=plastic&logo=react&logoColor=61DAFB" title="React" />
+	<img alt="NPM" src="https://img.shields.io/badge/-NPM-21262d?style=plastic&logo=npm" title="NPM" />
+	<img alt="Yarn" src="https://img.shields.io/badge/-Yarn-21262d?style=plastic&logo=yarn" title="Yarn" />
+	<img alt="Heroku" src="https://img.shields.io/badge/-Heroku-21262d?fff&style=plastic&logo=heroku&logoColor=3e0094" title="Heroku" />
+	<img alt="Git" src="https://img.shields.io/badge/-Git-21262d?style=plastic&logo=git" title="Git" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-21262d?style=plastic&logo=visual-studio-code&logoColor=007ACC" title="Visual Studio Code" />
+</p>
+
+1. Criar uma aplicação web para **Controle Financeiro Pessoal** com **MongoDB** + **Node.js** + **React** e implantação no **Heroku**.
 
 ## Trabalhos práticos
 
@@ -95,7 +106,8 @@ Como aplicação prático dos conteúdos abordados, ao fim dos módulos são des
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-01">Desafio do Módulo 01</a></li>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-02">Desafio do Módulo 02</a></li>
     <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-03">Desafio do Módulo 03</a></li>
-    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-04">Desafio do Módulo 03</a></li>
+    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-04">Desafio do Módulo 04</a></li>
+    <li><a href="https://github.com/JefersonLucas/bootcamp-full-stack/tree/main/desafio-05">Desafio do Módulo 05</a></li>
   </ul>
 </details>
 
