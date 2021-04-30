@@ -33,5 +33,8 @@ app.get("/account/activity10/:limit", controller.activity10);
 // Atividade 11: endpoint para consultar os clientes mais ricos do banco.
 app.get("/account/activity11/:limit", controller.activity11);
 
+// Atividade 12: endpoint para que irá transferir o cliente com maior saldo em conta de cada agência para a agência private agencia=99.
+app.get("/account/activity12", controller.activity12);
+
 // Exportando a Rota
 export { app as accountRouter };

@@ -256,7 +256,7 @@ const activity10 = async (request, response) => {
     )
       // Exibindo em ordem crescente
       .limit(parseInt(limit)) // Importante! O `limit` deve ser parseado para inteiro
-      .sort({ saldo: 1 });
+      .sort({ balance: 1 });
 
     // Validando o `account`
 
@@ -292,7 +292,7 @@ const activity11 = async (request, response) => {
     )
       // Exibindo em ordem decrescente pelo saldo, crescente pelo `name`
       .limit(parseInt(limit)) // Importante! O `limit` deve ser parseado para inteiro
-      .sort({ saldo: -1, name: 1 });
+      .sort({ balance: -1, name: 1 });
 
     // Validando o `account`
 
@@ -317,6 +317,43 @@ const activity11 = async (request, response) => {
  * 1. Crie um endpoint que irá transferir o cliente com maior saldo em conta de cada agência para a agência private agencia=99.
  * 2. O endpoint deverá retornar a lista dos clientes da agencia private.
  */
+
+const activity12 = async (request, response) => {
+  try {
+    let accounts = await Account.aggregate([
+      {
+        $group: {
+          _id: "$agencia",
+          balance: { $max: "$balance" },
+        },
+      },
+    ]);
+
+    for (const account of accounts) {
+      const { _id, balance } = account;
+      let newAccount = await Account.findOne({
+        agencia: _id,
+        balance,
+      });
+      newAccount.agencia = 99;
+      newAccount.save();
+    }
+    accounts = await Account.find({
+      agencia: 99,
+    });
+
+    // Retornando a lista dos clientes.
+    response.send(accounts);
+
+    // Finalizando a seção
+    response.end();
+  } catch (error) {
+    // Retorno de erro
+    response.status(500).send({
+      "Erro ao transferir clientes para a conta privada": error.message,
+    });
+  }
+};
 
 /** Validador:
  * valida se existe agencia e conta.
@@ -355,4 +392,5 @@ export default {
   activity09,
   activity10,
   activity11,
+  activity12,
 };
