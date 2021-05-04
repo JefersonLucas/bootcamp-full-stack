@@ -37,15 +37,29 @@ Os alunos deverão desempenhar as seguintes atividades:
 
 4. Acesse a aplicação Node.js fornecida pelo professor no "**Fórum de Avisos**" do Módulo (projeto "**mongodb-import**") e execute o comando **yarn** para instalar todas as dependências já definidas em `package.json`. Crie o arquivo "`.env`" na raiz do projeto e preencha "`DB_CONNECTION`" com os dados pertinentes ao <u>**seu**</u> **Banco de Dados**. As dicas de como preencher o arquivo "`.env`" estão no arquivo "`.env.example`". Há um comentário iniciado por `#` na linha 1 com um exemplo de preenchimento e um template para ser copiado/colado no arquivo "`.env`". Muito cuidado com o preenchimento dos valores. **Caracteres maiúsculos e minúsculos** <u>**são**</u> **considerados!**
 
-![Example 04](./images/example-04.jpg)
+```makefile
+# Exemplo: DB_CONNECTION="mongodb+srv://root:123456@rusha458tpl.mongodb.net/DesafioFinalBootcampFullStack?retryWrites=true&w=majority"
+DB_CONNECTION="mongodb+srv://<usuario>:<senha>@<host_com_final_.mongodb.net>/<cluster>?retryWrites=true&w=majority"
+```
 
 5. Acesse a pasta do projeto "`mongodb-import/`" no seu terminal de comandos e execute o seguinte comando: "`yarn db`". Caso ocorra algum problema, verifique novamente os passos acima. Se tudo correr bem, a seguinte saída aparecerá no terminal e os dados originais do projeto serão copiados para o seu Banco de Dados.
 
-![Example 05](./images/example-05.jpg)
+```
+yarn db
+yarn run v1.22.10
+$ node populateMongoDb.js
+Iniciando conexão ao MongoDB...
+Conectado ao MongoDB
+Eliminando as collections...
+Recriando as collections...
+Preenchendo os documentos das collections...
+Processamento finalizado!
+Done in 7.01s.
+```
 
 6. Confirme se os dados apareceram em sua conta no **MongoDB Atlas**. Recarregue a tela se necessário.
 
-![Example 06](./images/example-06.jpg)
+![Example 04](./images/example-04.jpg)
 
 7. **<u>Observação muito importante</u>**: a execução deste script de importação deve ser feita novamente antes do aluno preencher o **Questionário sobre o Desafio Final**, pois serão considerados os **dados originais**. Não modifique os arquivos do projeto "`mongodb-import/`", principalmente os de extensão `.json`, senão isso pode te prejudicar na resolução das questões. O arquivo que é utilizado na importação é o "`./official-db/transactionsArray.json`". Caso esse arquivo seja modificado, você pode obter novamente o projeto no "**Fórum de Avisos**" ou então acessar a pasta "`./backup`". Há uma cópia desse arquivo por lá.
 
@@ -65,7 +79,23 @@ Os alunos deverão desempenhar as seguintes atividades:
 
 4. Verifique, estude e entenda as pastas e arquivos já contidos neste projeto:
 
-- ![Example 06](./images/example-06.jpg)
+```
+app/
+├── client/
+├── models/
+│   └── TransactionModel.js
+├── routes/
+│   └── routes.js
+├── services/
+│   └── transactionService.js
+├── .env
+├── .gitignore
+├── .npmrc
+├── index.js
+├── package.json
+└── yarn.lock
+```
+
 - Pasta `client/`: contém o projeto React (Front End). É o mesmo "`react-projetobase`", disponibilizado durante o Módulo 03 do Bootcamp. Mais detalhes sobre a implementação com React serão vistos na **Etapa 3**.
 - Pasta `models/`: contém o arquivo `TransactionModel.js`, referente ao **Schema Mongoose** para a Collection **transaction**. <u>**Este arquivo já foi implementado pelo professor**</u>. Entretanto, nada impede o aluno de modificá-lo e adaptá-lo às suas necessidades.
 - Pasta `routes/`: contém o arquivo `routes.js` e deve conter as rotas, que deverão ser implementadas pelo aluno.
@@ -83,7 +113,9 @@ Os alunos deverão desempenhar as seguintes atividades:
 app.use(express.static(path.join(__dirname, "client/build")));
 ```
 
-Este trecho de código faz com que o express hospede o React de produção (após o build).
+<p align="center">
+  Este trecho de código faz com que o express hospede o React de produção (após o build).
+</p>
 
 ```js
 /**
@@ -102,7 +134,9 @@ app.get("/api/", (_, response) => {
 app.user("/api/transactioin", routes);
 ```
 
-Este trecho de código faz com que a API principal do Back End (`transaction`) fique hospedada em [http://"meu_site_no_heroku".herokuapp.com/api/transaction](http://"meu_site_no_heroku".herokuapp.com/api/transaction)
+<p align="center">
+  Este trecho de código faz com que a API principal do Back End (`transaction`) fique hospedada em <a href='http://"meu_site_no_heroku".herokuapp.com/api/transaction'>http://"meu_site_no_heroku".herokuapp.com/api/transaction</a>
+</p>
 
 ```js
 /**
@@ -115,7 +149,9 @@ app.listen(APP_PORT, () => {
 });
 ```
 
-Neste trecho de código perceba que foi priorizado o valor de `process.env.PORT` para ser utilizado como porta do servidor de Back End. Isso será utilizado pelo **Heroku** em **produção**. Em **desenvolvimento**, será adotada a porta `3001`, pois não há a variável `PORT` no arquivo `.env` local.
+<p align="center">
+  Neste trecho de código perceba que foi priorizado o valor de <code>process.env.PORT</code> para ser utilizado como porta do servidor de Back End. Isso será utilizado pelo <b>Heroku</b> em <b>produção</b>. Em <b>desenvolvimento</b>, será adotada a porta <code>3001</code>, pois não há a variável <code>PORT</code> no arquivo <code>.env</code> local.
+</p>
 
 6. Verifique, estude e entenda alguns detalhes importantes sobre o arquivo `package.json`:
 
@@ -152,19 +188,31 @@ Configuração importante do **Nodemon** para que ele não "escute" a pasta do R
 Configuração importante do **Heroku** para que ele utilize a mesma versão do Node.js de desenvolvimento em produção. Se a sua versão do Node.js for **diferente** de [12.9.1](https://nodejs.org/download/release/v12.19.1/), faça a devida alteração nesse objeto de package.json e informe a versão que você está utilizando. Recomenda-se, entretanto, utilizar a versão [12.9.1](https://nodejs.org/download/release/v12.19.1/). Ela foi homologada por
 mim durante o desenvolvimento deste projeto.
 
-7. Ainda na pasta raiz do projeto, execute yarn server para inicializar o Back End de desenvolvimento. Caso ocorra algum problema, verifique novamente os passos acima. Se tudo correr bem, serão exibidas as seguintes mensagens no console:
+7. Ainda na pasta raiz do projeto, execute `yarn server` para inicializar o Back End de desenvolvimento. Caso ocorra algum problema, verifique novamente os passos acima. Se tudo correr bem, serão exibidas as seguintes mensagens no console:
 
-![Example 08](./images/example-08.jpg)
+```bash
+yarn server
+yarn run v1.22.10
+$ nodemon index.js
+[nodemon] 2.0.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+Iniciando conexão ao MongoDB...
+Conectado ao MongoDB
+Servidor iniciado na porta 3001
+```
 
 8. **<u>Observação muito importante</u>**: o **GET** de **transaction** deve considerar **obrigatoriamente** o **período** (**ano-mês**) com base no campo **yearMonth**. Ou seja, o **período deve ser obrigatoriamente informado** nesse tipo de **rota**. Isso deve ser implementado pelo aluno no arquivo `routes.js`.
 
-![Example 09](./images/example-09.jpg)
+![Example 05](./images/example-05.jpg)
 
 <p align="center">
   Requisição <b>incorreta</b>, pois não foi informado o parâmetro <code>period</code>.
 </p>
 
-![Example 10](./images/example-10.jpg)
+![Example 06](./images/example-06.jpg)
 
 <p align="center">
   Requisição <b>correta</b>, pois foi informado o parâmetro <code>period</code>.
@@ -188,7 +236,24 @@ mim durante o desenvolvimento deste projeto.
 
 O arquivo `package.json` também foi modificado pelo professor, conforme imagem abaixo. Isso é importante para os casos onde tanto o Back End quanto o Front End estão hospedados no mesmo servidor, que é o caso deste projeto. Mais informações podem ser encontradas [aqui](https://create-react-app.dev/docs/proxying-api-requests-in-development/).
 
-![Example 11](./images/example-11.jpg)
+```json
+{
+  "name": "react-client",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.3.2",
+    "@testing-library/user-event": "7.1.2",
+    "axios": "0.19.2",
+    "materialize-css": "1.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-modal": "3.11.2",
+    "react-scripts": "3.4.1"
+  },
+```
 
 5. A implementação é <u>**obrigatória**</u> para as seguintes **funcionalidades** no Front End, pois elas serão testadas no questionário de entrega do projeto do Desafio Final.
 
@@ -198,31 +263,31 @@ O arquivo `package.json` também foi modificado pelo professor, conforme imagem 
 
 6. Algumas telas **sugeridas** para a aplicação Front End:
 
-![Example 12](./images/example-12.jpg)
+![Example 07](./images/example-07.jpg)
 
 <p align="center">
   Estado inicial da tela (mês corrente).
 </p>
 
-![Example 13](./images/example-13.jpg)
+![Example 08](./images/example-08.jpg)
 
 <p align="center">
   Seleção de períodos através de <code>select</code>.
 </p>
 
-![Example 14](./images/example-14.jpg)
+![Example 09](./images/example-09.jpg)
 
 <p align="center">
   Edição de lançamentos, que <b>não</b> permite a troca do tipo (receita/despesa).
 </p>
 
-![Example 15](./images/example-15.jpg)
+![Example 10](./images/example-10.jpg)
 
 <p align="center">
   Inclusão de lançamentos.
 </p>
 
-![Example 16](./images/example-16.jpg)
+![Example 11](./images/example-11.jpg)
 
 <p align="center">
   Filtro de lançamentos a partir da descrição.
@@ -249,33 +314,43 @@ heroku/7.52.0 win32-x64 node-v14.16.0
 
 3. Acesse a pasta **app** e faça o login no **Heroku** com o comando `heroku login`. **Atenção**: por algum motivo que desconheço, a tela de login do **Heroku** não ficou bem visível no **Cmder** do **meu computador com Windows 10**. Se acontecer com você, faça o login no prompt de comando padrão do Windows.
 
-![Example 17](./images/example-17.jpg)
+```bash
+heroku login
+Enter your Heroku credentials:
+Email: example@email.com
+Password: #examplepassword12345
+Logged in as example@email.com
+```
 
 4. Crie um projeto no Heroku com o comando `heroku create nome_do_projeto`. Sugiro **"identificador-pessoal"-desafio-final**. O nome do projeto deve ser **único** e possuir, no máximo, 30 caracteres. Caso não se importe com o nome, digite apenas `heroku create` que o próprio **Heroku** define um nome único para você.
 
-![Example 18](./images/example-18.jpg)
+```bash
+heroku create rush-desafio-final
+Creating rush-desafio-final... done
+https://rush-desafio-final.herokuapp.com/ | https://git.hekoku.com/rush-desafio-final.git/
+```
 
 5. Acesse o site do Heroku e inclua a variável de ambiente `DB_CONNECTION`, que foi definida no arquivo `.env`, seguindo as imagens abaixo em sequência:
 
-![Example 19](./images/example-19.jpg)
+![Example 12](./images/example-12.jpg)
 
 <p align="center">
   Acesse o seu projeto recém-criado.
 </p>
 
-![Example 20](./images/example-20.jpg)
+![Example 13](./images/example-13.jpg)
 
 <p align="center">
   Acesse "Settings".
 </p>
 
-![Example 21](./images/example-21.jpg)
+![Example 14](./images/example-14.jpg)
 
 <p align="center">
   Acesse "Reveal Config Vars".
 </p>
 
-![Example 22](./images/example-22.jpg)
+![Example 15](./images/example-15.jpg)
 
 <p align="center">
   Preencha <code>DB_CONNECTION</code> e a String de conexão (sem aspas duplas) e clique em "Add".
@@ -289,11 +364,63 @@ heroku/7.52.0 win32-x64 node-v14.16.0
 - `git commit -m "heroku"`
 - `git push heroku master`
 
-![Example 23](./images/example-23.jpg)
+```bash
+git init
+Initialized empty Git repository in C:/User/you-repository/
+```
+
+```bash
+heroku git:remote -a rush-desafio-final
+set git remote heroku to https://git.heroku.com/rush-desafio-final.git
+```
+
+```bash
+git add .
+```
+
+```bash
+git commit -m "heroku"
+[master (root-commit) f7a2228] heroku
+22 files change, 12492 insertions(+)
+create mode 10064 .gitignore
+create mode 10064 .npmrc
+create mode 10064 client/.gitignore
+create mode 10064 client/.npmrc
+create mode 10064 client/README.md
+create mode 10064 client/package.json
+create mode 10064 client/public/favicon.ico
+create mode 10064 client/public/index.html
+...
+```
+
+```bash
+git push heroku master
+Counting objects: 29, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (26/26), done.
+Wrinting objects: 100% (29/29), 221 KiB | 8.19 MiB/s, done.
+Total 29 (delta 1), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Bulding source:
+remote:
+remote: --------> Node.js app detected
+remote:
+remote: --------> Creating runtime enviroment
+...
+```
+
+```bash
+remote:           Released v4
+remote:           https://rush-desafio-final.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/rush-desafio-final.git
+ * [new branch]         master -> master
+```
 
 7. Se tudo deu certo, o app estará disponível conforme imagem abaixo.
 
-![Example 24](./images/example-24.jpg)
+![Example 16](./images/example-16.jpg)
 
 <p align="center">
   Neste exemplo, o app ainda está "vazio". 
@@ -325,7 +452,7 @@ A API pode ser acesada em: [http://nome-do-projeto.herokuapp.com/api/](http://no
 Por conta dos repositórios ter que serem separados, os repositórios e deploys estão separados da seguinte forma:
 
 - **Backend**
-  - Repositório remoto: [GitHub]();
+  - Repositório remoto: [GitHub](https://github.com/JefersonLucas/desafio-05-app);
   - Deploy: [Heroku]().
 - **Frontend**
   - Repositório remoto: [GitHub]();
